@@ -1,3 +1,8 @@
+.desktop-icon {
+  width: 20px;
+  height: 20px;
+}
+
 * {
   list-style-type: none;
 }
@@ -43,5 +48,9 @@ a:link {
 
 .container {
   text-align: center;
+}
+
+.c-link:link, .c-link:visited {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
