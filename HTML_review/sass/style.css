@@ -2,9 +2,15 @@
   list-style-type: none;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .main-body {
   display: flexbox;
   max-width: 80%;
+  max-height: 100%;
+  background-image: url(../Assets/asset_3.jpeg);
 }
 
 .slider-overlay {
@@ -14,5 +20,28 @@
 .sliderph {
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.design-button:link, .design-button:visited {
+  margin: 10px;
+  padding: 5px;
+  background-color: #926fb1;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.design-button:hover {
+  background-color: #7E57A0;
+}
+
+.card {
+  display: flexbox;
+  border: 2px solid black;
+  margin: 3rem;
+}
+
+.container {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
