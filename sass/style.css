@@ -6,9 +6,9 @@
   color: #ffffff;
 }
 
-@media only screen and (max-width: s) {
-  img.sliderph {
-    width: 200px;
-  }
+.sliderph {
+  display: flexbox;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=style.css.map */

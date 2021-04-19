@@ -2,12 +2,14 @@
     list-style-type: none;
 }
 
+.main-body {
+    display: flexbox;
+}
 
 .slider-overlay {
     color:$white;
 }
 
-@media only screen and (max-width:s) {
-    img.sliderph {width: 200px;}
+.sliderph {
+    align-content: center;
 }
-
