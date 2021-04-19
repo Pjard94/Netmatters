@@ -1,7 +1,8 @@
 .icon {
   width: 20px;
   height: 20px;
-  -webkit-filter: #ffffff;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 * {
