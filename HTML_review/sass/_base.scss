@@ -46,9 +46,6 @@ a:link {
     text-align: center;
 }
 
-.c-link:link, .c-link:visited{
-    color:black;
-}
 .image {
     text-align: center;
 }
@@ -67,4 +64,11 @@ a:link {
 footer {
     background-color: $background-color-primary;
     color: #ffffff;
+}
+
+footer a{
+    color:#ffffff
+}
+footer a:visited {
+    color: $background-color-primary;
 }
