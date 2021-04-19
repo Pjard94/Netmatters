@@ -53,4 +53,8 @@ a:link {
 .c-link:link, .c-link:visited {
   color: black;
 }
+
+.image {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
