@@ -2,12 +2,15 @@
   list-style-type: none;
 }
 
+.main-body {
+  display: flexbox;
+}
+
 .slider-overlay {
   color: #ffffff;
 }
 
 .sliderph {
-  display: flexbox;
   -ms-flex-line-pack: center;
       align-content: center;
 }
