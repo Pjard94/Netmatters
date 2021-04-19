@@ -1,9 +1,13 @@
-
+.icon-container {
+    display:flexbox;
+    min-width: 150px;
+    align-items: center;
+    background-image: url(circle-solid.svg);
+}
 
 .icon {
     width: 20px;
     height: 20px;
-    filter: invert(100%);
 }
 
 .WD {

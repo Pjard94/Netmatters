@@ -1,8 +1,15 @@
+.icon-container {
+  display: flexbox;
+  min-width: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(circle-solid.svg);
+}
+
 .icon {
   width: 20px;
   height: 20px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
 }
 
 .WD {
@@ -74,7 +81,6 @@ a:link {
   display: flexbox;
   border: 2px solid black;
   margin: 3rem;
-  color: #ffffff;
 }
 
 .container {
@@ -87,5 +93,15 @@ a:link {
 
 .image {
   text-align: center;
+}
+
+.culture {
+  background-color: #333645;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #333645;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
