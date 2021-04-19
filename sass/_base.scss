@@ -2,11 +2,16 @@
     list-style-type: none;
 }
 
-.slider-area {
-    background-image: url('../Assets/asset_3.jpeg');
-}
+
 .slider-overlay {
     color:$white;
 }
 
+@media only screen and (max-width: s) {
+    .slider-area {
+    display: flexbox;
+    width: 80%;
+    }
+    
+}
 
