@@ -1,6 +1,7 @@
-.desktop-icon {
+.icon {
   width: 20px;
   height: 20px;
+  -webkit-filter: #ffffff;
 }
 
 * {
@@ -44,6 +45,7 @@ a:link {
   display: flexbox;
   border: 2px solid black;
   margin: 3rem;
+  color: #ffffff;
 }
 
 .container {
@@ -56,5 +58,33 @@ a:link {
 
 .image {
   text-align: center;
+}
+
+.WD {
+  background-color: #926fb1;
+}
+
+.IT {
+  background-color: #4183d7;
+}
+
+.BS {
+  background-color: #67809f;
+}
+
+.DM {
+  background-color: #2ecc71;
+}
+
+.TS {
+  background-color: #d64541;
+}
+
+.DT {
+  background-color: #926fb1;
+}
+
+.CS {
+  background-color: #f62459;
 }
 /*# sourceMappingURL=style.css.map */
