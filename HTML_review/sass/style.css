@@ -4,6 +4,7 @@
 
 .main-body {
   display: flexbox;
+  max-width: 80%;
 }
 
 .slider-overlay {
