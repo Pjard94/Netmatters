@@ -12,6 +12,22 @@ a:link {
     color: #ffffff;
 }
 
+// .culture p,
+// .culture h2 {
+//     margin:auto;
+//     padding: auto;
+// }
+
+.but-cult {
+    background-color: $white;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+.culture a:link,
+.culture a:visited {
+    color: black;
+}
 
 footer {
     background-color: $background-color-primary;

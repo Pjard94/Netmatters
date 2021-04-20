@@ -86,7 +86,8 @@
 }
 
 
-// .WD:hover {
+// Developer Training hover rules
+
 .DT:hover {
     background-color: $fill-des-dev;
 }
@@ -100,18 +101,19 @@
 }
 
 
-// .IT:hover {
-    .CS:hover {
-        background-color: $fill-cyber;
-    }
-    .ic_CS {
-        background-color: $fill-cyber;
-    }
-    
-    .card:hover .ic_CS {
-        color: $fill-cyber;
-        background-color: $white;
-    }
+// Cyber security hover rules
+
+.CS:hover {
+    background-color: $fill-cyber;
+}
+.ic_CS {
+    background-color: $fill-cyber;
+}
+
+.card:hover .ic_CS {
+    color: $fill-cyber;
+    background-color: $white;
+}
 
 .icon {
     display: flexbox;

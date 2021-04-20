@@ -169,6 +169,17 @@ a:link {
   color: #ffffff;
 }
 
+.but-cult {
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 10%;
+}
+
+.culture a:link,
+.culture a:visited {
+  color: black;
+}
+
 footer {
   background-color: #333645;
   color: #ffffff;
