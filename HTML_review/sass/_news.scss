@@ -1,0 +1,78 @@
+.news-article {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.user {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+
+// The first article
+
+.art-head1:link,
+.art-head1:visited {
+    color: $fill-bespoke;
+}
+
+.art-head1:hover {
+   text-decoration: underline;
+}
+
+.Read-more1:link,
+.Read-more1:visited {
+    margin: 10px;
+    padding: 5px;
+    background-color: $fill-bespoke;
+    color: $white;
+}
+
+.Read-more1:hover {
+    background-color: $news-art-alt1;
+}
+
+// The second article
+
+.art-head2:link,
+.art-head2:visited {
+    color: $fill-telecoms;
+}
+
+.art-head2:hover {
+   text-decoration: underline;
+}
+
+.Read-more2:link,
+.Read-more2:visited {
+    margin: 10px;
+    padding: 5px;
+    background-color: $fill-telecoms;
+    color: $white;
+}
+
+.Read-more2:hover {
+    background-color: $news-art-alt2;
+}
+
+// The third article 
+
+.art-head3:link,
+.art-head3:visited {
+    color: $fill-supp;
+}
+
+.art-head3:hover {
+   text-decoration: underline;
+}
+
+.Read-more3:link,
+.Read-more3:visited {
+    margin: 10px;
+    padding: 5px;
+    background-color: $fill-supp;
+    color: $white;
+}
+
+.Read-more3:hover {
+    background-color: $news-art-alt3;
+}

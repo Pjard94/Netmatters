@@ -156,6 +156,79 @@ i {
   fill: #ffffff;
 }
 
+.news-article {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.user {
+  border-top: 1px solid #CCCCCC;
+  margin-top: 10px;
+}
+
+.art-head1:link,
+.art-head1:visited {
+  color: #67809f;
+}
+
+.art-head1:hover {
+  text-decoration: underline;
+}
+
+.Read-more1:link,
+.Read-more1:visited {
+  margin: 10px;
+  padding: 5px;
+  background-color: #67809f;
+  color: #ffffff;
+}
+
+.Read-more1:hover {
+  background-color: #576C88;
+}
+
+.art-head2:link,
+.art-head2:visited {
+  color: #d64541;
+}
+
+.art-head2:hover {
+  text-decoration: underline;
+}
+
+.Read-more2:link,
+.Read-more2:visited {
+  margin: 10px;
+  padding: 5px;
+  background-color: #d64541;
+  color: #ffffff;
+}
+
+.Read-more2:hover {
+  background-color: #C42E2A;
+}
+
+.art-head3:link,
+.art-head3:visited {
+  color: #4183d7;
+}
+
+.art-head3:hover {
+  text-decoration: underline;
+}
+
+.Read-more3:link,
+.Read-more3:visited {
+  margin: 10px;
+  padding: 5px;
+  background-color: #4183d7;
+  color: #ffffff;
+}
+
+.Read-more3:hover {
+  background-color: #2A6EC6;
+}
+
 * {
   list-style-type: none;
 }
@@ -167,12 +240,19 @@ a:link {
 .culture {
   background-color: #333645;
   color: #ffffff;
+  padding: 10px;
 }
 
 .but-cult {
   background-color: #ffffff;
   padding: 3px;
   border-radius: 10%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.but-cult:hover {
+  background-color: #EBEBEB;
 }
 
 .culture a:link,

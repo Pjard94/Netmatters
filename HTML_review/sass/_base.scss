@@ -10,6 +10,7 @@ a:link {
 .culture {
     background-color: $background-color-primary;
     color: #ffffff;
+    padding: 10px;
 }
 
 // .culture p,
@@ -22,6 +23,12 @@ a:link {
     background-color: $white;
     padding: 3px;
     border-radius: 10%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.but-cult:hover {
+    background-color: #EBEBEB;
 }
 
 .culture a:link,
