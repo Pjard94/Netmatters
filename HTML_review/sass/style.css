@@ -1,53 +1,3 @@
-.icon-container {
-  display: flexbox;
-  min-width: 150px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url(circle-solid.svg);
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
-
-.WD {
-  background-color: #926fb1;
-}
-
-.IT {
-  background-color: #4183d7;
-}
-
-.BS {
-  background-color: #67809f;
-}
-
-.DM {
-  background-color: #2ecc71;
-}
-
-.TS {
-  background-color: #d64541;
-}
-
-.DT {
-  background-color: #926fb1;
-}
-
-.CS {
-  background-color: #f62459;
-}
-
-* {
-  list-style-type: none;
-}
-
-a:link {
-  text-decoration: none;
-}
-
 .main-body {
   display: flexbox;
   max-width: 80%;
@@ -77,18 +27,47 @@ a:link {
   background-color: #7E57A0;
 }
 
+i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  fill: #ffffff;
+}
+
+* {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 .card {
   display: flexbox;
   border: 2px solid black;
   margin: 3rem;
-}
-
-.container {
   text-align: center;
 }
 
-.image {
-  text-align: center;
+.card a.main:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+}
+
+.click-card a:visited,
+.click-card a:link,
+.click-card a:target,
+.click-card a {
+  color: black;
+}
+
+.BS:hover {
+  background-color: #67809f;
+  color: #ffffff;
 }
 
 .culture {

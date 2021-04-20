@@ -1,39 +1,7 @@
-.icon-container {
-    display:flexbox;
-    min-width: 150px;
-    align-items: center;
-    background-image: url(circle-solid.svg);
-}
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
 
-.WD {
-    background-color: $fill-des-dev;
-}
 
-.IT {
-    background-color: $fill-supp;
-}
-
-.BS {
-    background-color: $fill-bespoke;
-}
-
-.DM {
-    background-color: $fill-market;
-}
-
-.TS {
-    background-color: $fill-telecoms;
-}
-
-.DT {
-    background-color: $fill-des-dev;
-}
-
-.CS {
-    background-color: $fill-cyber;
+i {
+    align-self: center;
+    fill: #ffffff;
 }
