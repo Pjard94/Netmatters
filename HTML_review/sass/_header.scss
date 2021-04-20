@@ -1,6 +1,9 @@
 .mob-nav {
     display: flexbox;
+}
 
+.sup-but {
+    font-size: 30px;
 }
 
 .sup-but:link,
@@ -10,7 +13,7 @@
 
 .sup-but:hover {
     color: $header-button;
-    text-decoration: underline;
+    border-bottom: 2px solid $header-button;
 }
 
 .menu-button:link,
@@ -20,5 +23,6 @@
 
 .menu-button:hover {
     color: $header-button;
-    text-decoration: underline;
+    text-decoration: underline;    
 }
+

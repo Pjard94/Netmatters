@@ -2,6 +2,10 @@
   display: flexbox;
 }
 
+.sup-but {
+  font-size: 30px;
+}
+
 .sup-but:link,
 .sup-but:visited {
   color: #333645;
@@ -9,7 +13,7 @@
 
 .sup-but:hover {
   color: #22242E;
-  text-decoration: underline;
+  border-bottom: 2px solid #22242E;
 }
 
 .menu-button:link,
