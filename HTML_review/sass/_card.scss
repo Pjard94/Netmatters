@@ -1,0 +1,130 @@
+.card {
+    display: flexbox;
+    border: 2px solid black;
+    margin:3rem;
+    text-align: center;
+}
+
+.card a:visited,
+.card a:link {
+ color: black;
+}
+
+// Hover commands
+.card a:hover {
+    color: $white;
+}
+
+// bespoke hover rules
+.card:hover .ic_BS {
+    color: $fill-bespoke;
+    background-color: $white;
+}
+
+.ic_BS {
+    background-color: $fill-bespoke;
+}
+
+.BS:hover {
+    background-color: $fill-bespoke;
+}
+
+// Web design hover rules
+.WD:hover {
+    background-color: $fill-des-dev;
+}
+
+.ic_WD {
+    background-color: $fill-des-dev;
+}
+
+.card:hover .ic_WD {
+    color: $fill-des-dev;
+    background-color: $white;
+}
+
+// Digital Marketing hover rules
+
+.DM:hover {
+    background-color: $fill-market;
+}
+.ic_DM {
+    background-color: $fill-market;
+}
+
+.card:hover .ic_DM {
+    color: $fill-market;
+    background-color: $white;
+}
+
+// IT hover rules
+
+.IT:hover {
+    background-color: $fill-supp;
+}
+.ic_IT {
+    background-color: $fill-supp;
+}
+
+.card:hover .ic_IT {
+    color: $fill-supp;
+    background-color: $white;
+}
+
+// Telecom services hover rules
+
+.TS:hover {
+    background-color: $fill-telecoms;
+}
+.ic_TS {
+    background-color: $fill-telecoms;
+}
+
+.card:hover .ic_TS {
+    color: $fill-telecoms;
+    background-color: $white;
+}
+
+
+// .WD:hover {
+.DT:hover {
+    background-color: $fill-des-dev;
+}
+.ic_DT {
+    background-color: $fill-des-dev;
+}
+
+.card:hover .ic_DT {
+    color: $fill-des-dev;
+    background-color: $white;
+}
+
+
+// .IT:hover {
+    .CS:hover {
+        background-color: $fill-cyber;
+    }
+    .ic_CS {
+        background-color: $fill-cyber;
+    }
+    
+    .card:hover .ic_CS {
+        color: $fill-cyber;
+        background-color: $white;
+    }
+
+.icon {
+    display: flexbox;
+    // margin: auto;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;  
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 3px;
+    color: $white;
+}

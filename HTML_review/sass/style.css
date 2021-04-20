@@ -27,6 +27,128 @@
   background-color: #7E57A0;
 }
 
+.card {
+  display: flexbox;
+  border: 2px solid black;
+  margin: 3rem;
+  text-align: center;
+}
+
+.card a:visited,
+.card a:link {
+  color: black;
+}
+
+.card a:hover {
+  color: #ffffff;
+}
+
+.card:hover .ic_BS {
+  color: #67809f;
+  background-color: #ffffff;
+}
+
+.ic_BS {
+  background-color: #67809f;
+}
+
+.BS:hover {
+  background-color: #67809f;
+}
+
+.WD:hover {
+  background-color: #926fb1;
+}
+
+.ic_WD {
+  background-color: #926fb1;
+}
+
+.card:hover .ic_WD {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+.DM:hover {
+  background-color: #2ecc71;
+}
+
+.ic_DM {
+  background-color: #2ecc71;
+}
+
+.card:hover .ic_DM {
+  color: #2ecc71;
+  background-color: #ffffff;
+}
+
+.IT:hover {
+  background-color: #4183d7;
+}
+
+.ic_IT {
+  background-color: #4183d7;
+}
+
+.card:hover .ic_IT {
+  color: #4183d7;
+  background-color: #ffffff;
+}
+
+.TS:hover {
+  background-color: #d64541;
+}
+
+.ic_TS {
+  background-color: #d64541;
+}
+
+.card:hover .ic_TS {
+  color: #d64541;
+  background-color: #ffffff;
+}
+
+.DT:hover {
+  background-color: #926fb1;
+}
+
+.ic_DT {
+  background-color: #926fb1;
+}
+
+.card:hover .ic_DT {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+.CS:hover {
+  background-color: #f62459;
+}
+
+.ic_CS {
+  background-color: #f62459;
+}
+
+.card:hover .ic_CS {
+  color: #f62459;
+  background-color: #ffffff;
+}
+
+.icon {
+  display: flexbox;
+  margin-top: 15px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-left: 3px;
+  color: #ffffff;
+}
+
 i {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -40,34 +162,6 @@ i {
 
 a:link {
   text-decoration: none;
-}
-
-.card {
-  display: flexbox;
-  border: 2px solid black;
-  margin: 3rem;
-  text-align: center;
-}
-
-.card a.main:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: '';
-}
-
-.click-card a:visited,
-.click-card a:link,
-.click-card a:target,
-.click-card a {
-  color: black;
-}
-
-.BS:hover {
-  background-color: #67809f;
-  color: #ffffff;
 }
 
 .culture {
@@ -85,6 +179,6 @@ footer a {
 }
 
 footer a:visited {
-  color: #333645;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

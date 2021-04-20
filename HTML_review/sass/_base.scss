@@ -7,43 +7,6 @@ a:link {
 }
 
 
-
-
-.card {
-    display: flexbox;
-    border: 2px solid black;
-    margin:3rem;
-    text-align: center;
-}
-
-
-.card a.main:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: '';
-}
-
-.click-card a:visited,
-.click-card a:link, 
-.click-card a:target,
-.click-card a {
- color: black;
-}
-
-.BS:hover {
-    background-color: $fill-bespoke;
-    color: $white;
-}
-
-
-
-
-
-
-
 .culture {
     background-color: $background-color-primary;
     color: #ffffff;
@@ -59,5 +22,5 @@ footer a{
     color:#ffffff
 }
 footer a:visited {
-    color: $background-color-primary;
+    color: black;
 }
