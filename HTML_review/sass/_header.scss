@@ -1,0 +1,24 @@
+.mob-nav {
+    display: flexbox;
+
+}
+
+.sup-but:link,
+.sup-but:visited {
+    color: $color-primary;
+}
+
+.sup-but:hover {
+    color: $header-button;
+    text-decoration: underline;
+}
+
+.menu-button:link,
+.menu-button:visited {
+    color: $color-primary;
+}
+
+.menu-button:hover {
+    color: $header-button;
+    text-decoration: underline;
+}

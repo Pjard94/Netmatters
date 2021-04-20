@@ -1,3 +1,27 @@
+.mob-nav {
+  display: flexbox;
+}
+
+.sup-but:link,
+.sup-but:visited {
+  color: #333645;
+}
+
+.sup-but:hover {
+  color: #22242E;
+  text-decoration: underline;
+}
+
+.menu-button:link,
+.menu-button:visited {
+  color: #333645;
+}
+
+.menu-button:hover {
+  color: #22242E;
+  text-decoration: underline;
+}
+
 .main-body {
   display: flexbox;
   max-width: 80%;
