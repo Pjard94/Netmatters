@@ -47,3 +47,28 @@ footer a{
 footer a:visited {
     color: black;
 }
+
+.Newsletter {
+    background-color: $background-color-footer;
+}
+
+.Privacy:link,
+.Privacy:visited {
+    color: $color;
+    text-decoration: underline;
+}
+
+.Privacy:hover {
+    color: $color-hover;
+}
+
+.sub-button {
+    color: $white;
+    background-color: $color;
+    padding: 10px;
+}
+
+.sub-button:hover {
+    background-color: $color-hover;
+    color: $white;
+}

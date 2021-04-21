@@ -26,3 +26,8 @@
     text-decoration: underline;    
 }
 
+header {
+    display: grid;
+    grid-template-rows: auto, auto;
+    
+}
