@@ -1,13 +1,40 @@
+.cards-section {
+    display: flex;
+    margin: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
 .card {
     display: flexbox;
-    border: 2px solid black;
+    border: 1px solid #666666;
     margin:3rem;
     text-align: center;
+    padding-top: 5px;
+    min-width: 100px;
+    min-height: 250px;
+    padding-right: 20%;
+    padding-left: 20%;
+    position: relative;
 }
 
 .card a:visited,
 .card a:link {
  color: black;
+}
+
+.card a.click-card {
+    z-index: 1;
+    display: block;
+}
+
+.card a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
 }
 
 // Hover commands
@@ -118,7 +145,7 @@
 .icon {
     display: flexbox;
     // margin: auto;
-    margin-top: 15px;
+    margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;

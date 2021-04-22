@@ -1,9 +1,14 @@
 .slider-area {
     display: flex;
+    background-image: url(../Assets/asset-3.jpeg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
 .slider-overlay {
     color:$white;
+    text-align: center;
 }
 
 .design-button:link, .design-button:visited {
