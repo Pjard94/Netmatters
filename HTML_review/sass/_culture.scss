@@ -1,0 +1,24 @@
+// Culture rules
+.culture {
+    background: $background-color-primary;
+    color: #ffffff;
+    padding: 10px;
+}
+
+// Button rules
+.but-cult {
+    background-color: $white;
+    padding: 3px;
+    border-radius: 9%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.but-cult:hover {
+    background-color: #EBEBEB;
+}
+
+.culture a:link,
+.culture a:visited {
+    color: black;
+}

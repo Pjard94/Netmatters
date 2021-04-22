@@ -1,3 +1,4 @@
+// Universal rules
 *{
     list-style-type: none;
 }
@@ -7,47 +8,8 @@ a:link {
 }
 
 
-.culture {
-    background-color: $background-color-primary;
-    color: #ffffff;
-    padding: 10px;
-}
 
-// .culture p,
-// .culture h2 {
-//     margin:auto;
-//     padding: auto;
-// }
-
-.but-cult {
-    background-color: $white;
-    padding: 3px;
-    border-radius: 10%;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.but-cult:hover {
-    background-color: #EBEBEB;
-}
-
-.culture a:link,
-.culture a:visited {
-    color: black;
-}
-
-footer {
-    background-color: $background-color-primary;
-    color: #ffffff;
-}
-
-footer a{
-    color:#ffffff
-}
-footer a:visited {
-    color: black;
-}
-
+// News sub rules
 .Newsletter {
     background-color: $background-color-footer;
 }
@@ -72,3 +34,17 @@ footer a:visited {
     background-color: $color-hover;
     color: $white;
 }
+
+// Footer rules
+footer {
+    background-color: $background-color-primary;
+    color: #ffffff;
+}
+
+footer a{
+    color:#ffffff
+}
+footer a:visited {
+    color: black;
+}
+

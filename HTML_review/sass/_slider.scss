@@ -1,3 +1,4 @@
+// The entire area rules
 .slider-area {
     display: flex;
     background-image: url(../Assets/asset-3.jpeg);
@@ -6,11 +7,17 @@
     text-align: center;
 }
 
+.slid-text {
+    display: flex;
+}
+
 .slider-overlay {
     color:$white;
     text-align: center;
+    display: flex;
 }
 
+// Design button styling
 .design-button:link, .design-button:visited {
     margin: 10px;
     padding: 5px;
