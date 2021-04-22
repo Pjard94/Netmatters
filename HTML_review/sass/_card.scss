@@ -1,3 +1,4 @@
+// card layout instructions
 .cards-section {
     display: flex;
     margin: auto;
@@ -18,6 +19,7 @@
     position: relative;
 }
 
+// card link manipulations
 .card a:visited,
 .card a:link {
  color: black;
@@ -142,6 +144,8 @@
     background-color: $white;
 }
 
+
+// icon container 
 .icon {
     display: flexbox;
     // margin: auto;
@@ -158,4 +162,14 @@
     padding-right: 4px;
     padding-bottom: 3px;
     color: $white;
+}
+
+// icon manipulations
+.ci {
+    align-self: center;
+    fill: #ffffff;
+    padding-top: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
 }
