@@ -1,5 +1,17 @@
-.mob-nav {
-    display: flexbox;
+// Header rules
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.header > * {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+// Support button rules
+.support-button {
+    display: flex;
 }
 
 .sup-but {
@@ -16,6 +28,11 @@
     border-bottom: 2px solid $header-button;
 }
 
+// Hamburger rules
+.hamburger {
+    display: flex;
+}
+
 .menu-button:link,
 .menu-button:visited {
     color: $color-primary;
@@ -26,14 +43,7 @@
     text-decoration: underline;    
 }
 
-.header {
+// Search bar rules
+.search {
     display: flex;
-    width: 1000px;
-    
 }
-.header > * {
-    flex: 1 1 10em;
-    position: inline;
-}
-
-

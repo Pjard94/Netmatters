@@ -71,8 +71,24 @@ footer a:visited {
   color: #ffffff;
 }
 
-.mob-nav {
-  display: flexbox;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+.header > * {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.support-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sup-but {
@@ -89,6 +105,12 @@ footer a:visited {
   border-bottom: 2px solid #22242E;
 }
 
+.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu-button:link,
 .menu-button:visited {
   color: #333645;
@@ -99,18 +121,10 @@ footer a:visited {
   text-decoration: underline;
 }
 
-.header {
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1000px;
-}
-
-.header > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 10em;
-          flex: 1 1 10em;
-  position: inline;
 }
 
 .slider-area {
