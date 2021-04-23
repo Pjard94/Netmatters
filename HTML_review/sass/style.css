@@ -35,19 +35,6 @@ a:link {
   color: #ffffff;
 }
 
-footer {
-  background-color: #333645;
-  color: #ffffff;
-}
-
-footer a {
-  color: #ffffff;
-}
-
-footer a:visited {
-  color: black;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,5 +397,48 @@ footer a:visited {
 
 .Read-more3:hover {
   background-color: #2A6EC6;
+}
+
+footer {
+  background-color: #333645;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: black;
+}
+
+.Sm-buttons {
+  color: #ffffff;
+}
+
+footer button {
+  background-color: #000000;
+  min-width: 203px;
+  max-width: 334px;
+  height: 55px;
+  border: none;
+}
+
+footer i {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 5px;
+}
+
+footer .fb:hover {
+  background-color: #3B5998;
+}
+
+footer .tw:hover {
+  background-color: #00ACED;
+}
+
+footer .in:hover {
+  background-color: #0077B5;
 }
 /*# sourceMappingURL=style.css.map */
