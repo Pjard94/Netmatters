@@ -1,7 +1,16 @@
 // Footer rules
 footer {
+    display: flex;
+    flex-wrap: wrap;
     background-color: $background-color-primary;
     color: #ffffff;
+    justify-content: space-evenly;
+}
+
+footer > *{
+    width: 25%;
+    flex: 1 466px;
+    margin-left: 20px;
 }
 
 footer a{
@@ -13,10 +22,6 @@ footer a:visited {
 
 
 //footer button rules
-.Sm-buttons {
-    color: $white;
-}
-
 //opacity needs to be added without affecting the other elements
 footer button{
     background-color:#000000;
@@ -24,6 +29,9 @@ footer button{
     max-width: 334px;
     height: 55px;
     border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
 }
 
 footer i{

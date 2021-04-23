@@ -1,0 +1,63 @@
+// News sub rules
+.Newsletter {
+    background-color: $background-color-footer;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.Newsletter > * {
+    margin: 10px 3px;
+}
+
+label.required:after
+{
+    color: red;
+    content: " *";
+}
+
+.entry {
+    display: flex;
+}
+
+.entry > * {
+    display: flex;
+    margin: 0 5px 0 0;
+}
+
+// Privacy policy rules
+.Privacy:link,
+.Privacy:visited {
+    color: $color;
+    text-decoration: underline;
+}
+
+.Privacy:hover {
+    color: $color-hover;
+}
+
+
+//Subscribe button rules
+.sub-button {
+    color: $white;
+    background-color: $color;
+    padding: 10px;
+    border: none;
+    border-radius: 8%;
+}
+
+.sub-button:hover {
+    background-color: $color-hover;
+    color: $white;
+}
+
+// Search box rules
+.Newsletter input {
+    border: none;
+}
+
+.Newsletter input:focus {
+box-shadow: $search-focus 0 0 8px 0;
+border: none;
+outline: none;
+}

@@ -1,7 +1,3 @@
-body {
-  font-family: Poppins,sans-serif;
-}
-
 * {
   list-style-type: none;
 }
@@ -10,29 +6,8 @@ a:link {
   text-decoration: none;
 }
 
-.Newsletter {
-  background-color: #dddddd;
-}
-
-.Privacy:link,
-.Privacy:visited {
-  color: #22242E;
-  text-decoration: underline;
-}
-
-.Privacy:hover {
-  color: #121419;
-}
-
-.sub-button {
-  color: #ffffff;
-  background-color: #22242E;
-  padding: 10px;
-}
-
-.sub-button:hover {
-  background-color: #121419;
-  color: #ffffff;
+body {
+  font-family: Poppins,sans-serif;
 }
 
 .header {
@@ -399,9 +374,91 @@ a:link {
   background-color: #2A6EC6;
 }
 
+.Newsletter {
+  background-color: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
+.Newsletter > * {
+  margin: 10px 3px;
+}
+
+label.required:after {
+  color: red;
+  content: " *";
+}
+
+.entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.entry > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5px 0 0;
+}
+
+.Privacy:link,
+.Privacy:visited {
+  color: #22242E;
+  text-decoration: underline;
+}
+
+.Privacy:hover {
+  color: #121419;
+}
+
+.sub-button {
+  color: #ffffff;
+  background-color: #22242E;
+  padding: 10px;
+  border: none;
+  border-radius: 8%;
+}
+
+.sub-button:hover {
+  background-color: #121419;
+  color: #ffffff;
+}
+
+.Newsletter input {
+  border: none;
+}
+
+.Newsletter input:focus {
+  -webkit-box-shadow: #5bbfde 0 0 8px 0;
+          box-shadow: #5bbfde 0 0 8px 0;
+  border: none;
+  outline: none;
+}
+
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #333645;
   color: #ffffff;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer > * {
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 466px;
+          flex: 1 466px;
+  margin-left: 20px;
 }
 
 footer a {
@@ -412,16 +469,15 @@ footer a:visited {
   color: black;
 }
 
-.Sm-buttons {
-  color: #ffffff;
-}
-
 footer button {
   background-color: #000000;
   min-width: 203px;
   max-width: 334px;
   height: 55px;
   border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
 }
 
 footer i {

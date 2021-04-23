@@ -7,31 +7,6 @@ a:link {
     text-decoration: none;
 }
 
-
-
-// News sub rules
-.Newsletter {
-    background-color: $background-color-footer;
+body {
+    font-family: Poppins,sans-serif;
 }
-
-.Privacy:link,
-.Privacy:visited {
-    color: $color;
-    text-decoration: underline;
-}
-
-.Privacy:hover {
-    color: $color-hover;
-}
-
-.sub-button {
-    color: $white;
-    background-color: $color;
-    padding: 10px;
-}
-
-.sub-button:hover {
-    background-color: $color-hover;
-    color: $white;
-}
-
