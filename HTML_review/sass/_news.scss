@@ -6,8 +6,22 @@
     padding: 30px;
 }
 
+.Newsletter h2 {
+    font-size: 32px;
+}
+
 .Newsletter > * {
     margin: 10px 3px;
+}
+
+.NewsTitle {
+    display: inline-block;
+}
+
+// entry area
+.entry label,
+.entry input {
+    display: block;
 }
 
 label.required:after
@@ -17,7 +31,7 @@ label.required:after
 }
 
 .entry {
-    display: flex;
+    float: left;
 }
 
 .entry > * {
@@ -60,4 +74,9 @@ label.required:after
 box-shadow: $search-focus 0 0 8px 0;
 border: none;
 outline: none;
+}
+
+.entry input {
+    min-width: 376px;
+    height: 47px;
 }

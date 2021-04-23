@@ -1,9 +1,9 @@
 // card layout instructions
 .cards-section {
     display: flex;
-    margin: auto;
     position: relative;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .card {

@@ -11,115 +11,120 @@
     <body class="home-page default ">
         <div class="main">
             <header>
-                <div class="">
-                    <div class="mob-nav">
-                        <div class="">
-                            <div class="logo-cont">
-                                <a class="logo" href="#">
-                                    <img src="Assets/f-logo.png" alt="Netmatters">
-                                </a>
-                            </div>
-                            <div class="support-button col">
-                                <div>
-                                    <a href="" alt="" class="sup-but"><i class="fas fa-phone-alt"></i></a>
-                                </div>
-                                <!-- <div><i class="fas fa-mouse"></i>larger support button here</div> -->
-                            </div>
-                            <div class="menu-button col"> 
-                                <a rel="" href="" class="menu-button"><span class="menu-line"></span><span class="menu-line">Menu</span><span class="menu-line"></span></a>
-                            </div>
-                        </div>   
-                        <!-- <div> contact button here for larger screens</div> -->
-                        <div class="search row">
-                            <form action="" class="col">
-                                <input type="text" placeholder="Search">
-                                <button type="submit" href="#"><i class="fas fa-search"></i></button>
-                            </form>
-                        </div>
-
+                <!-- The netmatters logo as a link too -->
+                <div class="header">
+                    <div class="logo-cont">                  
+                        <a class="logo-link col" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
                     </div>
-                </div> <!-- container div end -->
+        
+                    <!-- The support call button aka the phone  -->
+                    <div class="support-button">
+                        <a href="#" rel="Support page" class="sup-but"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+        
+                    <!-- the menu button aka hamburger -->
+                    <div class="hamburger"> 
+                        <a rel="" href="" class="menu-button"><span class="menu-line"></span><span class="menu-line">Menu</span><span class="menu-line"></span></a>
+                    </div>
+        
+                    <!-- The search bar -->
+                    <div class="search">
+                        <form action="" class="">
+                            <input type="text" placeholder="Search">
+                            <button type="submit" href="#"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div> <!-- the class header div end-->
             </header>
-            <div class="main-body">
-                <div class="slider-area bg-img">
-                    <!-- <img src="Assets/asset_3.jpeg" alt="An image of a website designed by one of our teams, up on a computer screen." class="sliderph"> -->
+            <!-- Slider placeholder -->
+            <section class="slider-area">
+                <div class="slid-text">
+                    <div class="slider-overlay">
+                        <h1>Web Design </h1>
+                        <p>Websites for businesses wanting to leave an impression.</p>
                     </div>
-                        <!-- <img src="Assets/asset_3.jpeg" class="img-fluid"  alt=""> -->
+                    <div class="slider-overlay">
+                    <a class="design-button" href="#">See More Here <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                </div>
+            <section>
+            <!-- End of slider placeholder -->
+            <!-- Linked cards to service pages -->
+            <section class="cards-section">
 
-                        <h1 class="slider-overlay">Web Design </h1>
-                        <p class="slider-overlay">Websites for businesses wanting to leave an impression.</p>
+                <!-- Web design card -->
+                <div class="card WD"> <a href="#" rel="Web design page" class="click-card">
+                    <div class="icon ic_WD"> <i class="fas fa-code ci"></i> </div>
+                    <div class="crd-txt">
+                        <h3>Web Design</h3>
+                        <p>User friendly designs, that will leave a lasting impression.</p>
                     </div>
-                    <div>
-                        <a class="design-button" href="#">See More Here <i class="fas fa-arrow-right"></i> </a>
-                    </div>
-                <div>
-            </div>
-            <div class="cards-section container">
-                <div class="row">
-                    <div class="card WD col-md-4"> <a href="#" rel="Support page" class="click-card">
-                        <span class="icon ic_WD"> <i class="fas fa-code"></i> </span>
-                        <div class="">
-                            <h3>Web Design</h3>
-                            <p>User friendly designs, that will leave a lasting impression.</p>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="card IT col-md-4"><a href="#" rel="Support page" class="click-card">
-                            <span class="icon ic_IT"> <i class="fas fa-desktop"></i> </span>
-                            <div class="">
-                                <h3>IT Support</h3>
-                                <p>Top tier IT support from small error solving, to server support.</p>
-                            </div>
-                            </a>
-                    </div>
-                    <div class="card BS col-md-4"> <a href="#" rel="Support page" class="click-card">
-                        <span class="icon ic_BS"> <i class="fas fa-th"></i> </span>
-                        <div class="">
-                            <h3>Bespoke Software</h3>
-                            <p>Software custom made to solve any situation.</p>
+                </a>
+                </div>
+
+                <!-- IT support card -->
+                <div class="card IT"><a href="#" rel="Support page" class="click-card">
+                        <div class="icon ic_IT"> <i class="fas fa-desktop ci"></i> </div>
+                        <div class="crd-txt">
+                            <h3>IT Support</h3>
+                            <p>Top tier IT support from small error solving, to server support.</p>
                         </div>
                         </a>
+                </div>
+
+                <!-- Bespoke Software card -->
+                <div class="card BS"> <a href="#" rel="Bespoke software page" class="click-card">
+                    <div class="icon ic_BS"> <i class="fas fa-th ci"></i> </div>
+                    <div class="crd-txt">
+                        <h3>Bespoke Software</h3>
+                        <p>Software custom made to solve any situation.</p>
                     </div>
-                    <div class="card DM col-md-4"> <a href="#" rel="Support page" class="click-card">
-                        <span class="icon ic_DM"> <i class="fas fa-chart-line"></i> </span>
-                        <div class="">
-                            <h3>Digital marketing</h3>
-                            <p>Marketing on the cutting edge of digital media.</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="card TS col-md-4"> <a href="#" rel="Support page" class="click-card">
-                        <span class="icon ic_TS"> <i class="fas fa-phone-alt"></i> </span>
-                        <div class="">
-                            <h3>Telecom services</h3>
-                            <p>Stay connected in these long distanced times with our telecoms solutions.</p>
-                        </div>
                     </a>
+                </div>
+
+                <!-- Digital marketing card -->
+                <div class="card DM"> <a href="#" rel="Digital marketing page" class="click-card">
+                    <div class="icon ic_DM"> <i class="fas fa-chart-line ci"></i> </div>
+                    <div class="crd-txt">
+                        <h3>Digital marketing</h3>
+                        <p>Marketing on the cutting edge of digital media.</p>
                     </div>
-                    <a href="#" rel="Support page" class="click-card">
-                    <div class="card DT"> 
-                        <div class="icon ic_DT">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="">
-                            <h3>Developer trainer</h3>
-                            <p>Want a career in development? Start with us.</p>
-                        </div>
                     </a>
+                </div>
+
+                <!-- Telecoms service card -->
+                <div class="card TS"> <a href="#" rel="Telecoms service page" class="click-card">
+                    <div class="icon ic_TS"> <i class="fas fa-phone-alt ci"></i> </div>
+                    <div class="crd-txt">
+                        <h3>Telecom services</h3>
+                        <p>Stay connected in these long distanced times with our telecoms solutions.</p>
                     </div>
-                    <div class="card CS"> <a href="#" rel="Support page" class="click-card">
-                        <div class="icon ic_CS">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="container">
-                            <h3>Cyber security</h3>
-                            <p>Making sure your business is digitally safe year round.</p>
-                        </div>
+                </a>
+                </div>
+
+                <!-- Cyber security card -->
+                <div class="card CS">  <a href="#" rel="Cyber security page" class="click-card"> 
+                    <div class="icon ic_CS"> <i class="fas fa-shield-alt ci"></i> </div>
+                    <div class="crd-txt">
+                        <h3>Cyber security</h3>
+                        <p>Making sure your business is digitally safe year round.</p>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Developer Training card -->
+                <div class="card DT"> <a href="#" rel="Developer training page" class="click-card">
+                    <div class="icon ic_DT"> <i class="fas fa-graduation-cap ci"></i> </div>
+                    <div class="crd-txt">
+                        <h3>Developer trainer</h3>
+                        <p>Want a career in development? Start with us.</p>
+                    </div>
                     </a>
-                    </div> 
-                </div>   
-            </div>
-            <div class="culture">
+                </div>
+
+            </section>  
+            <!-- Start of the culture -->
+            <section class="culture">
                 <h2>NETMATTERS</h2>
                 <p class="intro-paragraph">Netmatters is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk</p>
                 <p>Founded in 2008, we work with businesses froma  variety of industries to gain new prospects, nuture existing leads and further grow their sales.
@@ -127,9 +132,11 @@
                     We provide Cost effective, reliable solutions to a range of services; from bespoke cloud-based management systems, workflow and IT solutions through to creative website development and integrated digital campaigning.
                 </p>
                 <a href="" rel="" class="but-cult">OUR CULTURE</a>
-            </div>
-            <div class="news">
-                <h3>LATEST</h3>
+            </section> 
+            <!--End of the culture div-->
+            <!-- The latest section -->
+            <section class="latest">
+                <div><h3>LATEST</h3></div>
                 <div class="news-article">
                     <a href="" rel=""> <img src="Assets/asset 7.jpeg" alt="image related to the story"></a>
                     <h3><a href="" rel="" class="art-head1">Article</a></h3>
@@ -163,23 +170,44 @@
                             <span class="post-date"></span> </p>
                     </div>
                 </div>
-            </div>
-            <!--<div class="clients">
-                <img src="#" alt="A client's logo">
-                <img src="#" alt="A client's logo">
-                <img src="#" alt="A client's logo">
-                <img src="#" alt="A client's logo">
-            </div> This only appears on bigger screens-->
+            </section> 
+            <!--The end of the Latest section as in news articles-->
+            <!-- <div class="clients">
+                <img src="HTML_review\Assets\asset 13.png" alt="A client's logo">  <img src="HTML_review\Assets\asset 14.jpeg" alt="A client's logo"> 
+                <img src="HTML_review\Assets\asset 16.jpeg" alt="A client's logo">  <img src="HTML_review\Assets\asset 15.png" alt="A client's logo"> 
+                <img src="HTML_review\Assets\asset 18.jpeg" alt="A client's logo">  <img src="HTML_review\Assets\asset 17.png" alt="A client's logo"> 
+                <img src="HTML_review\Assets\asset 20.jpeg" alt="A client's logo">  <img src="HTML_review\Assets\asset 19.png" alt="A client's logo"> 
+            </div> This only appears on bigger screens -->
+            <!-- Newsletter subscription section -->
             <div class="Newsletter">
-                <label for="name">Name</label>
-                <input type="text" name="users-name" id="name" value="">
-                <label for="email">Your Email</label>
-                <input type="email" name="users-email" id="email" value="">
-                <input type="checkbox" name="marketing-yes" id="m-y" value="">
-                <label for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
-                <span><a href="" rel="" class="sub-button">SUBSCRIBE</a></span>
+                <div class="NewsTitle"> <h2>Email Newsletter Sign-Up</h2> </div>
+                <div class="entry">
+                    <label class="required" for="name">Your Name</label>
+                    <input type="text" name="users-name" id="name" value="" required="required" class="sub-box">
+                </div>
+                <div class="entry">
+                    <label class="required" for="email">Your Email</label>
+                    <input type="email" name="users-email" id="email" value="" required="required" class="sub-box">
+                </div>
+                <div>
+                    <input type="checkbox" name="marketing-yes" id="m-y" value="">
+                    <label for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
+                </div>
+                <div>
+                    <button class="sub-button" type="submit" href="#">SUBSCRIBE</button>
+                </div>
             </div>
-            <footer class="footer">
+        </div>
+            need a cient div here
+        <section>
+            <div><img> <img></div>
+            <div><img> <img></div>
+            <div><img> <img></div>
+            <div><img> <img></div>
+        </section>
+        <footer class="footer">
+            <!--The contact us section of the footer  -->
+            <div class="contact-area">
                 <h3 class="footer-heading">Contact us</h3>
                 <ul>
                     <li>11 Penfold Drive</li>
@@ -189,6 +217,9 @@
                 </ul>
                 <p>Tel:<a href="">01603 70 40 20</a></p>
                 <p>Email: <a href="mailto:#" target="_blank">support@netmatters.com</a></p>
+            </div>
+            <!--The links to about us pages section of the footer  -->
+            <div class="about-area">
                 <h3 class="footer-heading"> About Netmatters</h3>
                 <ul>
                     <li><a href="#" rel="The latest publications">News</a></li>
@@ -200,12 +231,32 @@
                     <li><a href="#" rel="Our terms and conditions page.">Terms & Conditions</a></li>
                     <li><a href="#" rel="Everything you need for domains.">UK Domains</a></li>
                 </ul>
+            </div>
+            <!--The site map section of the footer  -->
+            <div class="site-map">
                 <h3 class="footer-heading">Website</h3>
                 <p><a href="" target="_blank" rel="The map of the Netmatters site.">Sitemap</a></p>
+            </div>
+            <!--The social media links section of the footer  -->
+            <div class="Sm-buttons">
                 <h3 class="footer-heading">Social Media</h3>
-                <button type="submit"><a href="#" rel="The companies Facebook page." target="_blank"><i class="fab fa-facebook-square"></i></a></button><button type="submit"><a href="" rel="The companies Twitter profile." target="_blank"><i class="fab fa-twitter-square"></i></a></button><button type="submit"><a href="" rel="The companies LinkedIn page." target="_blank"><i class="fab fa-linkedin"></i></a></button>
-            </footer>
-            <div></div>
-        </div>
+                <button type="submit" class="fb"><a href="#" rel="The companies Facebook page." target="_blank"><i class="fab fa-facebook-f"></i></a></button>
+                <button type="submit" class="tw"><a href="" rel="The companies Twitter profile." target="_blank"><i class="fab fa-twitter"></i></a></button>
+                <button type="submit" class="in"><a href="" rel="The companies LinkedIn page. in" target="_blank"><i class="fab fa-linkedin-in"></i></a></button>
+            </div>
+        </footer>
+        
+            <!-- This note will be the awards section
+        <section>
+            <div><img src=""></div>
+            <div><img src="HTML_review\Assets\asset 21.jpeg"></div>
+            <div><img src="HTML_review\Assets\asset 22.jpeg"> <img src="HTML_review\Assets\asset 23.jpeg"></div>
+            <div><img src="HTML_review\Assets\asset 24.jpeg"> <img src="HTML_review\Assets\asset 25.jpeg"></div>
+            <div><img src="HTML_review\Assets\asset 26.jpeg"> <img src="HTML_review\Assets\asset 27.jpeg"></div>
+            <div><img src="HTML_review\Assets\asset 28.jpeg"> <img src="HTML_review\Assets\asset 29.jpeg"></div>
+            <div><img src="HTML_review\Assets\asset 30.jpeg"> <img src="HTML_review\Assets\asset 31.jpeg"></div>
+            <div><img src="HTML_review\Assets\asset 32.jpeg"> <img src="HTML_review\Assets\asset 33.jpeg"></div>
+        </section> -->
+       
     </body>
 </html>
