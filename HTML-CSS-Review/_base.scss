@@ -1,0 +1,38 @@
+*{
+    font-family: Poppins,sans-serif;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    columns: 1;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    columns: 1;
+    align-items: center;
+}
+
+.slid-text {
+    background-image: url(assets\asset-3.jpeg);
+}
+
+.bg-dark {
+    background-color: $color-primary;
+    color: $white;
+}
+
+.bg-med {
+    background-color: $background-color-footer;
+    color: $white;
+}
+
+
