@@ -8,9 +8,12 @@ a:link {
 
 body {
   font-family: Poppins,sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+
+section {
+  margin-inline: auto;
+  width: 70.5;
 }
 
 .header {
@@ -74,23 +77,22 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-image: url(../Assets/asset-3.jpeg);
-  padding: 370px 805px 370px 805px;
   background-repeat: no-repeat;
   text-align: center;
 }
 
 .slid-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
 }
 
 .slider-overlay {
   color: #ffffff;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .design-button:link, .design-button:visited {

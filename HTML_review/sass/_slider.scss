@@ -1,20 +1,25 @@
 // The entire area rules
 .slider-area {
-    display: inline-flex;
     background-image: url(../Assets/asset-3.jpeg);
-    padding: 370px 805px 370px 805px;
     background-repeat: no-repeat;
     text-align: center;
 }
 
+// .slider-area {
+//     flex-direction: column;
+//     display: flex;
+// }
+
 .slid-text {
-    display: flex;
+    display: block;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
 }
 
 .slider-overlay {
     color:$white;
     text-align: center;
-    display: flex;
+    display: block;
 }
 
 // Design button styling

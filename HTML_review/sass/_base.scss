@@ -9,5 +9,16 @@ a:link {
 
 body {
     font-family: Poppins,sans-serif;
-    display: flex;
 }
+section {
+    margin-top: auto;
+    width: min(90%, 70.5rem);
+}
+
+// body {
+//     display: flex;
+//     flex-direction: column;
+//     grid-template-columns: 1;
+//     grid-template-rows: 9;
+//     justify-content: space-evenly;
+// }
