@@ -1,6 +1,7 @@
 // Universal rules
 *{
     list-style-type: none;
+    box-sizing: border-box;
 }
 
 a:link {
@@ -10,14 +11,3 @@ a:link {
 body {
     font-family: Poppins,sans-serif;
 }
-section {
-    margin-top: auto;
-}
-
-// body {
-//     display: flex;
-//     flex-direction: column;
-//     grid-template-columns: 1;
-//     grid-template-rows: 9;
-//     justify-content: space-evenly;
-// }

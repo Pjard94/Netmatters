@@ -1,5 +1,7 @@
 * {
   list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a:link {
@@ -8,12 +10,6 @@ a:link {
 
 body {
   font-family: Poppins,sans-serif;
-  display: block;
-}
-
-section {
-  margin-inline: auto;
-  width: 70.5;
 }
 
 .header {
@@ -73,12 +69,12 @@ section {
 }
 
 .slider-area {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   background-image: url(../Assets/asset-3.jpeg);
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: center;
+  width: 100%;
+  height: 1020px;
+  background-size: cover;
 }
 
 .slid-text {
@@ -122,16 +118,11 @@ section {
 }
 
 .card {
-  display: flexbox;
   border: 1px solid #666666;
-  margin: 3rem;
   text-align: center;
   padding-top: 5px;
-  min-width: 100px;
-  min-height: 250px;
   padding-right: 20%;
   padding-left: 20%;
-  position: relative;
 }
 
 .card a:visited,
@@ -482,7 +473,7 @@ footer > * {
   -webkit-box-flex: 1;
       -ms-flex: 1 466px;
           flex: 1 466px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 footer a {
