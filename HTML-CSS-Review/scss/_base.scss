@@ -15,15 +15,19 @@ body {
 }
 
 .container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     columns: 1;
     align-items: center;
 }
 
-.slider-area {
-    background-image: url(assets\asset-3.jpeg);
+#slider-area {
+    background-image: url(../assets/asset-3.jpeg);
     background-repeat: no-repeat;
+    // background-color: aqua;
+    padding: 300px 500px;
+    text-align: left;
+    background-position: center;
 }
 
 .bg-dark {
@@ -41,7 +45,7 @@ body {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 footer > *{
