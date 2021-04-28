@@ -1,7 +1,7 @@
 @use '../absracts/index' as *;
 
 // card layout instructions
-.cards-section {
+.cards--section {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -50,71 +50,71 @@
 }
 
 // bespoke hover rules
-.card:hover .ic_BS {
+.card:hover .ic__BS {
     color: $fill-bespoke;
     background-color: $white;
 }
 
-.ic_BS {
+.ic__BS {
     background-color: $fill-bespoke;
 }
 
-.BS:hover {
+.card--BS:hover {
     background-color: $fill-bespoke;
 }
 
 // Web design hover rules
-.WD:hover {
+.card--WD:hover {
     background-color: $fill-des-dev;
 }
 
-.ic_WD {
+.ic__WD {
     background-color: $fill-des-dev;
 }
 
-.card:hover .ic_WD {
+.card:hover .ic__WD {
     color: $fill-des-dev;
     background-color: $white;
 }
 
 // Digital Marketing hover rules
 
-.DM:hover {
+.card--DM:hover {
     background-color: $fill-market;
 }
-.ic_DM {
+.ic__DM {
     background-color: $fill-market;
 }
 
-.card:hover .ic_DM {
+.card:hover .ic__DM {
     color: $fill-market;
     background-color: $white;
 }
 
 // IT hover rules
 
-.IT:hover {
+.card--IT:hover {
     background-color: $fill-supp;
 }
-.ic_IT {
+.ic__IT {
     background-color: $fill-supp;
 }
 
-.card:hover .ic_IT {
+.card:hover .ic__IT {
     color: $fill-supp;
     background-color: $white;
 }
 
 // Telecom services hover rules
 
-.TS:hover {
+.card--TS:hover {
     background-color: $fill-telecoms;
 }
-.ic_TS {
+.ic__TS {
     background-color: $fill-telecoms;
 }
 
-.card:hover .ic_TS {
+.card:hover .ic__TS {
     color: $fill-telecoms;
     background-color: $white;
 }
@@ -122,14 +122,14 @@
 
 // Developer Training hover rules
 
-.DT:hover {
+.card--DT:hover {
     background-color: $fill-des-dev;
 }
-.ic_DT {
+.ic__DT {
     background-color: $fill-des-dev;
 }
 
-.card:hover .ic_DT {
+.card:hover .ic__DT {
     color: $fill-des-dev;
     background-color: $white;
 }
@@ -137,14 +137,14 @@
 
 // Cyber security hover rules
 
-.CS:hover {
+.card--CS:hover {
     background-color: $fill-cyber;
 }
-.ic_CS {
+.ic__CS {
     background-color: $fill-cyber;
 }
 
-.card:hover .ic_CS {
+.card:hover .ic__CS {
     color: $fill-cyber;
     background-color: $white;
 }

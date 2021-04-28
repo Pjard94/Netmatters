@@ -3,12 +3,19 @@
 // Header rules
 .header {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     width: 80%;
+    grid-template-rows: 2;
 }
 .header > * {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+// Logo rules
+.logo--cont img {
+    max-height: auto;
+    max-width: 100%;
 }
 
 // Support button rules
@@ -48,4 +55,36 @@
 // Search bar rules
 .search {
     display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.search.search--bar::after,
+.search.search--button::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.search--bar {
+    display: flex;
+    float:left;
+    font-size: 14px;
+    flex-grow: 1;
+    background: $search-bar;
+    border: 0;
+    width: 60vw;
+    height: 23px;
+    outline: none;
+}
+
+.search--button {
+    font-size: 20px;
+    border: none;
+    float: left;
+    background: $search-bar;
+    color: $color-primary;
+    cursor: pointer;
+    height: 23px;
+    width: auto;
 }
