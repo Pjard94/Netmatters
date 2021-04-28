@@ -1,3 +1,5 @@
+@use '../absracts' as i;
+
 // The entire area rules
 .slider-area {
     background-image: url(../Assets/asset-3.jpeg);
@@ -16,7 +18,7 @@
 }
 
 .slider-overlay {
-    color:$white;
+    color:i.$white;
     text-align: left;
     display: block;
 }
@@ -25,11 +27,11 @@
 .design-button:link, .design-button:visited {
     margin: 10px;
     padding: 5px;
-    background-color: $fill-des-dev;
-    color: $white;
+    background-color: i.$fill-des-dev;
+    color: i.$white;
     transition: 0.3s ease-out;
 }
 
 .design-button:hover {
-    background-color: $fill-des-dev-dar;
+    background-color: i.$fill-des-dev-dar;
 }

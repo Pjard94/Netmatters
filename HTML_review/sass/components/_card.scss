@@ -1,3 +1,5 @@
+@use '../absracts' as i;
+
 // card layout instructions
 .cards-section {
     display: flex;
@@ -44,91 +46,91 @@
 
 // Hover commands
 .card a:hover {
-    color: $white;
+    color: i.$white;
 }
 
 // bespoke hover rules
 .card:hover .ic_BS {
     color: $fill-bespoke;
-    background-color: $white;
+    background-color: i.$white;
 }
 
 .ic_BS {
-    background-color: $fill-bespoke;
+    background-color: i.$fill-bespoke;
 }
 
 .BS:hover {
-    background-color: $fill-bespoke;
+    background-color: i.$fill-bespoke;
 }
 
 // Web design hover rules
 .WD:hover {
-    background-color: $fill-des-dev;
+    background-color: i.$fill-des-dev;
 }
 
 .ic_WD {
-    background-color: $fill-des-dev;
+    background-color: i.$fill-des-dev;
 }
 
 .card:hover .ic_WD {
     color: $fill-des-dev;
-    background-color: $white;
+    background-color: i.$white;
 }
 
 // Digital Marketing hover rules
 
 .DM:hover {
-    background-color: $fill-market;
+    background-color: i.$fill-market;
 }
 .ic_DM {
-    background-color: $fill-market;
+    background-color: i.$fill-market;
 }
 
 .card:hover .ic_DM {
-    color: $fill-market;
-    background-color: $white;
+    color: i.$fill-market;
+    background-color: i.$white;
 }
 
 // IT hover rules
 
 .IT:hover {
-    background-color: $fill-supp;
+    background-color: i.$fill-supp;
 }
 .ic_IT {
-    background-color: $fill-supp;
+    background-color: i.$fill-supp;
 }
 
 .card:hover .ic_IT {
-    color: $fill-supp;
+    color: i.$fill-supp;
     background-color: $white;
 }
 
 // Telecom services hover rules
 
 .TS:hover {
-    background-color: $fill-telecoms;
+    background-color: i.$fill-telecoms;
 }
 .ic_TS {
-    background-color: $fill-telecoms;
+    background-color: i.$fill-telecoms;
 }
 
 .card:hover .ic_TS {
-    color: $fill-telecoms;
-    background-color: $white;
+    color: i.$fill-telecoms;
+    background-color: i.$white;
 }
 
 
 // Developer Training hover rules
 
 .DT:hover {
-    background-color: $fill-des-dev;
+    background-color: i.$fill-des-dev;
 }
 .ic_DT {
-    background-color: $fill-des-dev;
+    background-color: i.$fill-des-dev;
 }
 
 .card:hover .ic_DT {
-    color: $fill-des-dev;
+    color: i.$fill-des-dev;
     background-color: $white;
 }
 
@@ -136,15 +138,15 @@
 // Cyber security hover rules
 
 .CS:hover {
-    background-color: $fill-cyber;
+    background-color: i.$fill-cyber;
 }
 .ic_CS {
-    background-color: $fill-cyber;
+    background-color: i.$fill-cyber;
 }
 
 .card:hover .ic_CS {
-    color: $fill-cyber;
-    background-color: $white;
+    color: i.$fill-cyber;
+    background-color: i.$white;
 }
 
 

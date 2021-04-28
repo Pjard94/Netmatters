@@ -1,3 +1,5 @@
+@use '../absracts' as i;
+
 // Header rules
 .header {
     display: flex;
@@ -20,12 +22,12 @@
 
 .sup-but:link,
 .sup-but:visited {
-    color: $color-primary;
+    color: i.$color-primary;
 }
 
 .sup-but:hover {
-    color: $header-button;
-    border-bottom: 2px solid $header-button;
+    color: i.$header-button;
+    border-bottom: 2px solid i.$header-button;
 }
 
 // Hamburger rules
@@ -35,11 +37,11 @@
 
 .menu-button:link,
 .menu-button:visited {
-    color: $color-primary;
+    color: i.$color-primary;
 }
 
 .menu-button:hover {
-    color: $header-button;
+    color: i.$header-button;
     text-decoration: underline;    
 }
 

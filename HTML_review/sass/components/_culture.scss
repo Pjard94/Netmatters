@@ -1,13 +1,15 @@
+@use '../absracts' as i;
+
 // Culture rules
 .culture {
-    background: $background-color-primary;
+    background: i.$background-color-primary;
     color: #ffffff;
     padding: 10px;
 }
 
 // Button rules
 .but-cult {
-    background-color: $white;
+    background-color: i.$white;
     padding: 3px;
     border-radius: 9%;
     margin-left: 10px;
