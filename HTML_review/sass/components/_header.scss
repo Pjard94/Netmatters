@@ -1,4 +1,4 @@
-@use '../absracts' as i;
+@use '../absracts/index' as *;
 
 // Header rules
 .header {
@@ -22,12 +22,12 @@
 
 .sup-but:link,
 .sup-but:visited {
-    color: i.$color-primary;
+    color: $color-primary;
 }
 
 .sup-but:hover {
-    color: i.$header-button;
-    border-bottom: 2px solid i.$header-button;
+    color: $header-button;
+    border-bottom: 2px solid $header-button;
 }
 
 // Hamburger rules
@@ -37,11 +37,11 @@
 
 .menu-button:link,
 .menu-button:visited {
-    color: i.$color-primary;
+    color: $color-primary;
 }
 
 .menu-button:hover {
-    color: i.$header-button;
+    color: $header-button;
     text-decoration: underline;    
 }
 

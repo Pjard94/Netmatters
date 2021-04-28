@@ -1,10 +1,10 @@
-@use '../absracts' as i;
+@use '../absracts/index' as *;
 
 // Footer rules
 footer {
     display: flex;
     flex-wrap: wrap;
-    background-color: i.$background-color-primary;
+    background-color: $background-color-primary;
     color: #ffffff;
     justify-content: space-evenly;
 }
@@ -43,13 +43,13 @@ footer i{
 }
 
 footer .fb:hover {
-    background-color: i.$fb-blue;
+    background-color: $fb-blue;
 }
 
 footer .tw:hover {
-    background-color: i.$tw-blue;
+    background-color: $tw-blue;
 }
 
 footer .in:hover {
-    background-color: i.$in-blue;
+    background-color: $in-blue;
 }

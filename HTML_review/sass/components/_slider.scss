@@ -1,4 +1,4 @@
-@use '../absracts' as i;
+@use '../absracts/index' as *;
 
 // The entire area rules
 .slider-area {
@@ -18,7 +18,7 @@
 }
 
 .slider-overlay {
-    color:i.$white;
+    color:$white;
     text-align: left;
     display: block;
 }
@@ -27,11 +27,11 @@
 .design-button:link, .design-button:visited {
     margin: 10px;
     padding: 5px;
-    background-color: i.$fill-des-dev;
-    color: i.$white;
+    background-color: $fill-des-dev;
+    color: $white;
     transition: 0.3s ease-out;
 }
 
 .design-button:hover {
-    background-color: i.$fill-des-dev-dar;
+    background-color: $fill-des-dev-dar;
 }

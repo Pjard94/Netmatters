@@ -1,4 +1,4 @@
-@use '../absracts' as i;
+@use '../absracts/index' as *;
 
 // Rules for the section.
 .latest {
@@ -23,7 +23,7 @@
 
 .art-head1:link,
 .art-head1:visited {
-    color: i.$fill-bespoke;
+    color: $fill-bespoke;
 }
 
 .art-head1:hover {
@@ -34,19 +34,19 @@
 .Read-more1:visited {
     margin: 10px;
     padding: 5px;
-    background-color: i.$fill-bespoke;
-    color: i.$white;
+    background-color: $fill-bespoke;
+    color: $white;
 }
 
 .Read-more1:hover {
-    background-color: i.$news-art-alt1;
+    background-color: $news-art-alt1;
 }
 
 // The second article
 
 .art-head2:link,
 .art-head2:visited {
-    color: i.$fill-telecoms;
+    color: $fill-telecoms;
 }
 
 .art-head2:hover {
@@ -57,19 +57,19 @@
 .Read-more2:visited {
     margin: 10px;
     padding: 5px;
-    background-color: i.$fill-telecoms;
-    color: i.$white;
+    background-color: $fill-telecoms;
+    color: $white;
 }
 
 .Read-more2:hover {
-    background-color: i.$news-art-alt2;
+    background-color: $news-art-alt2;
 }
 
 // The third article 
 
 .art-head3:link,
 .art-head3:visited {
-    color: i.$fill-supp;
+    color: $fill-supp;
 }
 
 .art-head3:hover {
@@ -80,10 +80,10 @@
 .Read-more3:visited {
     margin: 10px;
     padding: 5px;
-    background-color: i.$fill-supp;
+    background-color: $fill-supp;
     color: $white;
 }
 
 .Read-more3:hover {
-    background-color: i.$news-art-alt3;
+    background-color: $news-art-alt3;
 }

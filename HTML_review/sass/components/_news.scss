@@ -1,8 +1,8 @@
-@use '../absracts' as i;
+@use '../absracts/index' as *;
 
 // News sub rules
 .Newsletter {
-    background-color: i.$background-color-footer;
+    background-color: $background-color-footer;
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
@@ -44,27 +44,27 @@ label.required:after
 // Privacy policy rules
 .Privacy:link,
 .Privacy:visited {
-    color: i.$color;
+    color: $color;
     text-decoration: underline;
 }
 
 .Privacy:hover {
-    color: i.$color-hover;
+    color: $color-hover;
 }
 
 
 //Subscribe button rules
 .sub-button {
-    color: i.$white;
-    background-color: i.$color;
+    color: $white;
+    background-color: $color;
     padding: 10px;
     border: none;
     border-radius: 8%;
 }
 
 .sub-button:hover {
-    background-color: i.$color-hover;
-    color: i.$white;
+    background-color: $color-hover;
+    color: $white;
 }
 
 // Search box rules
@@ -73,7 +73,7 @@ label.required:after
 }
 
 .Newsletter input:focus {
-box-shadow: i.$search-focus 0 0 8px 0;
+box-shadow: $search-focus 0 0 8px 0;
 border: none;
 outline: none;
 }
