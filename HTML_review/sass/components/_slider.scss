@@ -28,6 +28,15 @@
     display: block;
 }
 
+.slider--overlay h1 {
+    font-size: 48px;
+}
+
+.slider--overlay p,
+.slider--overlay a {
+    font-size: 20px;
+}
+
 // Design button styling
 .design-button:link, .design-button:visited {
     margin: 10px;
@@ -35,6 +44,7 @@
     background-color: $fill-des-dev;
     color: $white;
     transition: 0.3s ease-out;
+    border-radius: 100vw;
 }
 
 .design-button:hover {

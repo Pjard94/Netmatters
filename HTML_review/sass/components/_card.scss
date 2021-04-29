@@ -6,22 +6,19 @@
     position: relative;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 0 -15px;
 }
 
-// .card {
-//     display: flex;
-//     position: relative;
-//     max-width: 80%;
-//     max-height: 80%;
-//     margin:3rem;  
-// }
-
 .card {
+    display: flex;
     border: 1px solid #666666;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+    width: 453px;
+    height: 312;
+    position: relative;
     text-align: center;
-    padding-top: 5px;
-    padding-right: 20%;
-    padding-left: 20%;
 }
 
 // card link manipulations
@@ -152,22 +149,69 @@
 
 // icon container 
 .icon {
-    display: flexbox;
+    display: flex;
     // margin: auto;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    height: 50px;  
-    width: 50px;
+    height: 60px;  
+    width: 60px;
     border-radius: 50%;
     font-size: 30px;
-    padding-top: 3px;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 3px;
     color: $white;
 }
+
+.ic__WD {
+    padding-top: none;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.ic__IT {
+    padding-top: none;
+    padding-left: 10px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.ic__BS {
+    padding-top: none;
+    padding-left: 11px;
+    padding-right: 4px;
+    padding-bottom: 6px;
+}
+
+.ic__DM {
+    padding-top: none;
+    padding-left: 12px;
+    padding-right: 4px;
+    padding-bottom: 6px;
+}
+
+.ic__TS {
+    padding-top: none;
+    padding-left: 12px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.ic__CS {
+    padding-top: none;
+    padding-left: 11px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.ic__DT {
+    padding-top: none;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+
 
 // icon manipulations
 .ci {
@@ -177,4 +221,12 @@
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 3px;
+}
+
+.card--txt p {
+    font-size: $secondary-fontsize;
+}
+
+.card--txt h3 {
+    font-size: $primary-fontsize;
 }

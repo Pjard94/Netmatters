@@ -7,6 +7,11 @@ footer {
     background-color: $background-color-primary;
     color: #ffffff;
     justify-content: space-evenly;
+    font-size: $secondary-fontsize;
+}
+
+footer h3 {
+    font-size: $primary-fontsize;
 }
 
 footer > *{
@@ -16,7 +21,7 @@ footer > *{
 }
 
 footer a{
-    color:#ffffff
+    color:#ffffff;
 }
 footer a:visited {
     color: black;

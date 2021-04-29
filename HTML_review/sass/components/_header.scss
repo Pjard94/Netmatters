@@ -3,13 +3,20 @@
 // Header rules
 .header {
     display: flex;
-    // flex-wrap: wrap;
-    width: 80%;
-    grid-template-rows: 2;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .header > * {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.topline {
+    display: inline-flex;
+}
+
+.topline :nth-child(2) {
+    margin-left: 20px;
 }
 
 // Logo rules
@@ -54,7 +61,7 @@
 
 // Search bar rules
 .search {
-    display: flex;
+    display: inline;
     width: 100%;
     height: auto;
 }
@@ -73,7 +80,7 @@
     flex-grow: 1;
     background: $search-bar;
     border: 0;
-    width: 60vw;
+    width: 90%;
     height: 23px;
     outline: none;
 }
@@ -86,5 +93,5 @@
     color: $color-primary;
     cursor: pointer;
     height: 23px;
-    width: auto;
+    width: 10%;
 }

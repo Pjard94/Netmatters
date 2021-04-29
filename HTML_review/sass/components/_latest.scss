@@ -1,12 +1,16 @@
 @use '../absracts/index' as *;
 
+// Latest area title
+.latest__title {
+    font-size: 20px;
+}
+
 // Rules for the section.
 .latest {
     display: flex;
-}
-
-.latest div:nth-of-type(n+2) {
-    margin-left: 20%;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
 }
 
 .news-article {
