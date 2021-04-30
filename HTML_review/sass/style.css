@@ -38,10 +38,12 @@ body {
 
 .support-button {
   display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .sup-but {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .sup-but:link,
@@ -56,6 +58,12 @@ body {
 
 .hamburger {
   display: flex;
+  background-color: #333645;
+  width: 63px;
+  height: 56px;
+  text-align: center;
+  align-items: center;
+  margin-left: 5px;
 }
 
 .menu-button:link,
@@ -66,6 +74,10 @@ body {
 .menu-button:hover {
   color: #22242E;
   text-decoration: underline;
+}
+
+.hamburger span {
+  color: #ffffff;
 }
 
 .search {
@@ -102,6 +114,7 @@ body {
   cursor: pointer;
   height: 23px;
   width: 10%;
+  text-align: right;
 }
 
 .slider--area {
@@ -208,6 +221,11 @@ body {
   background-color: #67809f;
 }
 
+.card:hover .cb__BS {
+  background-color: #ffffff;
+  color: #67809f;
+}
+
 .card--WD:hover {
   background-color: #926fb1;
 }
@@ -219,6 +237,11 @@ body {
 .card:hover .ic__WD {
   color: #926fb1;
   background-color: #ffffff;
+}
+
+.card:hover .cb__WD {
+  background-color: #ffffff;
+  color: #926fb1;
 }
 
 .card--DM:hover {
@@ -234,6 +257,11 @@ body {
   background-color: #ffffff;
 }
 
+.card:hover .cb__DM {
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+
 .card--IT:hover {
   background-color: #4183d7;
 }
@@ -245,6 +273,11 @@ body {
 .card:hover .ic__IT {
   color: #4183d7;
   background-color: #ffffff;
+}
+
+.card:hover .cb__IT {
+  background-color: #ffffff;
+  color: #4183d7;
 }
 
 .card--TS:hover {
@@ -260,6 +293,11 @@ body {
   background-color: #ffffff;
 }
 
+.card:hover .cb__TS {
+  background-color: #ffffff;
+  color: #d64541;
+}
+
 .card--DT:hover {
   background-color: #926fb1;
 }
@@ -273,6 +311,11 @@ body {
   background-color: #ffffff;
 }
 
+.card:hover .cb__DT {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+
 .card--CS:hover {
   background-color: #f62459;
 }
@@ -284,6 +327,11 @@ body {
 .card:hover .ic__CS {
   color: #f62459;
   background-color: #ffffff;
+}
+
+.card:hover .cb__CS {
+  background-color: #ffffff;
+  color: #f62459;
 }
 
 .icon {
@@ -365,14 +413,62 @@ body {
   font-size: 16px;
 }
 
+.card__button {
+  line-height: 35px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.cb__WD {
+  background-color: #926fb1;
+}
+
+.cb__IT {
+  background-color: #4183d7;
+}
+
+.cb__BS {
+  background-color: #67809f;
+}
+
+.cb__DM {
+  background-color: #2ecc71;
+}
+
+.cb__TS {
+  background-color: #d64541;
+}
+
+.cb__CS {
+  background-color: #f62459;
+}
+
+.cb__DT {
+  background-color: #926fb1;
+}
+
 .culture {
+  display: flex;
+  text-align: left;
   background: #333645;
   color: #ffffff;
   padding: 10px;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.culture p {
+  width: 100%;
+  height: auto;
 }
 
 .culture h2 {
   font-size: 36px;
+  width: 100vw;
+  height: auto;
 }
 
 .intro-paragraph {
@@ -387,6 +483,11 @@ body {
   margin-bottom: 10px;
 }
 
+.but--cult {
+  width: 100vw;
+  height: auto;
+}
+
 .but-cult:hover {
   background-color: #EBEBEB;
 }
@@ -398,6 +499,16 @@ body {
 
 .latest__title {
   font-size: 20px;
+  border-bottom: 2px solid black;
+  width: 89px;
+  height: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 24px;
+}
+
+.latest--title {
+  display: flex;
 }
 
 .latest {
@@ -412,9 +523,22 @@ body {
   margin-bottom: 20px;
 }
 
+.news-article h3 {
+  font-size: 16px;
+}
+
+.Read-more1,
+.Read-more2,
+.Read-more3 {
+  font-size: 17px;
+  line-height: 35px;
+}
+
 .user {
   border-top: 1px solid #CCCCCC;
   margin-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .art-head1:link,
@@ -497,12 +621,16 @@ body {
 }
 
 .NewsTitle {
-  display: inline-block;
+  display: inline-flex;
+  width: 100vw;
+  height: auto;
 }
 
 .entry label,
 .entry input {
   display: block;
+  width: 45vw;
+  height: auto;
 }
 
 label.required:after {
@@ -564,6 +692,8 @@ footer {
   color: #ffffff;
   justify-content: space-evenly;
   font-size: 13px;
+  width: 100vw;
+  height: auto;
 }
 
 footer h3 {
@@ -571,17 +701,22 @@ footer h3 {
 }
 
 footer > * {
-  width: 25%;
+  width: 20%;
   flex: 1 466px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 footer a {
   color: #ffffff;
+  line-height: 22px;
 }
 
 footer a:visited {
   color: black;
+}
+
+footer li {
+  line-height: 22px;
 }
 
 footer button {
@@ -601,14 +736,18 @@ footer i {
   margin: 5px;
 }
 
-footer .fb:hover {
+.fb:hover {
   background-color: #3B5998;
 }
 
-footer .tw:hover {
+.tw:hover {
   background-color: #00ACED;
 }
 
-footer .in:hover {
+.in:hover {
   background-color: #0077B5;
+}
+
+.sta:hover {
+  background-color: #d93175;
 }/*# sourceMappingURL=style.css.map */

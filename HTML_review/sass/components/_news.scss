@@ -18,13 +18,17 @@
 }
 
 .NewsTitle {
-    display: inline-block;
+    display: inline-flex;
+    width: 100vw;
+    height: auto; 
 }
 
 // entry area
 .entry label,
 .entry input {
     display: block;
+    width: 45vw;
+    height: auto;
 }
 
 label.required:after

@@ -26,7 +26,7 @@
             
                         <!-- the menu button aka hamburger -->
                         <div class="hamburger"> 
-                            <a rel="" href="" class="menu-button"><span class="menu-line"></span><span class="menu-line">Menu</span><span class="menu-line"></span></a>
+                            <a rel="" href="" class="menu-button"><span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span></a>
                         </div>
 
                     </div>
@@ -58,14 +58,15 @@
             <!-- Linked cards to service pages -->
             <div class="cards--section">
 
-                <!-- Web design card -->
-                <div class="card card--WD"> <a href="#" rel="Web design page" class="click-card">
-                    <div class="icon ic__WD"> <i class="fas fa-code ci"></i> </div>
+                <!-- Bespoke Software card -->
+                <div class="card card--BS"> <a href="#" rel="Bespoke software page" class="click-card">
+                    <div class="icon ic__BS"> <i class="fas fa-th ci"></i> </div>
                     <div class="card--txt">
-                        <h3>Web Design</h3>
-                        <p>User friendly designs, that will leave a lasting impression.</p>
+                        <h3>Bespoke Software</h3>
+                        <p>Tailored software solutions to improve business productivity and online profits. Our expert team will ensure a software solution.</p>
                     </div>
-                </a>
+                    <div><button class="card__button cb__BS">READ MORE</button></div>
+                    </a>
                 </div>
 
                 <!-- IT support card -->
@@ -73,19 +74,10 @@
                         <div class="icon ic__IT"> <i class="fas fa-desktop ci"></i> </div>
                         <div class="card--txt">
                             <h3>IT Support</h3>
-                            <p>Top tier IT support from small error solving, to server support.</p>
+                            <p>Remotely managed IT services that is catered to your businesses needs, adds value and reduces costs.</p>
                         </div>
+                        <div><button class="card__button cb__IT">READ MORE</button></div>
                         </a>
-                </div>
-
-                <!-- Bespoke Software card -->
-                <div class="card card--BS"> <a href="#" rel="Bespoke software page" class="click-card">
-                    <div class="icon ic__BS"> <i class="fas fa-th ci"></i> </div>
-                    <div class="card--txt">
-                        <h3>Bespoke Software</h3>
-                        <p>Software custom made to solve any situation.</p>
-                    </div>
-                    </a>
                 </div>
 
                 <!-- Digital marketing card -->
@@ -93,8 +85,9 @@
                     <div class="icon ic__DM"> <i class="fas fa-chart-line ci"></i> </div>
                     <div class="card--txt">
                         <h3>Digital marketing</h3>
-                        <p>Marketing on the cutting edge of digital media.</p>
+                        <p>Driving brand awareness and ROI through creative digital marketing campaigns. We review and monitor online performances.</p>
                     </div>
+                    <div><button class="card__button cb__DM">READ MORE</button></div>
                     </a>
                 </div>
 
@@ -103,8 +96,20 @@
                     <div class="icon ic__TS"> <i class="fas fa-phone-alt ci"></i> </div>
                     <div class="card--txt">
                         <h3>Telecom services</h3>
-                        <p>Stay connected in these long distanced times with our telecoms solutions.</p>
+                        <p>Stay connected with bespoke telecoms solutions when you need it most.</p>
                     </div>
+                    <div><button class="card__button cb__TS">READ MORE</button></div>
+                </a>
+                </div>
+
+                                <!-- Web design card -->
+                <div class="card card--WD"> <a href="#" rel="Web design page" class="click-card">
+                    <div class="icon ic__WD"> <i class="fas fa-code ci"></i> </div>
+                    <div class="card--txt">
+                        <h3>Web Design</h3>
+                        <p>User-centric design for businesses looking to make a lasting first impression.</p>
+                    </div>
+                    <div class=""><button class="card__button cb__WD">READ MORE</button></div>
                 </a>
                 </div>
 
@@ -113,8 +118,9 @@
                     <div class="icon ic__CS"> <i class="fas fa-shield-alt ci"></i> </div>
                     <div class="card--txt">
                         <h3>Cyber security</h3>
-                        <p>Making sure your business is digitally safe year round.</p>
+                        <p>Ensuring your online business stays secure 24/7, 365 days of the year.</p>
                     </div>
+                    <div><button class="card__button cb__CS">READ MORE</button></div>
                 </a>
                 </div>
 
@@ -123,8 +129,9 @@
                     <div class="icon ic__DT"> <i class="fas fa-graduation-cap ci"></i> </div>
                     <div class="card--txt">
                         <h3>Developer trainer</h3>
-                        <p>Want a career in development? Start with us.</p>
+                        <p>Have you considered a career in web development but you aren’t sure where to start?</p>
                     </div>
+                    <div><button class="card__button cb__DT">READ MORE</button></div>
                     </a>
                 </div>
 
@@ -140,13 +147,13 @@
 
                 <p>We provide Cost effective, reliable solutions to a range of services; from bespoke cloud-based management systems, workflow and IT solutions through to creative website development and integrated digital campaigning.</p>
 
-                <a href="" rel="" class="but-cult">OUR CULTURE</a>
+                <div class="but--cult"><a href="" rel="" class="but-cult">OUR CULTURE</a></div>
 
             </div> 
             <!--End of the culture div-->
 
             <!-- The latest section -->
-            <span class="latest__title"><h3>LATEST</h3></span>
+            <div class="latest--title"><span class="latest__title"><h3>LATEST</h3></span></div>
 
             <dev class="latest">
 
@@ -157,8 +164,8 @@
                     <a href="" rel="" class="Read-more1">Read More</a>
                     <div class="user">             
                         <img src="#" alt="The image of the user who posted the story.">
-                        <p> Posted by <span class="user-name"> </span>.
-                            <span class="post-date"></span> </p>
+                        <strong><p> Posted by <span class="user-name"> </span></strong>.</p>
+                        <p><span class="post-date"></span> </p>
                     </div>
                 </div>
 
@@ -198,7 +205,7 @@
 
             <!-- Newsletter subscription section -->
             <div class="Newsletter">
-                <div class="NewsTitle"> <h2>Email Newsletter Sign-Up</h2> </div>
+                <div class="NewsTitle"> <h2>Email Newsletter Sign-Up</h2></div>
                 <div class="entry">
                     <label class="required" for="name">Your Name</label>
                     <input type="text" name="users-name" id="name" value="" required="required" class="sub-box">
@@ -267,6 +274,7 @@
                 <h3 class="footer-heading">Social Media</h3>
                 <button type="submit" class="fb"><a href="#" rel="The companies Facebook page." target="_blank"><i class="fab fa-facebook-f"></i></a></button>
                 <button type="submit" class="tw"><a href="" rel="The companies Twitter profile." target="_blank"><i class="fab fa-twitter"></i></a></button>
+                <button type="submit" class="sta"><a href="" rel="The companies instagram page. in" target="_blank"><i class="fab fa-instagram"></i></a></button>
                 <button type="submit" class="in"><a href="" rel="The companies LinkedIn page. in" target="_blank"><i class="fab fa-linkedin-in"></i></a></button>
             </div>
 

@@ -3,6 +3,16 @@
 // Latest area title
 .latest__title {
     font-size: 20px;
+    border-bottom: 2px solid black;
+    width: 89px;
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 24px;
+}
+
+.latest--title {
+    display: flex;
 }
 
 // Rules for the section.
@@ -18,9 +28,22 @@
     margin-bottom: 20px;
 }
 
+.news-article h3{
+    font-size: $primary-fontsize;
+}
+
+.Read-more1,
+.Read-more2,
+.Read-more3 {
+    font-size: 17px;
+    line-height: $secondary-lineheight;
+}
+
 .user {
     border-top: 1px solid #CCCCCC;
     margin-top: 10px;
+    font-size: 14px;
+    line-height: $primary--lineheight;
 }
 
 // The first article

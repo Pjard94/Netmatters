@@ -8,6 +8,8 @@ footer {
     color: #ffffff;
     justify-content: space-evenly;
     font-size: $secondary-fontsize;
+    width: 100vw;
+    height: auto;
 }
 
 footer h3 {
@@ -15,16 +17,22 @@ footer h3 {
 }
 
 footer > *{
-    width: 25%;
+    width: 20%;
     flex: 1 466px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 footer a{
     color:#ffffff;
+    line-height: $primary--lineheight;
 }
+
 footer a:visited {
     color: black;
+}
+
+footer li {
+    line-height: $primary--lineheight;
 }
 
 
@@ -47,14 +55,18 @@ footer i{
     margin: 5px;
 }
 
-footer .fb:hover {
+.fb:hover {
     background-color: $fb-blue;
 }
 
-footer .tw:hover {
+.tw:hover {
     background-color: $tw-blue;
 }
 
-footer .in:hover {
+.in:hover {
     background-color: $in-blue;
+}
+
+.sta:hover {
+    background-color: $sta-pink;
 }

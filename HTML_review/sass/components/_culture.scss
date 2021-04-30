@@ -2,13 +2,26 @@
 
 // Culture rules
 .culture {
+    display: flex;
+    text-align: left;
     background: $background-color-primary;
     color: #ffffff;
     padding: 10px;
+    grid-template-columns: 1;
+    grid-template-rows: 5;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.culture p {
+    width: 100%;
+    height: auto;
 }
 
 .culture h2 {
     font-size: 36px;
+    width: 100vw;
+    height: auto;
 }
 
 .intro-paragraph {
@@ -22,6 +35,11 @@
     border-radius: 9%;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+.but--cult {
+    width: 100vw;
+    height: auto;
 }
 
 .but-cult:hover {
