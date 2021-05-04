@@ -1,5 +1,6 @@
 * {
   list-style-type: none;
+  list-style-position: none;
   box-sizing: border-box;
   letter-spacing: 0.4px;
 }
@@ -673,12 +674,15 @@ body {
 
 .Newsletter {
   background-color: #dddddd;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px;
-  font-size: 16px;
   width: 100%;
   height: auto;
+}
+
+.row--n {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  padding: 30px;
 }
 
 .Newsletter h2 {
@@ -739,11 +743,11 @@ label.required:after {
   color: #ffffff;
 }
 
-.Newsletter input {
+.row--n input {
   border: none;
 }
 
-.Newsletter input:focus {
+.row--n input:focus {
   box-shadow: #5bbfde 0 0 8px 0;
   border: none;
   outline: none;
@@ -755,13 +759,18 @@ label.required:after {
 }
 
 footer {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #333645;
-  color: #ffffff;
-  justify-content: space-evenly;
   font-size: 13px;
   width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.row--f {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  justify-content: space-evenly;
   height: auto;
 }
 
@@ -769,10 +778,9 @@ footer h3 {
   font-size: 16px;
 }
 
-footer > * {
-  width: 20%;
-  flex: 1 466px;
-  margin-left: 5px;
+.column {
+  flex: 25%;
+  padding-left: 10px;
 }
 
 footer a {
@@ -782,6 +790,14 @@ footer a {
 
 footer a:visited {
   color: black;
+}
+
+footer ul {
+  align-content: left;
+  align-items: left;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 footer li {
@@ -819,4 +835,15 @@ footer i {
 
 .sta:hover {
   background-color: #d93175;
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row--f {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

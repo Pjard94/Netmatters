@@ -3,12 +3,15 @@
 // News sub rules
 .Newsletter {
     background-color: $background-color-footer;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-    font-size: $primary-fontsize;
     width: 100%;
     height: auto;
+}
+
+.row--n {
+    display: flex;
+    flex-wrap: wrap;    
+    font-size: $primary-fontsize;  
+    padding: 30px;
 }
 
 .Newsletter h2 {
@@ -75,11 +78,11 @@ label.required:after
 }
 
 // Search box rules
-.Newsletter input {
+.row--n input {
     border: none;
 }
 
-.Newsletter input:focus {
+.row--n input:focus {
 box-shadow: $news-focus 0 0 8px 0;
 border: none;
 outline: none;

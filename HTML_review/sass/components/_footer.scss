@@ -2,33 +2,45 @@
 
 // Footer rules
 footer {
-    display: flex;
-    flex-wrap: wrap;
     background-color: $background-color-primary;
-    color: #ffffff;
-    justify-content: space-evenly;
     font-size: $secondary-fontsize;
     width: 100%;
-    height: auto;
+    height: auto; 
+    justify-content: center;
+}
+
+.row--f {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    justify-content: space-evenly;
+    height:auto;
 }
 
 footer h3 {
     font-size: $primary-fontsize;
 }
 
-footer > *{
-    width: 20%;
-    flex: 1 466px;
-    margin-left: 5px;
+.column {
+    flex: 25%;
+    padding-left: 10px;
 }
 
-footer a{
+footer a {
     color:#ffffff;
     line-height: $primary--lineheight;
 }
 
 footer a:visited {
     color: black;
+}
+
+footer ul {
+    align-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 footer li {
@@ -49,7 +61,7 @@ footer button{
     margin-right: 15px;
 }
 
-footer i{
+footer i {
     color: $white;
     font-size: 30px;
     margin: 5px;
@@ -69,4 +81,18 @@ footer i{
 
 .sta:hover {
     background-color: $sta-pink;
+}
+
+//Media Queries
+
+@media screen and (max-width:992px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .row--f {
+    flex-direction: column;
+    }
 }
