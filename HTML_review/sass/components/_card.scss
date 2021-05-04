@@ -15,8 +15,9 @@
     align-items: center;
     padding: 30px;
     margin-top: 30px;
-    width: 453px;
-    height: 312;
+    min-width: 453px;
+    max-width: 720px;
+    height: 290px;
     position: relative;
     text-align: center;
 }
@@ -297,4 +298,37 @@
 
 .cb__DT {
     background-color: $fill-des-dev;
+}
+
+//Media Queries
+@media screen and (max-width:600px) {
+.card {
+    width: 312px;
+}
+}
+
+@media screen and (min-width:768px) {
+
+    .cards--section {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-rows: 3;
+        grid-template-columns: 3;
+        flex-direction: none;
+        position: none;
+    }
+
+    .card--BS,
+    .card--IT,
+    .card--DM {
+        width: 293px;
+        height: 356px;
+    }
+
+    .card--TS,
+    .card--WD,
+    .card--CS,
+    .card--DT {
+        width: 455px;
+    }
 }

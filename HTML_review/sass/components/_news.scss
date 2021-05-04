@@ -7,6 +7,8 @@
     flex-wrap: wrap;
     padding: 30px;
     font-size: $primary-fontsize;
+    width: 100%;
+    height: auto;
 }
 
 .Newsletter h2 {
@@ -19,7 +21,7 @@
 
 .NewsTitle {
     display: inline-flex;
-    width: 100vw;
+    width: 100%;
     height: auto; 
 }
 
