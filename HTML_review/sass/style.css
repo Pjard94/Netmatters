@@ -369,13 +369,19 @@ body {
   background-color: #926fb1;
 }
 
+.cards-div {
+  width: 100vw;
+  height: auto;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}
+
 .cards--section {
   display: flex;
   position: relative;
   flex-wrap: wrap;
   padding: 0 -15px;
-  width: 100%;
-  height: auto;
   justify-content: space-evenly;
 }
 
@@ -389,16 +395,14 @@ body {
   height: 290px;
   position: relative;
   text-align: center;
-  justify-content: space-evenly;
   padding: 30px;
-  flex-basis: 100%;
 }
 
 .card--txt p {
-  min-width: 391px;
   max-width: 658px;
   height: auto;
   margin: 20px 30px 20px 30px;
+  flex-basis: 100%;
 }
 
 .card a:visited,
@@ -464,6 +468,7 @@ body {
 @media screen and (max-width: 600px) {
   .card {
     width: 312px;
+    height: auto;
     padding: 30px;
   }
 
@@ -472,6 +477,10 @@ body {
   }
 }
 @media screen and (min-width: 600px) {
+  .cards--section {
+    flex-direction: none;
+  }
+
   .card--TS,
 .card--WD,
 .card--CS,
@@ -479,7 +488,12 @@ body {
     height: 268px;
   }
 }
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 768px) {
+  .cards--section {
+    width: 750px;
+    height: auto;
+  }
+
   .card--TS,
 .card--WD,
 .card--CS,
@@ -488,11 +502,12 @@ body {
     height: 312px;
   }
 }
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 992px) {
   .cards--section {
     display: flex;
     flex-wrap: wrap;
-    position: none;
+    width: 970px;
+    height: auto;
   }
 
   .card--BS,
@@ -509,7 +524,12 @@ body {
     width: 455px;
   }
 }
-@media screen and (min-width: 1243px) {
+@media screen and (min-width: 1260px) {
+  .cards--section {
+    width: 1200px;
+    height: auto;
+  }
+
   .card--BS,
 .card--IT,
 .card--DM {
@@ -709,12 +729,12 @@ body {
   background-color: #2A6EC6;
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 768px) {
   .n--a3 {
     display: none;
   }
 }
-@media screen and (min-width: 1243px) {
+@media screen and (min-width: 1260px) {
   .n--a3 {
     display: unset;
   }
