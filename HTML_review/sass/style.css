@@ -166,25 +166,239 @@ body {
   background-color: #7E57A0;
 }
 
+.card:hover .ic__BS {
+  color: #67809f;
+  background-color: #ffffff;
+}
+
+.ic__BS {
+  background-color: #67809f;
+}
+
+.card--BS:hover {
+  background-color: #67809f;
+}
+
+.card:hover .cb__BS {
+  background-color: #ffffff;
+  color: #67809f;
+}
+
+.ic__BS {
+  padding-top: none;
+  padding-left: 11px;
+  padding-right: 4px;
+  padding-bottom: 6px;
+}
+
+.cb__BS {
+  background-color: #67809f;
+}
+
+.card--IT:hover {
+  background-color: #4183d7;
+}
+
+.ic__IT {
+  background-color: #4183d7;
+}
+
+.card:hover .ic__IT {
+  color: #4183d7;
+  background-color: #ffffff;
+}
+
+.card:hover .cb__IT {
+  background-color: #ffffff;
+  color: #4183d7;
+}
+
+.ic__IT {
+  padding-top: none;
+  padding-left: 10px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+}
+
+.cb__IT {
+  background-color: #4183d7;
+}
+
+.card--DM:hover {
+  background-color: #2ecc71;
+}
+
+.ic__DM {
+  background-color: #2ecc71;
+}
+
+.card:hover .ic__DM {
+  color: #2ecc71;
+  background-color: #ffffff;
+}
+
+.card:hover .cb__DM {
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+
+.ic__DM {
+  padding-top: none;
+  padding-left: 12px;
+  padding-right: 4px;
+  padding-bottom: 6px;
+}
+
+.cb__DM {
+  background-color: #2ecc71;
+}
+
+.card--TS:hover {
+  background-color: #d64541;
+}
+
+.ic__TS {
+  background-color: #d64541;
+}
+
+.card:hover .ic__TS {
+  color: #d64541;
+  background-color: #ffffff;
+}
+
+.card:hover .cb__TS {
+  background-color: #ffffff;
+  color: #d64541;
+}
+
+.ic__TS {
+  padding-top: none;
+  padding-left: 12px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+}
+
+.cb__TS {
+  background-color: #d64541;
+}
+
+.card--WD:hover {
+  background-color: #926fb1;
+}
+
+.ic__WD {
+  background-color: #926fb1;
+}
+
+.card:hover .ic__WD {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+.card:hover .cb__WD {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+
+.ic__WD {
+  padding-top: none;
+  padding-left: 8px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+}
+
+.cb__WD {
+  background-color: #926fb1;
+}
+
+.card--CS:hover {
+  background-color: #f62459;
+}
+
+.ic__CS {
+  background-color: #f62459;
+}
+
+.card:hover .ic__CS {
+  color: #f62459;
+  background-color: #ffffff;
+}
+
+.card:hover .cb__CS {
+  background-color: #ffffff;
+  color: #f62459;
+}
+
+.ic__CS {
+  padding-top: none;
+  padding-left: 11px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+}
+
+.cb__CS {
+  background-color: #f62459;
+}
+
+.card--DT:hover {
+  background-color: #926fb1;
+}
+
+.ic__DT {
+  background-color: #926fb1;
+}
+
+.card:hover .ic__DT {
+  color: #926fb1;
+  background-color: #ffffff;
+}
+
+.card:hover .cb__DT {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+
+.ic__DT {
+  padding-top: none;
+  padding-left: 8px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+}
+
+.cb__DT {
+  background-color: #926fb1;
+}
+
 .cards--section {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  flex-direction: column;
   padding: 0 -15px;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
 }
 
 .card {
   display: flex;
   border: 1px solid #666666;
   align-items: center;
-  padding: 30px;
   margin-top: 30px;
   min-width: 453px;
   max-width: 720px;
   height: 290px;
   position: relative;
   text-align: center;
+  justify-content: space-evenly;
+  padding: 30px;
+  flex-basis: 100%;
+}
+
+.card--txt p {
+  min-width: 391px;
+  max-width: 658px;
+  height: auto;
+  margin: 20px 30px 20px 30px;
 }
 
 .card a:visited,
@@ -210,132 +424,6 @@ body {
   color: #ffffff;
 }
 
-.card:hover .ic__BS {
-  color: #67809f;
-  background-color: #ffffff;
-}
-
-.ic__BS {
-  background-color: #67809f;
-}
-
-.card--BS:hover {
-  background-color: #67809f;
-}
-
-.card:hover .cb__BS {
-  background-color: #ffffff;
-  color: #67809f;
-}
-
-.card--WD:hover {
-  background-color: #926fb1;
-}
-
-.ic__WD {
-  background-color: #926fb1;
-}
-
-.card:hover .ic__WD {
-  color: #926fb1;
-  background-color: #ffffff;
-}
-
-.card:hover .cb__WD {
-  background-color: #ffffff;
-  color: #926fb1;
-}
-
-.card--DM:hover {
-  background-color: #2ecc71;
-}
-
-.ic__DM {
-  background-color: #2ecc71;
-}
-
-.card:hover .ic__DM {
-  color: #2ecc71;
-  background-color: #ffffff;
-}
-
-.card:hover .cb__DM {
-  background-color: #ffffff;
-  color: #2ecc71;
-}
-
-.card--IT:hover {
-  background-color: #4183d7;
-}
-
-.ic__IT {
-  background-color: #4183d7;
-}
-
-.card:hover .ic__IT {
-  color: #4183d7;
-  background-color: #ffffff;
-}
-
-.card:hover .cb__IT {
-  background-color: #ffffff;
-  color: #4183d7;
-}
-
-.card--TS:hover {
-  background-color: #d64541;
-}
-
-.ic__TS {
-  background-color: #d64541;
-}
-
-.card:hover .ic__TS {
-  color: #d64541;
-  background-color: #ffffff;
-}
-
-.card:hover .cb__TS {
-  background-color: #ffffff;
-  color: #d64541;
-}
-
-.card--DT:hover {
-  background-color: #926fb1;
-}
-
-.ic__DT {
-  background-color: #926fb1;
-}
-
-.card:hover .ic__DT {
-  color: #926fb1;
-  background-color: #ffffff;
-}
-
-.card:hover .cb__DT {
-  background-color: #ffffff;
-  color: #926fb1;
-}
-
-.card--CS:hover {
-  background-color: #f62459;
-}
-
-.ic__CS {
-  background-color: #f62459;
-}
-
-.card:hover .ic__CS {
-  color: #f62459;
-  background-color: #ffffff;
-}
-
-.card:hover .cb__CS {
-  background-color: #ffffff;
-  color: #f62459;
-}
-
 .icon {
   display: flex;
   margin-top: auto;
@@ -347,55 +435,6 @@ body {
   border-radius: 50%;
   font-size: 30px;
   color: #ffffff;
-}
-
-.ic__WD {
-  padding-top: none;
-  padding-left: 8px;
-  padding-right: 4px;
-  padding-bottom: 5px;
-}
-
-.ic__IT {
-  padding-top: none;
-  padding-left: 10px;
-  padding-right: 4px;
-  padding-bottom: 5px;
-}
-
-.ic__BS {
-  padding-top: none;
-  padding-left: 11px;
-  padding-right: 4px;
-  padding-bottom: 6px;
-}
-
-.ic__DM {
-  padding-top: none;
-  padding-left: 12px;
-  padding-right: 4px;
-  padding-bottom: 6px;
-}
-
-.ic__TS {
-  padding-top: none;
-  padding-left: 12px;
-  padding-right: 4px;
-  padding-bottom: 5px;
-}
-
-.ic__CS {
-  padding-top: none;
-  padding-left: 11px;
-  padding-right: 4px;
-  padding-bottom: 5px;
-}
-
-.ic__DT {
-  padding-top: none;
-  padding-left: 8px;
-  padding-right: 4px;
-  padding-bottom: 5px;
 }
 
 .ci {
@@ -422,49 +461,55 @@ body {
   outline: none;
 }
 
-.cb__WD {
-  background-color: #926fb1;
-}
-
-.cb__IT {
-  background-color: #4183d7;
-}
-
-.cb__BS {
-  background-color: #67809f;
-}
-
-.cb__DM {
-  background-color: #2ecc71;
-}
-
-.cb__TS {
-  background-color: #d64541;
-}
-
-.cb__CS {
-  background-color: #f62459;
-}
-
-.cb__DT {
-  background-color: #926fb1;
-}
-
 @media screen and (max-width: 600px) {
   .card {
     width: 312px;
+    padding: 30px;
+  }
+
+  .cards--section {
+    flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
+  .card--TS,
+.card--WD,
+.card--CS,
+.card--DT {
+    height: 268px;
+  }
+}
+@media screen and (min-width: 751px) {
+  .card--TS,
+.card--WD,
+.card--CS,
+.card--DT {
+    width: 345px;
+    height: 312px;
+  }
+}
+@media screen and (min-width: 975px) {
   .cards--section {
     display: flex;
     flex-wrap: wrap;
-    grid-template-rows: 3;
-    grid-template-columns: 3;
-    flex-direction: none;
     position: none;
   }
 
+  .card--BS,
+.card--IT,
+.card--DM {
+    width: 370px;
+    height: 312px;
+  }
+
+  .card--TS,
+.card--WD,
+.card--CS,
+.card--DT {
+    width: 455px;
+  }
+}
+@media screen and (min-width: 1243px) {
   .card--BS,
 .card--IT,
 .card--DM {
@@ -476,7 +521,8 @@ body {
 .card--WD,
 .card--CS,
 .card--DT {
-    width: 455px;
+    width: 270px;
+    height: 312px;
   }
 }
 .culture--container {
@@ -501,7 +547,7 @@ body {
   grid-template-rows: 5;
   flex-wrap: wrap;
   padding-right: 70px;
-  max-width: 750px;
+  max-width: 1170px;
   height: auto;
   align-items: center;
   align-self: center;
@@ -547,20 +593,11 @@ body {
   color: black;
 }
 
-@media screen and (min-width: 768px) {
-  .culture {
-    max-width: 918px;
-  }
-
+@media screen and (min-width: 751px) {
   .bg--image {
     background-image: url();
     background-repeat: no-repeat;
     background-size: 500px 500px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .culture {
-    max-width: 600px;
   }
 }
 .latest__title {
@@ -672,6 +709,16 @@ body {
   background-color: #2A6EC6;
 }
 
+@media screen and (min-width: 751px) {
+  .n--a3 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1243px) {
+  .n--a3 {
+    display: unset;
+  }
+}
 .Newsletter {
   background-color: #dddddd;
   width: 100%;

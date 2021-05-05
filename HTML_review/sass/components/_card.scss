@@ -1,25 +1,36 @@
 @use '../absracts/index' as *;
-
+// individual card styling found on _card--individuals
 // card layout instructions
 .cards--section {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    flex-direction: column;
     padding: 0 -15px;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
 }
 
 .card {
     display: flex;
     border: 1px solid #666666;
     align-items: center;
-    padding: 30px;
     margin-top: 30px;
     min-width: 453px;
     max-width: 720px;
     height: 290px;
     position: relative;
     text-align: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-basis: 100%;
+}
+
+.card--txt p {
+    min-width: 391px;
+    max-width: 658px;
+    height: auto;
+    margin: 20px 30px 20px 30px;
 }
 
 // card link manipulations
@@ -47,139 +58,6 @@
     color: $white;
 }
 
-// bespoke hover rules
-.card:hover .ic__BS {
-    color: $fill-bespoke;
-    background-color: $white;
-}
-
-.ic__BS {
-    background-color: $fill-bespoke;
-}
-
-.card--BS:hover {
-    background-color: $fill-bespoke;
-}
-
-.card:hover .cb__BS {
-    background-color: $white;
-    color: $fill-bespoke;
-}
-
-// Web design hover rules
-.card--WD:hover {
-    background-color: $fill-des-dev;
-}
-
-.ic__WD {
-    background-color: $fill-des-dev;
-}
-
-.card:hover .ic__WD {
-    color: $fill-des-dev;
-    background-color: $white;
-}
-
-.card:hover .cb__WD {
-    background-color: $white;
-    color: $fill-des-dev;
-}
-
-// Digital Marketing hover rules
-
-.card--DM:hover {
-    background-color: $fill-market;
-}
-.ic__DM {
-    background-color: $fill-market;
-}
-
-.card:hover .ic__DM {
-    color: $fill-market;
-    background-color: $white;
-}
-
-.card:hover .cb__DM {
-    background-color: $white;
-    color: $fill-market;
-}
-
-// IT hover rules
-
-.card--IT:hover {
-    background-color: $fill-supp;
-}
-.ic__IT {
-    background-color: $fill-supp;
-}
-
-.card:hover .ic__IT {
-    color: $fill-supp;
-    background-color: $white;
-}
-
-.card:hover .cb__IT {
-    background-color: $white;
-    color: $fill-supp;
-}
-
-// Telecom services hover rules
-
-.card--TS:hover {
-    background-color: $fill-telecoms;
-}
-.ic__TS {
-    background-color: $fill-telecoms;
-}
-
-.card:hover .ic__TS {
-    color: $fill-telecoms;
-    background-color: $white;
-}
-
-.card:hover .cb__TS {
-    background-color: $white;
-    color: $fill-telecoms;
-}
-
-// Developer Training hover rules
-
-.card--DT:hover {
-    background-color: $fill-des-dev;
-}
-.ic__DT {
-    background-color: $fill-des-dev;
-}
-
-.card:hover .ic__DT {
-    color: $fill-des-dev;
-    background-color: $white;
-}
-
-.card:hover .cb__DT {
-    background-color: $white;
-    color: $fill-des-dev;
-}
-
-// Cyber security hover rules
-
-.card--CS:hover {
-    background-color: $fill-cyber;
-}
-.ic__CS {
-    background-color: $fill-cyber;
-}
-
-.card:hover .ic__CS {
-    color: $fill-cyber;
-    background-color: $white;
-}
-
-.card:hover .cb__CS {
-    background-color: $white;
-    color: $fill-cyber;
-}
-
 // icon container 
 .icon {
     display: flex;
@@ -194,56 +72,6 @@
     font-size: 30px;
     color: $white;
 }
-
-.ic__WD {
-    padding-top: none;
-    padding-left: 8px;
-    padding-right: 4px;
-    padding-bottom: 5px;
-}
-
-.ic__IT {
-    padding-top: none;
-    padding-left: 10px;
-    padding-right: 4px;
-    padding-bottom: 5px;
-}
-
-.ic__BS {
-    padding-top: none;
-    padding-left: 11px;
-    padding-right: 4px;
-    padding-bottom: 6px;
-}
-
-.ic__DM {
-    padding-top: none;
-    padding-left: 12px;
-    padding-right: 4px;
-    padding-bottom: 6px;
-}
-
-.ic__TS {
-    padding-top: none;
-    padding-left: 12px;
-    padding-right: 4px;
-    padding-bottom: 5px;
-}
-
-.ic__CS {
-    padding-top: none;
-    padding-left: 11px;
-    padding-right: 4px;
-    padding-bottom: 5px;
-}
-
-.ic__DT {
-    padding-top: none;
-    padding-left: 8px;
-    padding-right: 4px;
-    padding-bottom: 5px;
-}
-
 
 
 // icon manipulations
@@ -272,51 +100,61 @@
     outline: none;
 }
 
-.cb__WD {
-    background-color: $fill-des-dev;
-}
-
-.cb__IT {
-    background-color: $fill-supp;
-} 
-
-.cb__BS {
-    background-color: $fill-bespoke;
-}
-
-.cb__DM {
-    background-color: $fill-market;
-}
-
-.cb__TS {
-    background-color: $fill-telecoms;
-}
-
-.cb__CS {
-    background-color: $fill-cyber;
-}
-
-.cb__DT {
-    background-color: $fill-des-dev;
-}
-
 //Media Queries
 @media screen and (max-width:600px) {
 .card {
     width: 312px;
+    padding: 30px;
+}
+
+.cards--section {
+    flex-direction: column;
 }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:600px) {
+    .card--TS,
+    .card--WD,
+    .card--CS,
+    .card--DT {
+        height: 268px;
+    }
+}
+
+@media screen and (min-width:751px) {
+    .card--TS,
+    .card--WD,
+    .card--CS,
+    .card--DT {
+        width: 345px;
+        height: 312px;
+    }
+}
+
+@media screen and (min-width:975px) {
 
     .cards--section {
         display: flex;
         flex-wrap: wrap;
-        grid-template-rows: 3;
-        grid-template-columns: 3;
-        flex-direction: none;
         position: none;
     }
+
+    .card--BS,
+    .card--IT,
+    .card--DM {
+        width: 370px;
+        height: 312px;
+    }
+
+    .card--TS,
+    .card--WD,
+    .card--CS,
+    .card--DT {
+        width: 455px;
+    }
+}
+
+@media screen and (min-width:1243px) {
 
     .card--BS,
     .card--IT,
@@ -329,6 +167,7 @@
     .card--WD,
     .card--CS,
     .card--DT {
-        width: 455px;
+        width: 270px;
+        height: 312px;
     }
 }

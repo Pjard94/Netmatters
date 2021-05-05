@@ -1,0 +1,221 @@
+@use '../absracts/index' as *;
+
+
+// bespoke card rules
+.card:hover .ic__BS {
+    color: $fill-bespoke;
+    background-color: $white;
+}
+
+.ic__BS {
+    background-color: $fill-bespoke;
+}
+
+.card--BS:hover {
+    background-color: $fill-bespoke;
+}
+
+.card:hover .cb__BS {
+    background-color: $white;
+    color: $fill-bespoke;
+}
+
+.ic__BS {
+    padding-top: none;
+    padding-left: 11px;
+    padding-right: 4px;
+    padding-bottom: 6px;
+}
+
+.cb__BS {
+    background-color: $fill-bespoke;
+}
+
+
+
+// IT card rules
+
+.card--IT:hover {
+    background-color: $fill-supp;
+}
+.ic__IT {
+    background-color: $fill-supp;
+}
+
+.card:hover .ic__IT {
+    color: $fill-supp;
+    background-color: $white;
+}
+
+.card:hover .cb__IT {
+    background-color: $white;
+    color: $fill-supp;
+}
+
+.ic__IT {
+    padding-top: none;
+    padding-left: 10px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.cb__IT {
+    background-color: $fill-supp;
+} 
+
+
+
+// Digital Marketing hover rules
+
+.card--DM:hover {
+    background-color: $fill-market;
+}
+.ic__DM {
+    background-color: $fill-market;
+}
+
+.card:hover .ic__DM {
+    color: $fill-market;
+    background-color: $white;
+}
+
+.card:hover .cb__DM {
+    background-color: $white;
+    color: $fill-market;
+}
+
+.ic__DM {
+    padding-top: none;
+    padding-left: 12px;
+    padding-right: 4px;
+    padding-bottom: 6px;
+}
+
+.cb__DM {
+    background-color: $fill-market;
+}
+
+
+// Telecom services card rules
+
+.card--TS:hover {
+    background-color: $fill-telecoms;
+}
+.ic__TS {
+    background-color: $fill-telecoms;
+}
+
+.card:hover .ic__TS {
+    color: $fill-telecoms;
+    background-color: $white;
+}
+
+.card:hover .cb__TS {
+    background-color: $white;
+    color: $fill-telecoms;
+}
+
+.ic__TS {
+    padding-top: none;
+    padding-left: 12px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.cb__TS {
+    background-color: $fill-telecoms;
+}
+
+
+
+// Web design card rules
+.card--WD:hover {
+    background-color: $fill-des-dev;
+}
+
+.ic__WD {
+    background-color: $fill-des-dev;
+}
+
+.card:hover .ic__WD {
+    color: $fill-des-dev;
+    background-color: $white;
+}
+
+.card:hover .cb__WD {
+    background-color: $white;
+    color: $fill-des-dev;
+}
+
+.ic__WD {
+    padding-top: none;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.cb__WD {
+    background-color: $fill-des-dev;
+}
+
+
+// Cyber security hover rules
+
+.card--CS:hover {
+    background-color: $fill-cyber;
+}
+.ic__CS {
+    background-color: $fill-cyber;
+}
+
+.card:hover .ic__CS {
+    color: $fill-cyber;
+    background-color: $white;
+}
+
+.card:hover .cb__CS {
+    background-color: $white;
+    color: $fill-cyber;
+}
+
+.ic__CS {
+    padding-top: none;
+    padding-left: 11px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.cb__CS {
+    background-color: $fill-cyber;
+}
+
+
+// Developer Training card rules
+
+.card--DT:hover {
+    background-color: $fill-des-dev;
+}
+.ic__DT {
+    background-color: $fill-des-dev;
+}
+
+.card:hover .ic__DT {
+    color: $fill-des-dev;
+    background-color: $white;
+}
+
+.card:hover .cb__DT {
+    background-color: $white;
+    color: $fill-des-dev;
+}
+
+.ic__DT {
+    padding-top: none;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.cb__DT {
+    background-color: $fill-des-dev;
+}
