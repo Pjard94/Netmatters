@@ -5,6 +5,7 @@
     background-color: $background-color-footer;
     width: 100%;
     height: auto;
+    align-content: center;
 }
 
 .row--n {
@@ -12,6 +13,7 @@
     flex-wrap: wrap;    
     font-size: $primary-fontsize;  
     padding: 30px;
+    margin: auto;
 }
 
 .Newsletter h2 {
@@ -32,7 +34,7 @@
 .entry label,
 .entry input {
     display: block;
-    width: 45vw;
+    width: 45%;
     height: auto;
 }
 
@@ -91,4 +93,26 @@ outline: none;
 .entry input {
     min-width: 376px;
     height: 47px;
+}
+
+@media screen and (min-width:$breakpoint-xl) {
+    
+    .row--n {
+        width: 1170px;
+        height: auto;
+        margin: auto;
+    }
+
+    .entry {
+        width: 50%;
+        padding: none;
+        margin: none;
+    }
+
+    #name,
+    #email {
+        width: 540px;
+        margin: none;
+        padding: none;
+    }
 }

@@ -22,7 +22,7 @@
     grid-template-rows: 5;
     flex-wrap: wrap;
     padding-right: 70px;
-    max-width: 1170px;
+    width: 100%;
     height: auto;
     align-items: center;
     align-self: center;
@@ -70,16 +70,31 @@
 }
 
 //media queries
-@media screen and (min-width: 751px) {
 
-
-    .bg--image {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: 500px 500px;
-    }
+@media screen and (min-width:768px) {
+    
 }
 
-@media screen and (min-width: 975px) {
+@media screen and (min-width:992px) {
 
+    .culture--container {
+        background: url(../Assets/about.png) $background-color-primary;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .culture {
+        width: 970px;
+        height: 393px;
+    }
+    
+}
+
+@media screen and (min-width:$breakpoint-xl) {
+    
+    .culture {
+        width: 1170px;
+        height: 453px;
+        margin: auto;
+    }
 }

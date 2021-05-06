@@ -1,6 +1,16 @@
 @use '../absracts/index' as *;
 
 // Latest area title
+.Bar {
+    width: 100%;
+}
+
+.latest--title {
+    display: flex;
+    width: 710px;
+    margin:auto;
+}
+
 .latest__title {
     font-size: 20px;
     border-bottom: 2px solid black;
@@ -11,23 +21,27 @@
     line-height: 24px;
 }
 
-.latest--title {
-    display: flex;
-}
-
 // Rules for the section.
 .latest {
+    width: 100%;
+    height: auto;
+}
+
+.latest--container {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
 .news-article {
     border: 1px solid black;
-    margin-bottom: 20px;
-    margin-left: 8px;
-    margin-right: auto;
+    margin: auto;
+}
+
+.news-article,
+.news-article img {
+    max-width: 720px;
 }
 
 .news-article h3{
@@ -117,17 +131,54 @@
     background-color: $news-art-alt3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint-medium) {
+
+    .latest--title {
+        width: 720px;
+    }
+
+    .news-article,
+    .news-article img {
+        width: 345px;
+    }
     
     .n--a3 {
         display: none;
     }
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: $breakpoint-large) {
+    
+    .latest--title {
+        width: 940px;
+    }
+
+    .latest--container {
+        width: 970px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+
+    .latest--title {
+        width: 1170px;
+    }
+
+    .latest--container {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+    }
 
     .n--a3 {
         display: unset;
     }
 
+    .news-article,
+    .news-article img {
+        width: 370px;
+    }
+
+    
 }

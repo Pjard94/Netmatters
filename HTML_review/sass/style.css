@@ -65,6 +65,7 @@ body {
   text-align: center;
   align-items: center;
   margin-left: 5px;
+  flex-direction: column;
 }
 
 .menu-button:link,
@@ -129,8 +130,6 @@ body {
 
 .slider--text {
   display: flex;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -166,6 +165,11 @@ body {
   background-color: #7E57A0;
 }
 
+@media screen and (min-width: 1260px) {
+  .slider--text {
+    width: 1170px;
+  }
+}
 .card:hover .ic__BS {
   color: #67809f;
   background-color: #ffffff;
@@ -370,7 +374,7 @@ body {
 }
 
 .cards-div {
-  width: 100vw;
+  width: 100%;
   height: auto;
   align-self: center;
   align-content: center;
@@ -381,8 +385,7 @@ body {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  padding: 0 -15px;
-  justify-content: space-evenly;
+  width: 100%;
 }
 
 .card {
@@ -390,8 +393,7 @@ body {
   border: 1px solid #666666;
   align-items: center;
   margin-top: 30px;
-  min-width: 453px;
-  max-width: 720px;
+  width: 100%;
   height: 290px;
   position: relative;
   text-align: center;
@@ -467,7 +469,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .card {
-    width: 312px;
+    min-width: 312px;
     height: auto;
     padding: 30px;
   }
@@ -479,13 +481,6 @@ body {
 @media screen and (min-width: 600px) {
   .cards--section {
     flex-direction: none;
-  }
-
-  .card--TS,
-.card--WD,
-.card--CS,
-.card--DT {
-    height: 268px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -506,8 +501,9 @@ body {
   .cards--section {
     display: flex;
     flex-wrap: wrap;
-    width: 970px;
+    width: 80vw;
     height: auto;
+    margin-left: 10vw;
   }
 
   .card--BS,
@@ -522,19 +518,22 @@ body {
 .card--CS,
 .card--DT {
     width: 455px;
+    height: 312px;
   }
 }
 @media screen and (min-width: 1260px) {
   .cards--section {
     width: 1200px;
     height: auto;
+    flex-direction: row;
+    margin: auto;
   }
 
   .card--BS,
 .card--IT,
 .card--DM {
     width: 293px;
-    height: 356px;
+    height: 312px;
   }
 
   .card--TS,
@@ -567,7 +566,7 @@ body {
   grid-template-rows: 5;
   flex-wrap: wrap;
   padding-right: 70px;
-  max-width: 1170px;
+  width: 100%;
   height: auto;
   align-items: center;
   align-self: center;
@@ -613,13 +612,35 @@ body {
   color: black;
 }
 
-@media screen and (min-width: 751px) {
-  .bg--image {
-    background-image: url();
+@media screen and (min-width: 992px) {
+  .culture--container {
+    background: url(../Assets/about.png) #333645;
     background-repeat: no-repeat;
-    background-size: 500px 500px;
+    background-position: right;
+  }
+
+  .culture {
+    width: 970px;
+    height: 393px;
   }
 }
+@media screen and (min-width: 1260px) {
+  .culture {
+    width: 1170px;
+    height: 453px;
+    margin: auto;
+  }
+}
+.Bar {
+  width: 100%;
+}
+
+.latest--title {
+  display: flex;
+  width: 710px;
+  margin: auto;
+}
+
 .latest__title {
   font-size: 20px;
   border-bottom: 2px solid black;
@@ -630,22 +651,26 @@ body {
   line-height: 24px;
 }
 
-.latest--title {
-  display: flex;
+.latest {
+  width: 100%;
+  height: auto;
 }
 
-.latest {
+.latest--container {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
 .news-article {
   border: 1px solid black;
-  margin-bottom: 20px;
-  margin-left: 8px;
-  margin-right: auto;
+  margin: auto;
+}
+
+.news-article,
+.news-article img {
+  max-width: 720px;
 }
 
 .news-article h3 {
@@ -730,19 +755,54 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .latest--title {
+    width: 720px;
+  }
+
+  .news-article,
+.news-article img {
+    width: 345px;
+  }
+
   .n--a3 {
     display: none;
   }
 }
+@media screen and (min-width: 992px) {
+  .latest--title {
+    width: 940px;
+  }
+
+  .latest--container {
+    width: 970px;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 1260px) {
+  .latest--title {
+    width: 1170px;
+  }
+
+  .latest--container {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+  }
+
   .n--a3 {
     display: unset;
+  }
+
+  .news-article,
+.news-article img {
+    width: 370px;
   }
 }
 .Newsletter {
   background-color: #dddddd;
   width: 100%;
   height: auto;
+  align-content: center;
 }
 
 .row--n {
@@ -750,6 +810,7 @@ body {
   flex-wrap: wrap;
   font-size: 16px;
   padding: 30px;
+  margin: auto;
 }
 
 .Newsletter h2 {
@@ -769,7 +830,7 @@ body {
 .entry label,
 .entry input {
   display: block;
-  width: 45vw;
+  width: 45%;
   height: auto;
 }
 
@@ -825,6 +886,26 @@ label.required:after {
   height: 47px;
 }
 
+@media screen and (min-width: 1260px) {
+  .row--n {
+    width: 1170px;
+    height: auto;
+    margin: auto;
+  }
+
+  .entry {
+    width: 50%;
+    padding: none;
+    margin: none;
+  }
+
+  #name,
+#email {
+    width: 540px;
+    margin: none;
+    padding: none;
+  }
+}
 footer {
   background-color: #333645;
   font-size: 13px;
@@ -904,13 +985,23 @@ footer i {
   background-color: #d93175;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
+  .row--f {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
   .column {
     flex: 50%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1260px) {
   .row--f {
-    flex-direction: column;
+    width: 1170px;
+    margin: auto;
+  }
+
+  .column {
+    flex: 25%;
   }
 }/*# sourceMappingURL=style.css.map */

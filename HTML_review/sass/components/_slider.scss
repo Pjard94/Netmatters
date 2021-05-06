@@ -13,8 +13,8 @@
 // the text area rules
 .slider--text {
     display: flex;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
+    // grid-template-columns: 1;
+    // grid-template-rows: 3;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -49,4 +49,13 @@
 
 .design-button:hover {
     background-color: $fill-des-dev-dar;
+}
+
+
+@media screen and (min-width:$breakpoint-xl) {
+
+    .slider--text {
+        width: 1170px;
+        // height: 246px;
+    }
 }

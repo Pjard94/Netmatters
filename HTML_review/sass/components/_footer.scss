@@ -85,14 +85,25 @@ footer i {
 
 //Media Queries
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:600px) {
+    .row--f {
+    flex-direction: column;
+    }
+}
+
+@media screen and (min-width:$breakpoint-medium) {
     .column {
         flex: 50%;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:$breakpoint-xl) {
     .row--f {
-    flex-direction: column;
+        width: 1170px;
+        margin: auto;
+    }
+
+    .column {
+        flex: 25%;
     }
 }
