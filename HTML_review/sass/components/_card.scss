@@ -104,11 +104,10 @@
 }
 
 //Media Queries
-@media screen and (max-width:600px) {
+@media screen and (max-width:$breakpoint-xs) {
 .card {
     min-width: 312px;
     height: auto;
-    padding: 30px;
 }
 
 .cards--section {
@@ -122,12 +121,25 @@
          flex-direction: none;
     }
 
-    // .card--TS,
-    // .card--WD,
-    // .card--CS,
-    // .card--DT {
-    //     height: 268px;
-    // }
+    .card {
+        width: 100%;
+    }     
+
+    .card--TS {
+        padding: 30px 110px;
+    }
+
+    .card--WD {
+        padding: 30px 100px;
+    }
+
+    .card--CS {
+        padding: 30px 115px;
+    }
+
+    .card--DT {
+        padding: 30px 90px;
+    }
 }
 
 @media screen and (min-width:$breakpoint-medium) {
@@ -135,6 +147,14 @@
     .cards--section {
         width: 750px;
         height: auto;
+        margin: auto;
+    }
+
+    .card--BS,
+    .card--IT,
+    .card--DM {
+        width: 720px;
+        margin: 10px 15px 0;
     }
 
     .card--TS,
@@ -143,6 +163,8 @@
     .card--DT {
         width: 345px;
         height: 312px;
+        margin: 10px 15px 0;
+        padding: 30px;
     }
 }
 
@@ -151,16 +173,17 @@
     .cards--section {
         display: flex;
         flex-wrap: wrap;
-        width: 80vw;
+        width: 970px;
         height: auto;
-        margin-left: 10vw;
+        flex-direction: row;
     }
 
     .card--BS,
     .card--IT,
     .card--DM {
-        width: 370px;
+        width: 293.33px;
         height: 312px;
+        margin: 10px 15px 0;
     }
 
     .card--TS,
@@ -184,8 +207,9 @@
     .card--BS,
     .card--IT,
     .card--DM {
-        width: 293px;
+        width: 370px;
         height: 312px;
+        margin: 10px 15px 0;
     }
 
     .card--TS,

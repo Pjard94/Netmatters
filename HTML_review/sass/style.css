@@ -37,22 +37,22 @@ body {
   max-width: 100%;
 }
 
-.support-button {
+.support-button-sm {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.sup-but {
+.sup-but-sm {
   font-size: 25px;
 }
 
-.sup-but:link,
-.sup-but:visited {
+.sup-but-sm:link,
+.sup-but-sm:visited {
   color: #333645;
 }
 
-.sup-but:hover {
+.sup-but-sm:hover {
   color: #22242E;
   border-bottom: 2px solid #22242E;
 }
@@ -82,20 +82,20 @@ body {
   color: #ffffff;
 }
 
-.search {
+.search-sm {
   display: inline;
   width: 100%;
   height: auto;
 }
 
-.search.search--bar::after,
-.search.search--button::after {
+.search-sm.search--bar-sm::after,
+.search-sm.search--button-sm::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.search--bar {
+.search--bar-sm {
   display: flex;
   float: left;
   font-size: 14px;
@@ -107,7 +107,7 @@ body {
   outline: none;
 }
 
-.search--button {
+.search--button-sm {
   font-size: 20px;
   border: none;
   float: left;
@@ -119,6 +119,15 @@ body {
   text-align: right;
 }
 
+@media screen and (min-width: 768px) {
+  .search-sm {
+    display: none;
+  }
+
+  .support-button-sm {
+    display: none;
+  }
+}
 .slider--area {
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/asset-3.jpeg);
   background-repeat: no-repeat;
@@ -467,11 +476,10 @@ body {
   outline: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   .card {
     min-width: 312px;
     height: auto;
-    padding: 30px;
   }
 
   .cards--section {
@@ -482,11 +490,39 @@ body {
   .cards--section {
     flex-direction: none;
   }
+
+  .card {
+    width: 100%;
+  }
+
+  .card--TS {
+    padding: 30px 110px;
+  }
+
+  .card--WD {
+    padding: 30px 100px;
+  }
+
+  .card--CS {
+    padding: 30px 115px;
+  }
+
+  .card--DT {
+    padding: 30px 90px;
+  }
 }
 @media screen and (min-width: 768px) {
   .cards--section {
     width: 750px;
     height: auto;
+    margin: auto;
+  }
+
+  .card--BS,
+.card--IT,
+.card--DM {
+    width: 720px;
+    margin: 10px 15px 0;
   }
 
   .card--TS,
@@ -495,22 +531,25 @@ body {
 .card--DT {
     width: 345px;
     height: 312px;
+    margin: 10px 15px 0;
+    padding: 30px;
   }
 }
 @media screen and (min-width: 992px) {
   .cards--section {
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 970px;
     height: auto;
-    margin-left: 10vw;
+    flex-direction: row;
   }
 
   .card--BS,
 .card--IT,
 .card--DM {
-    width: 370px;
+    width: 293.33px;
     height: 312px;
+    margin: 10px 15px 0;
   }
 
   .card--TS,
@@ -532,8 +571,9 @@ body {
   .card--BS,
 .card--IT,
 .card--DM {
-    width: 293px;
+    width: 370px;
     height: 312px;
+    margin: 10px 15px 0;
   }
 
   .card--TS,
@@ -544,14 +584,18 @@ body {
     height: 312px;
   }
 }
+.culture-section {
+  width: 100%;
+  background: #333645;
+  margin-top: 50px;
+}
+
 .culture--container {
   max-height: auto;
   width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background: #333645;
-  margin-top: 50px;
   text-align: center;
   -moz-columns: 1;
        columns: 1;
@@ -613,7 +657,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .culture--container {
+  .culture-section {
     background: url(../Assets/about.png) #333645;
     background-repeat: no-repeat;
     background-position: right;
@@ -625,19 +669,30 @@ body {
   }
 }
 @media screen and (min-width: 1260px) {
-  .culture {
-    width: 1170px;
-    height: 453px;
+  .culture--container {
+    width: 1200px;
     margin: auto;
+  }
+
+  .culture {
+    width: 600px;
+    height: 453px;
+    margin: none;
+  }
+
+  .empty-child {
+    width: 600px;
   }
 }
 .Bar {
   width: 100%;
+  height: 104px;
 }
 
 .latest--title {
   display: flex;
   width: 710px;
+  height: 104px;
   margin: auto;
 }
 
@@ -645,7 +700,7 @@ body {
   font-size: 20px;
   border-bottom: 2px solid black;
   width: 89px;
-  height: 60px;
+  height: 80px;
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 24px;
@@ -661,11 +716,12 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  padding: 50px 0;
 }
 
 .news-article {
   border: 1px solid black;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .news-article,
@@ -776,6 +832,11 @@ body {
   .latest--container {
     width: 970px;
     margin: auto;
+  }
+
+  .news-article,
+.news-article img {
+    width: 455px;
   }
 }
 @media screen and (min-width: 1260px) {

@@ -1,14 +1,18 @@
 @use '../absracts/index' as *;
 
 // Culture rules
+.culture-section {
+    width: 100%;
+    background: $background-color-primary;
+    margin-top: 50px;
+}
+
 .culture--container {
     max-height: auto;
     width: 100%;
     display:flex;
     align-items: center;
     flex-wrap: wrap;
-    background: $background-color-primary;
-    margin-top: 50px;
     text-align: center;
     columns: 1;
 }
@@ -77,7 +81,7 @@
 
 @media screen and (min-width:992px) {
 
-    .culture--container {
+    .culture-section {
         background: url(../Assets/about.png) $background-color-primary;
         background-repeat: no-repeat;
         background-position: right;
@@ -91,10 +95,19 @@
 }
 
 @media screen and (min-width:$breakpoint-xl) {
+
+    .culture--container {
+        width: 1200px;
+        margin: auto;
+    }
     
     .culture {
-        width: 1170px;
+        width: 600px;
         height: 453px;
-        margin: auto;
+        margin: none;
+    }
+
+    .empty-child {
+        width: 600px;
     }
 }
