@@ -110,6 +110,37 @@
     text-align: right;
 }
 
+
+
+.search-med,
+.search-lrg,
+.contact-lrg,
+.support-lrg {
+    display: none;
+}
+
+// support buttons
+
+.support--lrg {
+    background-color: $fill-supp;
+    color: $white;
+    border: none;
+    width: 136px;
+    height: 56px;
+    padding: 5px 15px;
+}
+
+.contact--lrg {
+    background-color: $contact-button;
+    color: $white;
+    border: none;
+    width: 144px;
+    height: 56px;
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+// media rules
 @media screen and (min-width:$breakpoint-medium) {
     .search-sm {
         display: none;
@@ -118,4 +149,31 @@
     .support-button-sm {
         display: none;
     }
+
+    .search-med {
+        display: unset;
+    }
+}
+
+@media screen and (min-width:$breakpoint-large) {
+    .search-med {
+        display: none;
+    }
+
+    .search-lrg,
+    .contact-lrg,
+    .support-lrg {
+        display: unset;
+    }
+}
+
+@media screen and (min-width:$breakpoint-xl) {
+    .search-med {
+        display: unset;
+    }
+
+    .search-lrg {
+        display: none;
+    }
+        
 }
