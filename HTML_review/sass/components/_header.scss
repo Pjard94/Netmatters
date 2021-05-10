@@ -1,11 +1,18 @@
 @use '../absracts/index' as *;
 
 // Header rules
+header {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: auto;
 }
+
 .header > * {
     padding-left: 5px;
     padding-right: 5px;
@@ -17,6 +24,11 @@
 
 .topline :nth-child(2) {
     margin-left: 20px;
+}
+
+.header-line {
+    display: none;
+    padding-left: 20px;
 }
 
 // Logo rules
@@ -47,7 +59,8 @@
 }
 
 // Hamburger rules
-.hamburger {
+.hamburger--sm,
+.hamburger--more {
     display: flex;
     background-color: $background-color-primary;
     width: 63px;
@@ -56,6 +69,11 @@
     align-items: center;
     margin-left: 5px;
     flex-direction: column;
+}
+
+.hamburger--more {
+    display: none;
+    margin-left: 5px;
 }
 
 .menu-button:link,
@@ -68,8 +86,15 @@
     text-decoration: underline;    
 }
 
-.hamburger span {
+.hamburger--sm span,
+.hamburger--more span {
     color: $white;
+    width: 100%;
+}
+
+.header-line {
+    width: 375px;
+    height: 70px;
 }
 
 // Search bar rules
@@ -91,7 +116,7 @@
     float:left;
     font-size: 14px;
     flex-grow: 1;
-    background: $search-bar;
+    background: rgba(85, 85, 85,0.25);
     border: 0;
     width: 90%;
     height: 23px;
@@ -102,7 +127,7 @@
     font-size: 20px;
     border: none;
     float: left;
-    background: $search-bar;
+    background: rgba(85, 85, 85,0.25);
     color: $color-primary;
     cursor: pointer;
     height: 23px;
@@ -110,7 +135,34 @@
     text-align: right;
 }
 
+.hidden--bar {
+    display: none;
+}
 
+//medium breakpoint search bar rules
+.search--bar-med {
+    display: flex;
+    float: left;
+    border: 1px grey solid;
+    border-right: none;
+    width: 174px;
+    height: 56px;
+    outline: none;
+}
+
+.search--button-med {
+    background: $contact-button;
+    border: none;
+    outline: none;
+    color: $white;
+    float: left;
+    padding: none;
+    margin: none;
+    font-size: 23px;
+    line-height: 24px;
+    width: 63px;
+    height: 56px;
+}
 
 .search-med,
 .search-lrg,
@@ -127,7 +179,7 @@
     border: none;
     width: 136px;
     height: 56px;
-    padding: 5px 15px;
+    border-radius: 3px;
 }
 
 .contact--lrg {
@@ -136,12 +188,23 @@
     border: none;
     width: 144px;
     height: 56px;
-    padding: 5px 15px;
-    margin-left: 20px;
 }
 
 // media rules
 @media screen and (min-width:$breakpoint-medium) {
+    .topline {
+        width: 375px;
+    }
+
+    .header {
+        width: 750px;
+    }
+
+    .header-line {
+        display: unset;
+        display: flex;
+    }
+
     .search-sm {
         display: none;
     }
@@ -153,9 +216,44 @@
     .search-med {
         display: unset;
     }
+
+    .hamburger--sm {
+        display: none;
+    }
+
+    .hamburger--more {
+        display:unset;
+    }
+
+
 }
 
 @media screen and (min-width:$breakpoint-large) {
+    .header {
+        width: 970px;
+    }
+
+    .header-line {
+        width: 467px;
+        justify-content: space-evenly;
+    }
+
+    .header-line button {
+        font-size: 18px;
+    }
+
+    .header-line i {
+        font-size: 23px;
+    }
+
+    .search--lrg {
+        width: 63px;
+        height: 56px;
+        background-color: $contact-button;
+        color: $white;
+        border: none;
+    }
+
     .search-med {
         display: none;
     }
@@ -165,9 +263,23 @@
     .support-lrg {
         display: unset;
     }
+
+    .search--lrg:focus {
+        .search--bar-med {
+        display: unset;
+        }
+    }
 }
 
 @media screen and (min-width:$breakpoint-xl) {
+    .header {
+        width: 1200px;
+    }
+
+    .header-line {
+        width: 707px;
+    }
+
     .search-med {
         display: unset;
     }
