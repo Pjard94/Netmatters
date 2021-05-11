@@ -164,6 +164,10 @@ header {
     height: 56px;
 }
 
+.search--button-med:hover {
+    background-color: $contact-button-hover;
+}
+
 .search-med,
 .search-lrg,
 .contact-lrg,
@@ -188,6 +192,14 @@ header {
     border: none;
     width: 144px;
     height: 56px;
+}
+
+.support--lrg:hover {
+    background-color: $support-button-hover;
+}
+
+.contact--lrg:hover {
+    background-color: $contact-button-hover;
 }
 
 // media rules
@@ -252,6 +264,10 @@ header {
         background-color: $contact-button;
         color: $white;
         border: none;
+    }
+
+    .search--lrg:hover {
+        background-color: $contact-button-hover;
     }
 
     .search-med {

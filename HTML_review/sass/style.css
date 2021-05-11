@@ -175,6 +175,10 @@ header {
   height: 56px;
 }
 
+.search--button-med:hover {
+  background-color: #84858f;
+}
+
 .search-med,
 .search-lrg,
 .contact-lrg,
@@ -197,6 +201,14 @@ header {
   border: none;
   width: 144px;
   height: 56px;
+}
+
+.support--lrg:hover {
+  background-color: #2a6ec6;
+}
+
+.contact--lrg:hover {
+  background-color: #84858f;
 }
 
 @media screen and (min-width: 768px) {
@@ -257,6 +269,10 @@ header {
     background-color: #999aa2;
     color: #ffffff;
     border: none;
+  }
+
+  .search--lrg:hover {
+    background-color: #84858f;
   }
 
   .search-med {
@@ -1226,5 +1242,28 @@ footer i {
 
   .column {
     flex: 25%;
+  }
+}
+.awards {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.awards--container {
+  margin: auto;
+}
+
+.color-award {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .awards {
+    display: unset;
+  }
+
+  .awards--container {
+    width: 750px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+@use '../absracts/index' as *;
+
+.awards {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.award--1 {
+    background-image: url(../Assets/asset\ 21.jpeg);
+    width: 260px;
+    height: 88px;
+}
+
+.bw--1 {
+    background-image: url(../Assets/asset\ 22.jpeg);
+}
+
+.bw--1:hover {
+  background-image: url(../Assets/asset\ 23.jpeg);
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .awards {
+        display: unset;
+    }
+
+    .awards--container {
+        width: 750px;
+        display: flex;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: $breakpoint-lrg) {
+    .awards--container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+    .awards--container {
+        width: 1200px;
+    }
+}
