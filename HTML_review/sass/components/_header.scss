@@ -139,6 +139,8 @@ header {
     display: none;
 }
 
+
+
 //medium breakpoint search bar rules
 .search--bar-med {
     display: flex;
@@ -278,12 +280,6 @@ header {
     .contact-lrg,
     .support-lrg {
         display: unset;
-    }
-
-    .search--lrg:focus {
-        .search--bar-med {
-        display: unset;
-        }
     }
 }
 
