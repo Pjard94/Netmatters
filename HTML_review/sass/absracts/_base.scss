@@ -4,16 +4,21 @@
     list-style-position: none;
     box-sizing: border-box;
     letter-spacing: 0.4px;
+    font-family: Poppins, sans-serif;
 }
 
 a:link {
     text-decoration: none;
 }
 
-body {
-    font-family: Poppins,sans-serif;
-}
-
 button {
     border-radius: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
 }

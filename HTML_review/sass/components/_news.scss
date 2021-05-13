@@ -46,6 +46,7 @@ label.required:after
 
 .entry {
     float: left;
+    width: 100%;
 }
 
 .entry > * {
@@ -91,14 +92,57 @@ outline: none;
 }
 
 .entry input {
-    min-width: 376px;
     height: 47px;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .entry input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .row--n {
+        width: $media-med-width;
+    }
+
+    .entry {
+        width: 100%;
+        padding: none;
+        margin: none;
+    }
+    
+    #name,
+    #email {
+        width: 90%;
+        margin: none;
+        padding: none;
+    }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+    .row--n {
+        width: $media-lrg-width;
+    }
+
+    .entry {
+        width: 50%;
+        padding: none;
+        margin: none;
+    }
+
+    #name,
+    #email {
+        width: 90%;
+        margin: none;
+        padding: none;
+    }
 }
 
 @media screen and (min-width:$breakpoint-xl) {
     
     .row--n {
-        width: 1170px;
+        width: $media-xl-width;
         height: auto;
         margin: auto;
     }

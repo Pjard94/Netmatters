@@ -4,16 +4,16 @@
 .cards-div {
     width: 100%;
     height: auto;
-    align-self: center;
-    align-content: center;
-    align-items: center;
+    // align-self: center;
+    // align-content: center;
+    // align-items: center;
 }
 
 .cards--section {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    // justify-content: space-evenly;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -27,10 +27,11 @@
     position: relative;
     text-align: center;
     padding: 30px;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
 }
 
 .card--txt p {
-    max-width: 658px;
+    width: 80%;
     height: auto;
     margin: 20px 30px 20px 30px;
     flex-basis: 100%;
@@ -105,11 +106,6 @@
 
 //Media Queries
 @media screen and (max-width:$breakpoint-xs) {
-.card {
-    min-width: 312px;
-    height: auto;
-}
-
 .cards--section {
     flex-direction: column;
 }

@@ -3,7 +3,8 @@
 .awards {
     display: none;
     width: 100%;
-    height: auto;
+    height: 274px;
+    margin-top: 100px;
 }
 
 .awards--container > * {
@@ -146,11 +147,16 @@
         display: flex;
         margin: auto;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        padding-top: 50px;
     }
 }
 
 @media screen and (min-width: $breakpoint-large) {
+    .awards {
+    height: 320px;
+    }
+
     .awards--container {
         width: 970px;
     }
@@ -220,6 +226,10 @@
 }
 
 @media screen and (min-width: $breakpoint-xl) {
+    .awards {
+        height: 266px;
+    }
+
     .awards--container {
         width: 1200px;
     }
