@@ -139,6 +139,7 @@
 @media screen and (min-width: $breakpoint-medium) {
     .awards {
         display: unset;
+        display: flex;
     }
 
     .awards--container {

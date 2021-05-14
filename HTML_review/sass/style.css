@@ -24,7 +24,7 @@ h5 {
 
 header {
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .header {
@@ -236,7 +236,7 @@ header {
   }
 
   .search-med {
-    display: unset;
+    display: block;
   }
 
   .hamburger--sm {
@@ -244,7 +244,7 @@ header {
   }
 
   .hamburger--more {
-    display: unset;
+    display: block;
   }
 }
 @media screen and (min-width: 992px) {
@@ -279,7 +279,7 @@ header {
   }
 
   .search-med {
-    display: unset;
+    display: inline-flex;
   }
 
   .hide {
@@ -288,7 +288,7 @@ header {
 
   .contact-lrg,
 .support-lrg {
-    display: unset;
+    display: inline-flex;
   }
 }
 .search-lrg {
@@ -360,7 +360,7 @@ header {
   .search-lrg,
 .hidden-contact-lrg,
 .hidden-support-lrg {
-    display: unset;
+    display: inline-flex;
   }
 }
 .slider--area {
@@ -1101,7 +1101,7 @@ header {
   }
 
   .n--a3 {
-    display: unset;
+    display: block;
   }
 
   .news-article,
@@ -1646,7 +1646,6 @@ footer {
   background-color: #333645;
   font-size: 13px;
   width: 100%;
-  height: auto;
   justify-content: center;
 }
 
@@ -1654,7 +1653,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
-  justify-content: space-evenly;
   height: auto;
 }
 
@@ -1664,7 +1662,6 @@ footer h3 {
 
 .column {
   flex: 25%;
-  padding-left: 10px;
 }
 
 footer a {
@@ -1724,12 +1721,16 @@ footer i {
 
 @media screen and (max-width: 768px) {
   .row--f {
-    flex-direction: column;
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
   .column {
     flex: 50%;
+  }
+
+  .row--f {
+    display: flex;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -1876,6 +1877,7 @@ footer i {
 @media screen and (min-width: 768px) {
   .awards {
     display: unset;
+    display: flex;
   }
 
   .awards--container {

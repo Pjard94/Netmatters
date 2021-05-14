@@ -3,7 +3,7 @@
 // Header rules
 header {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header {
@@ -225,7 +225,7 @@ header {
     }
 
     .search-med {
-        display: unset;
+        display: block;
     }
 
     .hamburger--sm {
@@ -233,7 +233,7 @@ header {
     }
 
     .hamburger--more {
-        display:unset;
+        display:block;
     }
 
 
@@ -274,7 +274,7 @@ header {
     }
 
     .search-med {
-        display: unset;
+        display: inline-flex;
     }
 
     .hide {
@@ -283,7 +283,7 @@ header {
 
     .contact-lrg,
     .support-lrg {
-        display: unset;
+        display: inline-flex;
     }
         
 }
