@@ -53,6 +53,11 @@
     .slider--text {
         text-align: left;
     }
+
+    .slider--text {
+        align-content: left;
+    }
+
 }
 
 @media screen and (min-width:$breakpoint-xl) {

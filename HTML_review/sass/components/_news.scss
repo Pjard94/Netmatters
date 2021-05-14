@@ -30,6 +30,11 @@
     height: auto; 
 }
 
+.subscription-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 // entry area
 .entry label,
 .entry input {
@@ -93,6 +98,41 @@ outline: none;
 
 .entry input {
     height: 47px;
+}
+
+.pretty--checkbox .focus-fill {
+    display: none;
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 3px 0 0;
+}
+
+.pretty--checkbox {
+    width: 32px;
+    height: 32px;
+    border: solid 2px $color-primary;
+    cursor: pointer;
+    background-color: $background-color-footer;
+    padding: 0 0 0 3px;
+}
+
+.pretty--checkbox:focus-within {
+    
+    .focus-fill {
+        display: unset;
+    }
+
+    .fill {
+        display:none
+    }
+
+    background-color: $color-primary;
+
+    color: $white;
 }
 
 @media screen and (max-width: $breakpoint-medium) {

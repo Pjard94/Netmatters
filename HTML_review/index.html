@@ -44,18 +44,25 @@
                 <div class="header-line">
 
                     <!-- support buttons -->
-
+                    
+                    
                     <div class="support-lrg"><button class="support--lrg"><i class="fas fa-mouse"></i> SUPPORT</button></div>
 
                     <div class="contact-lrg"><button class="contact--lrg"><i class="fas fa-paper-plane"></i>CONTACT</button></div>
 
                     <!-- large point search bar -->
+                    <div class="hide">
 
-                    <div class="search-lrg">
-                        <input type="text" class="hidden--bar" placeholder="Search ...">
-                        <button class="search--lrg"><i class="fas fa-search"></i></button>
+                        <div class="hidden-support-lrg hide-item"><button class="support--lrg"><i class="fas fa-mouse"></i> SUPPORT</button></div>
+
+                        <div class="hidden-contact-lrg hide-item"><button class="contact--lrg"><i class="fas fa-paper-plane"></i>CONTACT</button></div>
+
+                        <div class="search-lrg">
+                            <input type="text" class="hidden--bar" placeholder="Search ..." aria-label="search">
+                            <button type="" class="search--lrg"><i class="fas fa-search"></i></button>
+                        </div>
+
                     </div>
-
                     <!-- medium and xl search bar -->
 
                     <div class="search-med">
@@ -74,6 +81,17 @@
 
             </div> <!-- the class header div end-->
         </header>
+
+        <div class="menu-across">
+            <div class="menu--across">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
 
         <!-- Slider placeholder -->
         <div class="slider--area">
@@ -304,8 +322,8 @@
                     <label class="required" for="email">Your Email</label>
                     <input type="email" name="users-email" id="email" value="" required="required" class="sub-box">
                 </div>
-                <div>
-                    <input type="checkbox" name="marketing-yes" id="m-y" value="">
+                <div class="subscription-label">
+                    <button type="checkbox" id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
                     <label for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                 </div>
                 <div>
@@ -313,7 +331,7 @@
                 </div>
 
             </div>
-
+<!-- <span class="fill"><i class="far fa-square "></i></span> <i class="fas fa-check-square"></i>-->
         </div>
 
         <footer class="footer">

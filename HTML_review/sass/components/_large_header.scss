@@ -1,0 +1,83 @@
+@use '../absracts/index' as *;
+
+//search bar styling
+.search-lrg{
+    height: 56px;
+    width: 63px;
+    position: relative;
+}
+
+
+.hidden--bar {
+    float: left;
+    border: 1px grey solid;
+    border-right: none;
+    width: 250px;
+    height: 56px;
+    outline: none;
+    flex-grow: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-right: 0;
+    float: left;
+}
+
+.search--lrg {
+    width: 63px;
+    height: 56px;
+    background-color: $contact-button;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-left: 20px;
+}
+
+//making the search bar appear
+
+.search-lrg.hidden--bar::after,
+.search-lrg.search--lrg::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.search-lrg:focus-within {
+    width: 100%;
+
+    .hidden--bar {
+        display: unset;
+        display: flex;
+    }
+
+    .search--lrg {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+}
+
+//hiding rules
+
+.search-lrg {
+    display: none;
+}
+
+.hidden--bar,
+.hidden-support-lrg,
+.hidden-contact-lrg {
+    display: none;
+}
+
+.hide:focus-within .hide-item {
+    display: none;
+}
+
+@media screen and (min-width:$breakpoint-large) {
+    .search-lrg,
+    .hidden-contact-lrg,
+    .hidden-support-lrg {
+        display: unset;
+    }
+
+}

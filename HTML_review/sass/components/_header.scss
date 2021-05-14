@@ -104,13 +104,6 @@ header {
     height: auto;
 }
 
-.search-sm.search--bar-sm::after,
-.search-sm.search--button-sm::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .search--bar-sm {
     display: flex;
     float:left;
@@ -135,14 +128,15 @@ header {
     text-align: right;
 }
 
-.hidden--bar {
-    display: none;
+.search-sm.search--bar-sm::after,
+.search-sm.search--button-sm::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-
-
-
 //medium breakpoint search bar rules
-.search--bar-med {
+.search--bar-med
+{
     display: flex;
     float: left;
     border: 1px grey solid;
@@ -170,12 +164,10 @@ header {
     background-color: $contact-button-hover;
 }
 
-.search-med,
-.search-lrg,
-.contact-lrg,
-.support-lrg {
+.search-med {
     display: none;
 }
+
 
 // support buttons
 
@@ -194,6 +186,11 @@ header {
     border: none;
     width: 144px;
     height: 56px;
+}
+
+.contact-lrg,
+.support-lrg {
+    display: none;
 }
 
 .support--lrg:hover {
@@ -215,7 +212,7 @@ header {
     }
 
     .header-line {
-        display: unset;
+        // display: unset;
         display: flex;
     }
 
@@ -247,6 +244,7 @@ header {
         width: 970px;
     }
 
+
     .header-line {
         width: 467px;
         justify-content: space-evenly;
@@ -260,27 +258,10 @@ header {
         font-size: 23px;
     }
 
-    .search--lrg {
-        width: 63px;
-        height: 56px;
-        background-color: $contact-button;
-        color: $white;
-        border: none;
-    }
-
-    .search--lrg:hover {
-        background-color: $contact-button-hover;
-    }
-
     .search-med {
         display: none;
     }
 
-    .search-lrg,
-    .contact-lrg,
-    .support-lrg {
-        display: unset;
-    }
 }
 
 @media screen and (min-width:$breakpoint-xl) {
@@ -296,8 +277,13 @@ header {
         display: unset;
     }
 
-    .search-lrg {
+    .hide {
         display: none;
+    }
+
+    .contact-lrg,
+    .support-lrg {
+        display: unset;
     }
         
 }
