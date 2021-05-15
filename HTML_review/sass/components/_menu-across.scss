@@ -1,2 +1,31 @@
 @use '../absracts/index' as *;
 
+.menu-across {
+    display: flex;
+    width: 100%;
+    background-color: $color-primary;
+}
+
+.menu--across {
+    display: flex;
+    width: $media-lrg-width;
+    height: 99px;
+    color: $white;
+    flex-direction: row;
+    margin: auto;
+} 
+
+.menu--across a {
+    color: $white;
+    align-content: center;
+    text-align: center;
+}
+
+.menu-box {
+    width: 154px;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}

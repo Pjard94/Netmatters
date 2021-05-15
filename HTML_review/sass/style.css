@@ -363,6 +363,36 @@ header {
     display: inline-flex;
   }
 }
+.menu-across {
+  display: flex;
+  width: 100%;
+  background-color: #333645;
+}
+
+.menu--across {
+  display: flex;
+  width: 970px;
+  height: 99px;
+  color: #ffffff;
+  flex-direction: row;
+  margin: auto;
+}
+
+.menu--across a {
+  color: #ffffff;
+  align-content: center;
+  text-align: center;
+}
+
+.menu-box {
+  width: 154px;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
 .slider--area {
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/asset-3.jpeg);
   background-repeat: no-repeat;
