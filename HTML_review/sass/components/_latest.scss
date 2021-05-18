@@ -28,6 +28,7 @@
 .latest {
     width: 100%;
     height: auto;
+    margin-bottom: 70px;
 }
 
 .latest--container {
@@ -40,7 +41,7 @@
 
 .news-article {
     border: 1px solid black;
-    margin: 20px auto;
+    margin: 20px 10px;
 }
 
 .news-article,
@@ -177,7 +178,7 @@
 
     .latest--container {
         width: 1200px;
-        height: auto;
+        height: 583px;
         margin: auto;
     }
 
@@ -190,5 +191,8 @@
         width: 370px;
     }
 
-    
+    .news-article {
+        height: 583px;
+    }
+
 }
