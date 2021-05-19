@@ -11,6 +11,8 @@ header {
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
+    padding: 20px 0;
+
     i {
         margin: auto;
     }
@@ -33,10 +35,16 @@ header {
 .header-line {
     display: none;
     padding-left: 20px;
+    padding-top: 7px;
 }
 
 // Logo rules
+.logo--cont {
+    display: flex;
+}
+
 .logo--cont img {
+    flex-shrink: 0;
     max-height: auto;
     max-width: 100%;
 }
@@ -65,19 +73,23 @@ header {
 // Hamburger rules
 .hamburger--sm,
 .hamburger--more {
-    display: flex;
+    display: inline-flex;
     background-color: $background-color-primary;
     width: 63px;
     height: 56px;
     text-align: center;
-    align-items: center;
+    align-content: center;
     margin-left: 5px;
     flex-direction: column;
 }
 
+.hamburger--sm {
+    margin-left: 20px;
+}
+
 .hamburger--more {
     display: none;
-    margin-left: 5px;
+    margin: auto;
 }
 
 .menu-button:link,
@@ -138,6 +150,7 @@ header {
     clear: both;
     display: table;
 }
+
 //medium breakpoint search bar rules
 .search--bar-med
 {
@@ -148,6 +161,7 @@ header {
     width: 174px;
     height: 56px;
     outline: none;
+    margin: 0px 0px 0 20px;
 }
 
 .search--button-med {
@@ -158,6 +172,7 @@ header {
     float: left;
     padding: none;
     margin: none;
+    margin-top: 0px;
     font-size: 23px;
     line-height: 24px;
     width: 63px;
@@ -170,6 +185,7 @@ header {
 
 .search-med {
     display: none;
+    margin: auto;
 }
 
 
@@ -228,7 +244,7 @@ header {
     }
 
     .search-med {
-        display: block;
+        display: inline-flex;
     }
 
     .hamburger--sm {
@@ -236,10 +252,14 @@ header {
     }
 
     .hamburger--more {
-        display:block;
+        display:inline-flex;
+        margin: 7px auto;
     }
 
-
+    form {
+        display: inline-flex;
+        padding-top: 7px;
+    }
 }
 
 @media screen and (min-width:$breakpoint-large) {

@@ -68,6 +68,14 @@
     display: none;
 }
 
+.search-lrg,
+.support-lrg,
+.contact-lrg,
+.hidden-support-lrg,
+.hidden-contact-lrg {
+    margin: 7px auto;
+}
+
 .hide:focus-within .hide-item {
     display: none;
 }

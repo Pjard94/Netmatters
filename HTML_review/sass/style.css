@@ -84,6 +84,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
+  padding: 20px 0;
 }
 .header i {
   margin: auto;
@@ -106,9 +107,15 @@ header {
 .header-line {
   display: none;
   padding-left: 20px;
+  padding-top: 7px;
+}
+
+.logo--cont {
+  display: flex;
 }
 
 .logo--cont img {
+  flex-shrink: 0;
   max-height: auto;
   max-width: 100%;
 }
@@ -135,19 +142,23 @@ header {
 
 .hamburger--sm,
 .hamburger--more {
-  display: flex;
+  display: inline-flex;
   background-color: #333645;
   width: 63px;
   height: 56px;
   text-align: center;
-  align-items: center;
+  align-content: center;
   margin-left: 5px;
   flex-direction: column;
 }
 
+.hamburger--sm {
+  margin-left: 20px;
+}
+
 .hamburger--more {
   display: none;
-  margin-left: 5px;
+  margin: auto;
 }
 
 .menu-button:link,
@@ -216,6 +227,7 @@ header {
   width: 174px;
   height: 56px;
   outline: none;
+  margin: 0px 0px 0 20px;
 }
 
 .search--button-med {
@@ -226,6 +238,7 @@ header {
   float: left;
   padding: none;
   margin: none;
+  margin-top: 0px;
   font-size: 23px;
   line-height: 24px;
   width: 63px;
@@ -238,6 +251,7 @@ header {
 
 .search-med {
   display: none;
+  margin: auto;
 }
 
 .support--lrg {
@@ -292,7 +306,7 @@ header {
   }
 
   .search-med {
-    display: block;
+    display: inline-flex;
   }
 
   .hamburger--sm {
@@ -300,7 +314,13 @@ header {
   }
 
   .hamburger--more {
-    display: block;
+    display: inline-flex;
+    margin: 7px auto;
+  }
+
+  form {
+    display: inline-flex;
+    padding-top: 7px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -405,6 +425,14 @@ header {
 .hidden-support-lrg,
 .hidden-contact-lrg {
   display: none;
+}
+
+.search-lrg,
+.support-lrg,
+.contact-lrg,
+.hidden-support-lrg,
+.hidden-contact-lrg {
+  margin: 7px auto;
 }
 
 .hide:focus-within .hide-item {
