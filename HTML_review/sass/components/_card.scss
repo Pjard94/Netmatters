@@ -35,6 +35,25 @@
     height: auto;
     margin: 20px 30px 20px 30px;
     flex-basis: 100%;
+    font-size: $secondary-fontsize;
+}
+
+.card--txt h3 {
+    font-size: $primary-fontsize;
+}
+
+.card--txt h3::after {
+    content: '';
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card--txt{
+    justify-content: center;
 }
 
 // card link manipulations
@@ -67,7 +86,7 @@
     display: flex;
     // margin: auto;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 17px;
     margin-left: auto;
     margin-right: auto;
     height: 60px;  
@@ -88,13 +107,7 @@
     padding-bottom: 3px;
 }
 
-.card--txt p {
-    font-size: $secondary-fontsize;
-}
 
-.card--txt h3 {
-    font-size: $primary-fontsize;
-}
 
 //read more styling
 .card__button {

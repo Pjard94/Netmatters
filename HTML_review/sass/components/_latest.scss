@@ -42,15 +42,26 @@
 .news-article {
     border: 1px solid black;
     margin: 20px 10px;
+
+    h3 {
+        font-size: $primary-fontsize;
+        height: 48px;
+        margin: 0 0 15px;
+    }
+
+    p {
+        height: 66px;
+        margin: 0 0 25px;
+    }
+}
+
+.block {
+    padding: 30px;
 }
 
 .news-article,
 .news-article img {
     width: 100%;
-}
-
-.news-article h3{
-    font-size: $primary-fontsize;
 }
 
 .Read-more1,
@@ -63,10 +74,28 @@
 
 .user {
     border-top: 1px solid #CCCCCC;
-    margin-top: 10px;
+    margin: 30px 0px 0 0px;
+    padding: 30px 0 0 0;
     font-size: 14px;
     line-height: $primary--lineheight;
+    display: flex;
+
+    p{
+        margin: 0;
+        height: auto;
+    }
 }
+
+.details {
+    height: 47px;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+    .user-name {
+        padding: 0 0 10px 0;
+    }
+}
+
 
 // The first article
 
@@ -81,7 +110,6 @@
 
 .Read-more1:link,
 .Read-more1:visited {
-    margin: 10px;
     padding: 5px;
     background-color: $fill-bespoke;
     color: $white;
@@ -104,7 +132,6 @@
 
 .Read-more2:link,
 .Read-more2:visited {
-    margin: 10px;
     padding: 5px;
     background-color: $fill-telecoms;
     color: $white;
@@ -127,7 +154,6 @@
 
 .Read-more3:link,
 .Read-more3:visited {
-    margin: 10px;
     padding: 5px;
     background-color: $fill-supp;
     color: $white;
@@ -137,20 +163,46 @@
     background-color: $news-art-alt3;
 }
 
+@media screen and (max-width:$breakpoint-medium) {
+    .news-article{
+        h3 {
+          height: 24px;  
+        }
+
+        p {
+            height: 44px;
+        }
+    }
+
+    .block {
+        height: 302px;
+    }
+
+}
+
 @media screen and (min-width: $breakpoint-medium) {
 
     .latest--title {
         width: 720px;
     }
 
+    .latest--container {
+        justify-content: center;
+    }
+
     .news-article,
     .news-article img {
         width: 345px;
+    }
+
+    .news-article {
+        height: 569px;
     }
     
     .n--a3 {
         display: none;
     }
+
 }
 
 @media screen and (min-width: $breakpoint-large) {
@@ -168,6 +220,10 @@
     .news-article img {
         width: 455px;
     }
+    .news-article{
+        height: 636px;
+    }
+
 }
 
 @media screen and (min-width: $breakpoint-xl) {
@@ -195,4 +251,16 @@
         height: 583px;
     }
 
+    .news-article img {
+        height: 213px;
+    }
+
+
+}
+
+.user{
+    img {
+        width: 47px;
+        height: 47px;
+    }
 }

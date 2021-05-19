@@ -85,6 +85,9 @@ header {
   width: 100%;
   margin: auto;
 }
+.header i {
+  margin: auto;
+}
 
 .header > * {
   padding-left: 5px;
@@ -998,6 +1001,25 @@ header {
   height: auto;
   margin: 20px 30px 20px 30px;
   flex-basis: 100%;
+  font-size: 13px;
+}
+
+.card--txt h3 {
+  font-size: 16px;
+}
+
+.card--txt h3::after {
+  content: "";
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.card--txt {
+  justify-content: center;
 }
 
 .card a:visited,
@@ -1026,7 +1048,7 @@ header {
 .icon {
   display: flex;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 17px;
   margin-left: auto;
   margin-right: auto;
   height: 60px;
@@ -1043,14 +1065,6 @@ header {
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom: 3px;
-}
-
-.card--txt p {
-  font-size: 13px;
-}
-
-.card--txt h3 {
-  font-size: 16px;
 }
 
 .card__button {
@@ -1178,6 +1192,7 @@ header {
   text-align: center;
   -moz-columns: 1;
        columns: 1;
+  padding: 50px 15px;
 }
 
 .culture {
@@ -1202,6 +1217,7 @@ header {
   height: auto;
   margin-right: 40px;
   font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .culture h1 {
@@ -1211,6 +1227,7 @@ header {
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .intro-paragraph {
@@ -1245,6 +1262,11 @@ header {
   color: black;
 }
 
+@media screen and (min-width: 768px) {
+  .culture {
+    height: 399px;
+  }
+}
 @media screen and (min-width: 992px) {
   .culture-section {
     background: url(../Assets/about.png) #333645;
@@ -1253,7 +1275,7 @@ header {
   }
 
   .culture {
-    width: 970px;
+    width: 961px;
     height: 393px;
   }
 }
@@ -1314,14 +1336,23 @@ header {
   border: 1px solid black;
   margin: 20px 10px;
 }
+.news-article h3 {
+  font-size: 16px;
+  height: 48px;
+  margin: 0 0 15px;
+}
+.news-article p {
+  height: 66px;
+  margin: 0 0 25px;
+}
+
+.block {
+  padding: 30px;
+}
 
 .news-article,
 .news-article img {
   width: 100%;
-}
-
-.news-article h3 {
-  font-size: 16px;
 }
 
 .Read-more1,
@@ -1334,9 +1365,24 @@ header {
 
 .user {
   border-top: 1px solid #CCCCCC;
-  margin-top: 10px;
+  margin: 30px 0px 0 0px;
+  padding: 30px 0 0 0;
   font-size: 14px;
   line-height: 22px;
+  display: flex;
+}
+.user p {
+  margin: 0;
+  height: auto;
+}
+
+.details {
+  height: 47px;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.details .user-name {
+  padding: 0 0 10px 0;
 }
 
 .art-head1:link,
@@ -1350,7 +1396,6 @@ header {
 
 .Read-more1:link,
 .Read-more1:visited {
-  margin: 10px;
   padding: 5px;
   background-color: #67809f;
   color: #ffffff;
@@ -1371,7 +1416,6 @@ header {
 
 .Read-more2:link,
 .Read-more2:visited {
-  margin: 10px;
   padding: 5px;
   background-color: #d64541;
   color: #ffffff;
@@ -1392,7 +1436,6 @@ header {
 
 .Read-more3:link,
 .Read-more3:visited {
-  margin: 10px;
   padding: 5px;
   background-color: #4183d7;
   color: #ffffff;
@@ -1402,14 +1445,34 @@ header {
   background-color: #2A6EC6;
 }
 
+@media screen and (max-width: 768px) {
+  .news-article h3 {
+    height: 24px;
+  }
+  .news-article p {
+    height: 44px;
+  }
+
+  .block {
+    height: 302px;
+  }
+}
 @media screen and (min-width: 768px) {
   .latest--title {
     width: 720px;
   }
 
+  .latest--container {
+    justify-content: center;
+  }
+
   .news-article,
 .news-article img {
     width: 345px;
+  }
+
+  .news-article {
+    height: 569px;
   }
 
   .n--a3 {
@@ -1429,6 +1492,10 @@ header {
   .news-article,
 .news-article img {
     width: 455px;
+  }
+
+  .news-article {
+    height: 636px;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -1454,7 +1521,16 @@ header {
   .news-article {
     height: 583px;
   }
+
+  .news-article img {
+    height: 213px;
+  }
 }
+.user img {
+  width: 47px;
+  height: 47px;
+}
+
 .clients {
   display: none;
   width: 100%;

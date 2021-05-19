@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     text-align: center;
     columns: 1;
+    padding: 50px 15px;
 }
 
 .culture {
@@ -39,6 +40,7 @@
     height: auto;
     margin-right: 40px;
     font-size: 16px;
+    margin-bottom: 25px;
 }
 
 .culture h1 {
@@ -48,11 +50,13 @@
     font-weight: 400;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .intro-paragraph {
     font-size: $primary-fontsize;
 }
+
 
 // Button rules
 .but-cult {
@@ -86,6 +90,9 @@
 //media queries
 
 @media screen and (min-width:768px) {
+    .culture {
+        height: 399px;
+    }
     
 }
 
@@ -98,7 +105,7 @@
     }
 
     .culture {
-        width: 970px;
+        width: 961px;
         height: 393px;
     }
     
