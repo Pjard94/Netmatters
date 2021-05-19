@@ -40,7 +40,7 @@ header {
 
 // Logo rules
 .logo--cont {
-    display: flex;
+    display: inline-flex;
 }
 
 .logo--cont img {
@@ -222,6 +222,27 @@ header {
 }
 
 // media rules
+@media screen and (max-width: 380px) {
+    .logo--cont img {
+        width: 88px;
+        height: 15px
+    }
+
+    .logo--cont {
+        width: 88px;
+        height: 70px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .logo--cont img {
+        width: 300px;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width:$breakpoint-medium) {
     .topline {
         width: 375px;
@@ -237,10 +258,12 @@ header {
 
     .search-sm {
         display: none;
+        padding-bottom: 50px;
     }
 
     .support-button-sm {
         display: none;
+        margin:auto auto 50px;
     }
 
     .search-med {
@@ -259,6 +282,10 @@ header {
     form {
         display: inline-flex;
         padding-top: 7px;
+    }
+
+    .logo--cont {
+        margin-top: 7px;
     }
 }
 

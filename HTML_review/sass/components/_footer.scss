@@ -15,6 +15,8 @@ footer {
     height:auto;
     padding-top: 45px;
     padding-bottom: 43px;
+    margin: auto;
+    margin-left: 20px;
 }
 
 footer h3 {
@@ -23,6 +25,7 @@ footer h3 {
 
 .column {
     flex: 25%;
+    padding: 0 15px;
 }
 
 footer a {
@@ -95,7 +98,9 @@ footer i {
         flex: 50%;
     }
 
-    .row--f {display: flex;}
+    .row--f {
+        display: flex;
+    }
 }
 
 @media screen and (min-width:$breakpoint-xl) {

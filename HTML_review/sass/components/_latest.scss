@@ -64,6 +64,15 @@
     width: 100%;
 }
 
+.main-img:hover {
+    overflow: hidden;  
+    img{
+        opacity: 0.80;
+        transform: scale(1.05); 
+    }
+    
+}
+
 .Read-more1,
 .Read-more2,
 .Read-more3 {

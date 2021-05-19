@@ -111,7 +111,7 @@ header {
 }
 
 .logo--cont {
-  display: flex;
+  display: inline-flex;
 }
 
 .logo--cont img {
@@ -284,6 +284,25 @@ header {
   background-color: #84858f;
 }
 
+@media screen and (max-width: 380px) {
+  .logo--cont img {
+    width: 88px;
+    height: 15px;
+  }
+
+  .logo--cont {
+    width: 88px;
+    height: 70px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 380px) {
+  .logo--cont img {
+    width: 300px;
+    align-content: center;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .topline {
     width: 375px;
@@ -299,10 +318,12 @@ header {
 
   .search-sm {
     display: none;
+    padding-bottom: 50px;
   }
 
   .support-button-sm {
     display: none;
+    margin: auto auto 50px;
   }
 
   .search-med {
@@ -321,6 +342,10 @@ header {
   form {
     display: inline-flex;
     padding-top: 7px;
+  }
+
+  .logo--cont {
+    margin-top: 7px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -733,7 +758,7 @@ header {
 }
 .slider_text p {
   margin-bottom: 35px;
-  min-width: 370px;
+  min-width: 170px;
 }
 
 .slider--overlay {
@@ -1381,6 +1406,14 @@ header {
 .news-article,
 .news-article img {
   width: 100%;
+}
+
+.main-img:hover {
+  overflow: hidden;
+}
+.main-img:hover img {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .Read-more1,
@@ -2106,6 +2139,8 @@ footer {
   height: auto;
   padding-top: 45px;
   padding-bottom: 43px;
+  margin: auto;
+  margin-left: 20px;
 }
 
 footer h3 {
@@ -2114,6 +2149,7 @@ footer h3 {
 
 .column {
   flex: 25%;
+  padding: 0 15px;
 }
 
 footer a {
