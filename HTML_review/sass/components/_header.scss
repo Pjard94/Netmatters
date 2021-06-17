@@ -83,6 +83,13 @@ header {
     flex-direction: column;
 }
 
+.menu-line {
+    width: 30px;
+    height: 2px;
+    content: "";
+    background-color: $white;
+}
+
 .hamburger--sm {
     margin-left: 20px;
 }
