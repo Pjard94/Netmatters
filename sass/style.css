@@ -83,9 +83,6 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.header i {
-  margin: auto;
-}
 
 .header > * {
   padding-left: 5px;
@@ -94,7 +91,9 @@ header {
 }
 
 .topline {
-  display: inline-flex;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
 }
 
 .header-line {
@@ -103,14 +102,40 @@ header {
   padding-top: 7px;
 }
 
-.logo--cont {
-  display: inline-flex;
+.small-menu {
+  padding: 0 15px;
+  height: 128px;
 }
 
-.logo--cont img {
-  flex-shrink: 0;
-  max-height: auto;
+.small-menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.small-menu-top-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.large-menu {
+  display: none;
+  justify-content: space-between;
+  max-width: 900px;
+}
+
+.logo-link {
+  display: inline-flex;
+  max-width: 402px;
+}
+
+.logo {
+  flex-shrink: 1;
   max-width: 100%;
+}
+
+.logo-larger {
+  display: none;
 }
 
 .support-button-sm {
@@ -121,6 +146,7 @@ header {
 
 .sup-but-sm {
   font-size: 25px;
+  padding-left: 20px;
 }
 
 .sup-but-sm:link,
@@ -139,7 +165,7 @@ header {
   background-color: #333645;
   width: 63px;
   height: 56px;
-  text-align: center;
+  text-align: left;
   align-content: center;
   margin-left: 5px;
   flex-direction: column;
@@ -154,11 +180,11 @@ header {
   height: 3px;
   content: "";
   background-color: #ffffff;
-  margin: 5px 0 5px;
+  margin: 5px 0 0px;
 }
 
 .menu__word {
-  margin: -15px 0 0;
+  margin: 10px 0 0;
   color: #ffffff;
   line-height: 1;
   font-size: 0.75rem;
@@ -171,7 +197,7 @@ header {
 
 .hamburger--more {
   display: none;
-  margin: auto;
+  margin: 7px 0 7px 20px;
 }
 
 .menu-button:link,
@@ -196,8 +222,13 @@ header {
 }
 
 .search-form-small {
-  border: 2px solid rgba(85, 85, 85, 0.25);
+  border: 2px solid #CECECE;
   border-radius: 3px;
+  float: left;
+  width: 100%;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 11px;
 }
 
 .search--bar-sm {
@@ -210,20 +241,23 @@ header {
   height: 23px;
   outline: none;
   cursor: pointer;
-  background-color: rgba(85, 85, 85, 0.25);
+  background-color: rgba(85, 85, 85, 0.1);
+  height: 47px;
 }
 
 .search--button-sm {
   font-size: 20px;
   border: none;
   float: left;
-  background: rgba(85, 85, 85, 0.25);
+  background: rgba(85, 85, 85, 0.1);
   color: #333645;
   cursor: pointer;
   height: 23px;
   width: 10%;
   text-align: right;
   border-radius: 0;
+  height: 47px;
+  padding: 0 12px 0 0;
 }
 
 .search-sm.search--bar-sm::after,
@@ -241,7 +275,7 @@ header {
   width: 174px;
   height: 56px;
   outline: none;
-  margin: 0px 0px 0 20px;
+  margin-right: -1px;
 }
 
 .search--button-med {
@@ -267,6 +301,8 @@ header {
 .search-med {
   display: none;
   margin: auto;
+  margin: 0px 0px 0 20px;
+  align-items: center;
 }
 
 .search--lrg {
@@ -310,30 +346,7 @@ header {
   background-color: #84858f;
 }
 
-@media screen and (max-width: 380px) {
-  .logo--cont img {
-    width: 88px;
-    height: 15px;
-  }
-
-  .logo--cont {
-    width: 88px;
-    height: 70px;
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 380px) {
-  .logo--cont img {
-    width: 300px;
-    align-content: center;
-    justify-content: center;
-  }
-}
 @media screen and (min-width: 768px) {
-  .header {
-    width: 750px;
-  }
-
   .search-form-small {
     display: none;
     padding-bottom: 50px;
@@ -355,7 +368,7 @@ header {
 
   .hamburger--more {
     display: inline-flex;
-    margin: 7px auto;
+    margin: 7px 0 7px 20px;
   }
 
   form {
@@ -363,23 +376,23 @@ header {
     padding-top: 7px;
   }
 
-  .logo--cont {
-    margin-top: 7px;
+  .small-menu {
+    display: none;
+  }
+
+  .logo-larger {
+    display: inline-flex;
+  }
+
+  .large-menu {
+    display: flex;
+  }
+
+  .topline {
+    justify-content: center;
   }
 }
 @media screen and (min-width: 992px) {
-  .header {
-    width: 970px;
-  }
-
-  .header-line button {
-    font-size: 18px;
-  }
-
-  .header-line i {
-    font-size: 23px;
-  }
-
   .search-med {
     display: none;
   }
@@ -392,14 +405,6 @@ header {
   }
 }
 @media screen and (min-width: 1260px) {
-  .header {
-    width: 1200px;
-  }
-
-  .header-line {
-    width: 707px;
-  }
-
   .search-med {
     display: inline-flex;
   }
