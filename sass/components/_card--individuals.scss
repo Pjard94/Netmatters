@@ -1,6 +1,12 @@
 @use '../absracts/index' as *;
 
 
+.card:hover {
+    .card--txt h3::after {
+        background-color: $white;
+    }
+}
+
 // bespoke card rules
 .card:hover .ic__BS {
     color: $fill-bespoke;

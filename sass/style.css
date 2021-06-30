@@ -284,7 +284,7 @@ header {
 
 .search--bar-med:focus {
   border: #5BC0DE 1px solid;
-  box-shadow: #5BC0DE 3px;
+  box-shadow: 0px 0px 4px #5BC0DE;
 }
 
 .search--button-med {
@@ -330,6 +330,10 @@ header {
   font-size: 23px;
   padding: 15px 20px;
   display: none;
+}
+
+.search--lrg:hover {
+  background-color: #84858f;
 }
 
 .support--lrg {
@@ -757,15 +761,7 @@ header {
   margin-bottom: 35px;
   min-width: 170px;
   font-size: 20px;
-  line-height: 2.25rem;
-}
-
-.slider--overlay {
-  width: 100%;
-  margin: 0 auto;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
+  line-height: 36px;
 }
 
 .design-button {
@@ -778,6 +774,8 @@ header {
   border: none;
   font-size: 20px;
   line-height: 50px;
+  text-transform: uppercase;
+  justify-self: left;
 }
 
 .design-button:hover {
@@ -791,7 +789,7 @@ header {
     width: 970px;
   }
   .slider_text p {
-    width: 270px;
+    width: 377px;
   }
 
   .design-button {
@@ -799,25 +797,28 @@ header {
     text-align: left;
   }
 
-  .slider--overlay {
-    justify-content: center;
-    text-align: left;
-    align-content: left;
-    width: 970px;
+  .slider_text {
+    padding-left: 45px;
   }
 
-  .slider_text,
-.slider--overlay {
-    padding-left: 45px;
+  .design-button {
+    margin-left: -650px;
   }
 }
 @media screen and (min-width: 1260px) {
-  .slider_text,
-.slider--overlay {
+  .slider_text {
     width: 1170px;
     padding-left: 6px;
   }
+
+  .design-button {
+    margin-left: -924px;
+  }
 }
+.card:hover .card--txt h3::after {
+  background-color: #ffffff;
+}
+
 .card:hover .ic__BS {
   color: #67809f;
   background-color: #ffffff;
@@ -1024,6 +1025,7 @@ header {
 .cards-div {
   width: 100%;
   height: auto;
+  padding: 20px 15px 0;
 }
 
 .cards--section {
@@ -1036,11 +1038,11 @@ header {
 
 .card {
   display: flex;
-  border: 1px solid #666666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   align-items: center;
   margin-top: 30px;
   width: 100%;
-  height: 290px;
   position: relative;
   text-align: center;
   padding: 30px;
@@ -1053,6 +1055,7 @@ header {
   margin: 20px 30px 20px 30px;
   flex-basis: 100%;
   font-size: 13px;
+  line-height: 22px;
 }
 
 .card--txt h3 {
@@ -1123,6 +1126,7 @@ header {
   color: #ffffff;
   border: none;
   outline: none;
+  padding: 5px 15px;
 }
 
 @media screen and (max-width: 425px) {
@@ -1166,7 +1170,7 @@ header {
 .card--IT,
 .card--DM {
     width: 720px;
-    margin: 10px 15px 0;
+    margin: 30px 15px 0;
   }
 
   .card--TS,
@@ -1174,8 +1178,7 @@ header {
 .card--CS,
 .card--DT {
     width: 345px;
-    height: 312px;
-    margin: 10px 15px 0;
+    margin: 30px 15px 0;
     padding: 30px;
   }
 }
@@ -1192,8 +1195,7 @@ header {
 .card--IT,
 .card--DM {
     width: 293.33px;
-    height: 312px;
-    margin: 10px 15px 0;
+    margin: 30px 15px 0;
   }
 
   .card--TS,
@@ -1201,7 +1203,6 @@ header {
 .card--CS,
 .card--DT {
     width: 455px;
-    height: 312px;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -1216,8 +1217,7 @@ header {
 .card--IT,
 .card--DM {
     width: 370px;
-    height: 312px;
-    margin: 10px 15px 0;
+    margin: 30px 15px 0;
   }
 
   .card--TS,
@@ -1225,13 +1225,13 @@ header {
 .card--CS,
 .card--DT {
     width: 270px;
-    height: 312px;
   }
 }
 .culture-section {
   width: 100%;
   background: #333645;
   margin-top: 50px;
+  display: flex;
 }
 
 .culture--container {
@@ -1240,10 +1240,10 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
   -moz-columns: 1;
        columns: 1;
-  padding: 50px 15px;
+  padding: 50px 0;
 }
 
 .culture {
@@ -1269,6 +1269,8 @@ header {
   margin-right: 40px;
   font-size: 16px;
   margin-bottom: 25px;
+  padding: 0 0 0 6px;
+  line-height: 30px;
 }
 
 .culture h1 {
@@ -1279,6 +1281,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 25px;
+  padding: 0 0 0 6px;
+  line-height: 39px;
 }
 
 .intro-paragraph {
@@ -1287,7 +1291,7 @@ header {
 
 .but-cult {
   background-color: #ffffff;
-  margin-left: 10px;
+  margin-left: 8px;
   margin-bottom: 10px;
   border: none;
   font-weight: 400;
@@ -1323,6 +1327,7 @@ header {
     background: url(../Assets/about.png) #333645;
     background-repeat: no-repeat;
     background-position: right;
+    background-size: auto 100%;
   }
 
   .culture {
@@ -1334,16 +1339,19 @@ header {
   .culture--container {
     width: 1200px;
     margin: auto;
+    flex-direction: row;
   }
 
   .culture {
-    width: 600px;
+    width: 598px;
     height: 453px;
-    margin: none;
+    margin: 0;
   }
 
   .empty-child {
-    width: 600px;
+    width: 598px;
+    height: 453px;
+    content: "";
   }
 }
 .Bar {

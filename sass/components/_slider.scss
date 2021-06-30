@@ -37,16 +37,8 @@
         margin-bottom: 35px;
         min-width: 170px;
         font-size: 20px;
-        line-height: 2.25rem;
+        line-height: 36px;
     }
-}
-
-.slider--overlay {
-    width: 100%;
-    margin: 0 auto;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
 }
 
 // Design button styling
@@ -60,6 +52,8 @@
     border: none;
     font-size: 20px;
     line-height: 50px;
+    text-transform: uppercase;
+    justify-self:left;
 }
 
 .design-button:hover {
@@ -74,7 +68,7 @@
         width: $media-lrg-width;
 
         p {
-            width: 270px;
+            width: 377px;
         }
     }
 
@@ -83,23 +77,22 @@
         text-align: left;
     }
 
-    .slider--overlay {
-        justify-content: center;
-        text-align: left;
-        align-content: left;
-        width: $media-lrg-width;
+        .slider_text{
+        padding-left: 45px;
     }
 
-    .slider_text,
-    .slider--overlay{
-        padding-left: 45px;
+    .design-button {
+        margin-left: -650px;
     }
 }
 
 @media screen and (min-width:$breakpoint-xl) {
-    .slider_text,
-    .slider--overlay{
+    .slider_text{
         width: 1170px;
         padding-left: 6px;
+    }
+
+    .design-button {
+        margin-left: -924px;
     }
 }
