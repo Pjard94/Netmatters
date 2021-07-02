@@ -29,7 +29,6 @@
 .latest {
     width: 100%;
     height: auto;
-    padding-bottom: 130px;
 }
 
 .latest--container {
@@ -88,7 +87,7 @@
 
 .block {
     padding: 30px;
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    box-shadow: 0 45px 35px -35px rgb(0 0 0 / 10%);
     height: auto;
 }
 
@@ -220,8 +219,6 @@
             height: 44px;
         }
     }
-
-
 }
 
 @media screen and (min-width: $breakpoint-medium) {
@@ -262,11 +259,21 @@
         box-shadow: 0 35px 35px -25px rgb(0 0 0 / 10%);
     }
 
+    .block {
+        box-shadow: 0 0px 0px 0px rgb(0 0 0 / 0%);
+    }
 
+    .block--1 {
+        box-shadow: 25px 0 15px -15px rgb(0 0 0 / 10%);
+    }
+
+    .block--2 {
+        box-shadow: -25px 0 15px -15px rgb(0 0 0 / 10%);
+    }
 }
 
 @media screen and (min-width: $breakpoint-large) {
-    
+   
     .latest--title {
         width: 940px;
     }
@@ -295,6 +302,10 @@
 
 @media screen and (min-width: $breakpoint-xl) {
 
+    .latest {
+        padding-bottom: 130px;
+    }
+
     .latest--title {
         width: 1170px;
     }
@@ -322,7 +333,14 @@
         height: 213px;
     }
 
+    .block--2 {
+        box-shadow: 25px 0 15px -15px rgb(0 0 0 / 10%),
+        -25px 0 15px -15px rgb(0 0 0 / 10%);
+    }
 
+    .block--3 {
+        box-shadow: -25px 0 15px -15px rgb(0 0 0 / 10%);
+    }
 }
 
 .user{

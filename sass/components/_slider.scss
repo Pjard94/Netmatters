@@ -60,6 +60,10 @@
     background-color: $fill-des-dev-dar;
 }
 
+@media screen and (min-width:$breakpoint-medium) {
+    
+}
+
 @media screen and (min-width:$breakpoint-large) {
 
     .slider_text {
@@ -88,11 +92,11 @@
 
 @media screen and (min-width:$breakpoint-xl) {
     .slider_text{
-        width: 1170px;
-        padding-left: 6px;
+        width: 1200px;
+        padding-left: 15px;
     }
 
     .design-button {
-        margin-left: -924px;
+        margin-left: -932px;
     }
 }

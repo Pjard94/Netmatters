@@ -578,12 +578,15 @@ header {
   width: auto;
   margin-top: 15px;
   padding-left: 20px;
+  font-size: 16px;
+  line-height: 45px;
 }
 
 .menu li::after {
   content: "-";
   padding: 0 0 0 20px;
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 45px;
 }
 
 .menu li:last-child::after {
@@ -807,12 +810,12 @@ header {
 }
 @media screen and (min-width: 1260px) {
   .slider_text {
-    width: 1170px;
-    padding-left: 6px;
+    width: 1200px;
+    padding-left: 15px;
   }
 
   .design-button {
-    margin-left: -924px;
+    margin-left: -932px;
   }
 }
 .card:hover .card--txt h3::after {
@@ -1320,6 +1323,7 @@ header {
 @media screen and (min-width: 768px) {
   .culture {
     height: 399px;
+    width: 750px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1331,7 +1335,7 @@ header {
   }
 
   .culture {
-    width: 961px;
+    width: 970px;
     height: 393px;
   }
 }
@@ -1381,7 +1385,6 @@ header {
 .latest {
   width: 100%;
   height: auto;
-  padding-bottom: 130px;
 }
 
 .latest--container {
@@ -1438,7 +1441,7 @@ header {
 
 .block {
   padding: 30px;
-  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 45px 35px -35px rgba(0, 0, 0, 0.1);
   height: auto;
 }
 
@@ -1593,6 +1596,18 @@ header {
   .latest {
     box-shadow: 0 35px 35px -25px rgba(0, 0, 0, 0.1);
   }
+
+  .block {
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .block--1 {
+    box-shadow: 25px 0 15px -15px rgba(0, 0, 0, 0.1);
+  }
+
+  .block--2 {
+    box-shadow: -25px 0 15px -15px rgba(0, 0, 0, 0.1);
+  }
 }
 @media screen and (min-width: 992px) {
   .latest--title {
@@ -1622,6 +1637,10 @@ header {
   }
 }
 @media screen and (min-width: 1260px) {
+  .latest {
+    padding-bottom: 130px;
+  }
+
   .latest--title {
     width: 1170px;
   }
@@ -1647,6 +1666,14 @@ header {
 
   .main-img {
     height: 213px;
+  }
+
+  .block--2 {
+    box-shadow: 25px 0 15px -15px rgba(0, 0, 0, 0.1), -25px 0 15px -15px rgba(0, 0, 0, 0.1);
+  }
+
+  .block--3 {
+    box-shadow: -25px 0 15px -15px rgba(0, 0, 0, 0.1);
   }
 }
 .user img {
@@ -2007,7 +2034,8 @@ header {
   background-color: #dddddd;
   width: 100%;
   height: auto;
-  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .row--n {
@@ -2020,6 +2048,8 @@ header {
 
 .Newsletter h2 {
   font-size: 32px;
+  line-height: 35px;
+  margin: 0 0 15px;
 }
 
 .Newsletter > * {
@@ -2035,6 +2065,12 @@ header {
 .subscription-label {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.subscription-checkbox--mail {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
 }
 
 .entry label,
@@ -2192,7 +2228,6 @@ footer {
   background-color: #333645;
   font-size: 13px;
   width: 100%;
-  justify-content: center;
 }
 
 .row--f {
@@ -2202,8 +2237,6 @@ footer {
   height: auto;
   padding-top: 45px;
   padding-bottom: 43px;
-  margin: auto;
-  margin-left: 20px;
 }
 
 footer h3 {
@@ -2212,6 +2245,12 @@ footer h3 {
 
 .column {
   flex: 25%;
+}
+
+.contact-area,
+.about-area,
+.site-map,
+.Sm-buttons {
   padding: 0 15px;
 }
 
@@ -2280,13 +2319,25 @@ footer i {
     flex: 50%;
   }
 
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
   .row--f {
     display: flex;
+    width: 750px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .row--f {
+    width: 970px;
   }
 }
 @media screen and (min-width: 1260px) {
   .row--f {
-    width: 1170px;
+    width: 1200px;
     margin: auto;
   }
 
@@ -2298,7 +2349,6 @@ footer i {
   display: none;
   width: 100%;
   height: 274px;
-  margin-top: 100px;
 }
 
 .awards--container > * {

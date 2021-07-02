@@ -5,7 +5,8 @@
     background-color: $background-color-footer;
     width: 100%;
     height: auto;
-    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .row--n {
@@ -18,6 +19,8 @@
 
 .Newsletter h2 {
     font-size: 32px;
+    line-height: 35px;
+    margin: 0 0 15px;
 }
 
 .Newsletter > * {
@@ -33,6 +36,12 @@
 .subscription-label {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.subscription-checkbox--mail {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
 }
 
 // entry area

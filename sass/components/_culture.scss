@@ -97,6 +97,7 @@
 @media screen and (min-width:768px) {
     .culture {
         height: 399px;
+        width: $media-med-width;
     }
     
 }
@@ -111,7 +112,7 @@
     }
 
     .culture {
-        width: 961px;
+        width: $media-lrg-width;
         height: 393px;
     }
     
