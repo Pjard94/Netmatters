@@ -47,7 +47,7 @@ header {
 .large-menu {
     display: none;
     justify-content: space-between;
-    max-width: 900px;
+    width: 940px;
 }
 
 // Logo rules
@@ -390,7 +390,8 @@ header {
     }
 
     .large-menu {
-        max-width: 1200px;
+        width: 1200px;
+        padding: 0 15px;
     }
 
     .logo-larger {

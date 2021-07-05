@@ -22,14 +22,15 @@
     }
 
     li{
-        width: 145px;
+        width: 156px;
         height: 99px;
         float: left;
         align-content: center;
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        border-left: 1px solid $color-hover;
+        border-right: 1px solid hsla(0,0%,100%,.1);
+        border-left: 1px solid rgba(0,0,0,.25);
     }
 
     i{
@@ -44,8 +45,9 @@
     }
 }
 
-.navbar-main:last-child {
-    border-right: 1px solid $color-hover;
+.navbar-main{
+    border-left: 1px solid hsla(0,0%,100%,.1);
+    border-right: 1px solid rgba(0,0,0,.25);
 }
 
 .web {
@@ -111,6 +113,7 @@
 .menu {
     color: $white;
     visibility: hidden;
+    display: flex;
     position: absolute;
     height: 45px;
     z-index: 2;
@@ -118,20 +121,23 @@
     font-size: .8125rem;
     text-align: left;
     width: 970px;
+    padding: 0 0 0 17px;
 }
 
 .menu li {
     width: auto;
-    margin-top: 15px;
-    padding-left: 20px;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 45px;
+}
+
+.menu li:not(:first-child) {
+    padding: 0 0 0 20px;
 }
 
 .menu li::after {
     content: '-';
     padding: 0 0 0 20px;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 45px;
 }
 
@@ -162,14 +168,13 @@
   }
 
   .menu-web {
-      visibility: visible;
-      display: flex;
+    visibility: visible;
   }
 
   .empty-div {
-      visibility: visible;
-      bottom: -45px;
-      background: $fill-des-dev;
+    visibility: visible;
+    bottom: -45px;
+    background: $fill-des-dev;
   }
 }
 
@@ -180,14 +185,13 @@
   }
 
   .menu-it {
-      visibility: visible;
-      display: flex;
+    visibility: visible;
   }
 
   .empty-div {
-      visibility: visible;
-      bottom: -45px;
-      background: $fill-supp;
+    visibility: visible;
+    bottom: -45px;
+    background: $fill-supp;
   }
 }
 
@@ -198,14 +202,13 @@
   }
 
   .menu-telecoms {
-      visibility: visible;
-      display: flex;
+    visibility: visible;
   }
 
   .empty-div {
-      visibility: visible;
-      bottom: -45px;
-      background: $fill-telecoms;
+    visibility: visible;
+    bottom: -45px;
+    background: $fill-telecoms;
   }
 }
 
@@ -216,14 +219,13 @@
   }
 
   .menu-bespoke {
-      visibility: visible;
-      display: flex;
+    visibility: visible;
   }
 
   .empty-div {
-      visibility: visible;
-      bottom: -45px;
-      background: $fill-bespoke;
+    visibility: visible;
+    bottom: -45px;
+    background: $fill-bespoke;
   }
 }
 
@@ -234,14 +236,13 @@
   }
 
   .menu-marketing {
-      visibility: visible;
-      display: flex;
+    visibility: visible;
   }
 
   .empty-div {
-      visibility: visible;
-      bottom: -45px;
-      background: $fill-market;
+    visibility: visible;
+    bottom: -45px;
+    background: $fill-market;
   }
 }
 
@@ -252,14 +253,13 @@
   }
 
   .menu-cyber {
-      visibility: visible;
-      display: flex;
+    visibility: visible;
   }
 
   .empty-div {
-      visibility: visible;
-      bottom: -45px;
-      background: $fill-cyber;
+    visibility: visible;
+    bottom: -45px;
+    background: $fill-cyber;
   }
 }
 
@@ -275,18 +275,21 @@
         width: $media-xl-width;
 
         li{
-            width: 192px;
+            width: 195px;
         }
     }
 
     .menu {
         width: $media-xl-width;
-        justify-content: space-between;
 
         li {
             width: auto;
-            padding: 0 0 0 30px;
+            font-size: 16px;
         } 
+    }
+
+    .menu li:not(:first-child) {
+        padding: 0 0 0 30px;
     }
 
     .menu li::after {
