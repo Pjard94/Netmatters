@@ -20,6 +20,7 @@ header {
     width: 100%;
     padding: 20px 0;
     display: flex;
+    justify-content: center;
 }
 
 .header-line {
@@ -47,7 +48,7 @@ header {
 .large-menu {
     display: none;
     justify-content: space-between;
-    width: 940px;
+    width: 750px;
 }
 
 // Logo rules
@@ -202,12 +203,17 @@ header {
 {
     display: flex;
     float: left;
-    border: 1px grey solid;
+    border: 1px #ccc solid;
     border-right: none;
     width: 174px;
     height: 56px;
     outline: none;
     margin-right: -1px;
+    padding: 5px 15px;
+}
+
+.search--bar-med::placeholder{
+    color: #c5c5c5;
 }
 
 .search--bar-med:focus {
@@ -368,6 +374,10 @@ header {
 @media screen and (min-width:$breakpoint-large) {
     .search-med {
         display: none;
+    }
+
+    .large-menu{
+        width: 940px;
     }
 
     .support--lrg,

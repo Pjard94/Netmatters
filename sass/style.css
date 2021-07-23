@@ -98,6 +98,7 @@ header {
   width: 100%;
   padding: 20px 0;
   display: flex;
+  justify-content: center;
 }
 
 .header-line {
@@ -125,7 +126,7 @@ header {
 .large-menu {
   display: none;
   justify-content: space-between;
-  width: 940px;
+  width: 750px;
 }
 
 .logo-link {
@@ -274,12 +275,25 @@ header {
 .search--bar-med {
   display: flex;
   float: left;
-  border: 1px grey solid;
+  border: 1px #ccc solid;
   border-right: none;
   width: 174px;
   height: 56px;
   outline: none;
   margin-right: -1px;
+  padding: 5px 15px;
+}
+
+.search--bar-med::-moz-placeholder {
+  color: #c5c5c5;
+}
+
+.search--bar-med:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+.search--bar-med::placeholder {
+  color: #c5c5c5;
 }
 
 .search--bar-med:focus {
@@ -431,6 +445,10 @@ header {
 @media screen and (min-width: 992px) {
   .search-med {
     display: none;
+  }
+
+  .large-menu {
+    width: 940px;
   }
 
   .support--lrg,
@@ -1381,10 +1399,11 @@ header {
   font-size: 20px;
   border-bottom: 4px solid black;
   width: 89px;
-  height: 80px;
-  margin: 20px 0 40px 15px;
+  height: 105px;
+  margin: 0px 0 0px 15px;
   line-height: 24px;
   font-weight: 600;
+  padding: 40px 0 0;
 }
 
 .latest {
@@ -1573,7 +1592,7 @@ header {
   }
 
   .latest__title {
-    margin: 20px 0 40px;
+    margin: 0px 0 0px;
   }
 
   .latest--container {
@@ -1733,18 +1752,21 @@ header {
 .cl--1 .tooltiptext_1 {
   visibility: hidden;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   width: 260px;
   background: #333645;
   color: #ffffff;
-  padding: 0 auto 50px;
+  padding: 20px;
   text-align: center;
   position: absolute;
   z-index: 1;
   bottom: 150%;
   left: 50%;
   margin-left: -130px;
+}
+.cl--1 .tooltiptext_1 p {
+  margin-top: 10px;
 }
 
 .cl--1 .tooltiptext_1::after {
@@ -1765,18 +1787,21 @@ header {
 .cl--2 .tooltiptext_2 {
   visibility: hidden;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   width: 260px;
   background: #333645;
   color: #ffffff;
-  padding: 0 auto 50px;
+  padding: 20px;
   text-align: center;
   position: absolute;
   z-index: 1;
   bottom: 150%;
   left: 50%;
   margin-left: -130px;
+}
+.cl--2 .tooltiptext_2 p {
+  margin-top: 10px;
 }
 
 .cl--2 .tooltiptext_2::after {
@@ -1797,18 +1822,21 @@ header {
 .cl--3 .tooltiptext_3 {
   visibility: hidden;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   width: 260px;
   background: #333645;
   color: #ffffff;
-  padding: 0 auto 50px;
+  padding: 20px;
   text-align: center;
   position: absolute;
   z-index: 1;
   bottom: 150%;
   left: 50%;
   margin-left: -130px;
+}
+.cl--3 .tooltiptext_3 p {
+  margin-top: 10px;
 }
 
 .cl--3 .tooltiptext_3::after {
@@ -1829,18 +1857,21 @@ header {
 .cl--4 .tooltiptext_4 {
   visibility: hidden;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   width: 260px;
   background: #333645;
   color: #ffffff;
-  padding: 0 auto 50px;
+  padding: 20px;
   text-align: center;
   position: absolute;
   z-index: 1;
   bottom: 150%;
   left: 50%;
   margin-left: -130px;
+}
+.cl--4 .tooltiptext_4 p {
+  margin-top: 10px;
 }
 
 .cl--4 .tooltiptext_4::after {
