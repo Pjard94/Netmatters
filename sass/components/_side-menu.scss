@@ -1,0 +1,30 @@
+@use '../absracts/index' as *;
+
+#side-menu {
+    width: 280px;
+    position: fixed;
+    right: -100%;
+    z-index: 10;
+}
+
+.menu-xs {
+    background: $background-color-primary;
+}
+
+main::after {
+    top:     0;
+    right:   0;
+    position: absolute;
+    width:   0;
+    height:  0;
+    opacity: 0;
+    z-index: 10;
+    content: "";
+    background: rgba(0,0,0,.4);
+    transition: opacity .5s,width .1s .5s,height .1s .5s;
+}
+
+.side-menu_large-items::before {
+    content: "\BB";
+    padding-right: 15px;
+}

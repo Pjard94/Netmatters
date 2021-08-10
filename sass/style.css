@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -2679,4 +2680,32 @@ footer i {
     width: 175px;
     height: 44px;
   }
+}
+#side-menu {
+  width: 280px;
+  position: fixed;
+  right: -100%;
+  z-index: 10;
+}
+
+.menu-xs {
+  background: #333645;
+}
+
+main::after {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: 10;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.side-menu_large-items::before {
+  content: "»";
+  padding-right: 15px;
 }/*# sourceMappingURL=style.css.map */
