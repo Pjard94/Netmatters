@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- This helps with internet explorer-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--This helps to set up mobile viewing-->
         <title>Netmatters</title>
+        <!-- allows the jQuery stuff to run -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="sass/style.css">
     </head>
@@ -17,7 +19,7 @@
                         <a>Contact us</a>
                     </li>
                     <li class="side-menu--web">
-                        <a href="#"><span><i class="fas fa-code ci"></i></span>
+                        <a href="#" class="li-head"><span><i class="fas fa-code ci"></i></span>
                             <span><small>Web</small> Design</span></a>
                         <ul>
                             <li><a href="#">Stylish Websites</a></li>
@@ -29,7 +31,7 @@
                         </ul>
                     </li>
                     <li class="side-menu--support">
-                        <a href="#">
+                        <a href="#" class="li-head">
                             <span><i class="fas fa-desktop ci"></i></span>
                             <span><small>IT</small> Support</span>
                         </a>
@@ -43,7 +45,7 @@
                         </ul>
                     </li>
                     <li class="side-menu--telecoms">
-                        <a><span><i class="fas fa-phone-alt ci"></i></span>
+                        <a class="li-head"><span><i class="fas fa-phone-alt ci"></i></span>
                             <span><small>Telecoms</small>Services</span></a>
                         <ul>
                             <li><a href="#">Gigabit Voucher</a></li>
@@ -55,7 +57,7 @@
                         </ul>
                     </li>
                     <li class="side-menu--bespoke">
-                        <a><span><i class="fas fa-th ci"></i></span>
+                        <a class="li-head"><span><i class="fas fa-th ci"></i></span>
                             <span><small>Bespoke</small>Software</span></a>
                         <ul>
                             <li><a href="#">Workflow</a></li>
@@ -67,7 +69,7 @@
                         </ul>
                     </li>
                     <li class="side-menu--marketing">
-                        <a><span><i class="fas fa-chart-line ci"></i></span>
+                        <a class="li-head"><span><i class="fas fa-chart-line ci"></i></span>
                             <span><small>Digital</small>Marketing</span></a>
                         <ul>
                             <li><a href="#">Search (SEO)</a></li>
@@ -79,7 +81,7 @@
                         </ul>
                     </li>
                     <li class="side-menu--security">
-                        <a><span><i class="fas fa-shield-alt ci"></i></span>
+                        <a class="li-head"><span><i class="fas fa-shield-alt ci"></i></span>
                             <span><small>Cyber</small>Security</span></a>
                         <ul>
                             <li><a href="#">Assessment</a></li>
@@ -197,8 +199,8 @@
                             </div>   
 
                             <!-- hamburger -->
-                            <div id="hamburger--more" class="hamburger--more"> 
-                                <a rel="" href="" class="menu-button"><span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span></a>
+                            <div id="hamburger--more" class="hamburger--more menu-button"> 
+                                <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span>
                             </div>
                         
                         </div>
@@ -658,6 +660,7 @@
             </div>
 
         </div>
+        <div id="menu-overlay"></div>
 
         <script src="js/sideMenu.js"></script>
        
