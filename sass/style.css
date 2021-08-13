@@ -765,6 +765,36 @@ header {
   height: 883px;
 }
 
+.slider--support {
+  width: 100%;
+  height: 883px;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/it-support-banner.jpeg);
+}
+
+.slider--telecoms {
+  width: 100%;
+  height: 883px;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/telecomm-services-banner.jpeg);
+}
+
+.slider--bespoke {
+  width: 100%;
+  height: 883px;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/bespoke-design-banner.jpeg);
+}
+
+.slider--marketing {
+  width: 100%;
+  height: 883px;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/digital-marketing-banner.jpeg);
+}
+
+.slider--security {
+  width: 100%;
+  height: 883px;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/cyber-security-banner.jpeg);
+}
+
 .slider--text {
   display: flex;
   justify-content: center;
@@ -782,6 +812,7 @@ header {
   margin-bottom: 25px;
   font-size: 48px;
   line-height: 39px;
+  text-transform: uppercase;
 }
 .slider_text p {
   margin-bottom: 35px;
@@ -790,10 +821,7 @@ header {
   line-height: 36px;
 }
 
-.design-button {
-  margin-top: 10px;
-  padding: 5px 20px;
-  background-color: #926fb1;
+.slider-button {
   color: #ffffff;
   transition: 0.3s ease-out;
   border-radius: 3px;
@@ -802,10 +830,56 @@ header {
   line-height: 50px;
   text-transform: uppercase;
   justify-self: left;
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+
+.design-button {
+  background-color: #926fb1;
 }
 
 .design-button:hover {
   background-color: #7E57A0;
+}
+
+.support-button {
+  background-color: #4183d7;
+}
+
+.support-button:hover {
+  background-color: #4183d7;
+}
+
+.telecoms-button {
+  background-color: #d64541;
+}
+
+.telecoms-button:hover {
+  background-color: #d64541;
+}
+
+.bespoke-button {
+  background-color: #67809f;
+}
+
+.bespoke-button:hover {
+  background-color: #67809f;
+}
+
+.marketing-button {
+  background-color: #2ecc71;
+}
+
+.marketing-button:hover {
+  background-color: #2ecc71;
+}
+
+.security-button {
+  background-color: #f62459;
+}
+
+.security-button:hover {
+  background-color: #f62459;
 }
 
 @media screen and (min-width: 992px) {
@@ -818,17 +892,14 @@ header {
     width: 377px;
   }
 
-  .design-button {
+  .slider-button {
     justify-content: center;
     text-align: left;
+    margin-left: -703px;
   }
 
   .slider_text {
     padding-left: 15px;
-  }
-
-  .design-button {
-    margin-left: -703px;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -837,7 +908,7 @@ header {
     padding-left: 15px;
   }
 
-  .design-button {
+  .slider-button {
     margin-left: -932px;
   }
 }

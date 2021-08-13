@@ -9,6 +9,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="sass/style.css">
+        <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="sass/slick.css"/>
     </head>
     <body>
 
@@ -329,85 +331,93 @@
             </div>
 
             <!-- Slider placeholder -->
-            <div class="slider-autoplay">
-                <div class="slider--area slider--web">
+            <div class="slider-autoplay slides slick slick-initialise slick-slider slick-dotted">
+                <div class="slider--area slider--web slick-slide">
 
                     <div class="slider--text">
 
                         <div class="slider_text">
-                            <h1>Web Design </h1>
+                            <h1>Web Design</h1>
                             <p>For businesses looking to make a strong and effective first impression.</p>
                         </div>
                         
-                        <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        <button class="design-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
                         
                     </div>
                 </div>
-                <div class="slider--area slider--support">
+                <div class="slider--area slider--support slick-slide">
 
                     <div class="slider--text">
 
                         <div class="slider_text">
-                            <h1>Web Design </h1>
+                            <h1>IT Support</h1>
                             <p>For businesses looking to make a strong and effective first impression.</p>
                         </div>
                         
-                        <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        <button class="support-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
                         
                     </div>
                 </div>
-                <div class="slider--area slider--telecoms">
+                <div class="slider--area slider--telecoms slick-slide">
 
                     <div class="slider--text">
 
                         <div class="slider_text">
-                            <h1>Web Design </h1>
+                            <h1>Telecoms Service</h1>
                             <p>For businesses looking to make a strong and effective first impression.</p>
                         </div>
                         
-                        <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        <button class="telecoms-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
                         
                     </div>
                 </div>
-                <div class="slider--area slider--bespoke">
+                <div class="slider--area slider--bespoke slick-slide">
 
                     <div class="slider--text">
 
                         <div class="slider_text">
-                            <h1>Web Design </h1>
+                            <h1>Bespoke Design</h1>
                             <p>For businesses looking to make a strong and effective first impression.</p>
                         </div>
                         
-                        <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        <button class="bespoke-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
                         
                     </div>
                 </div>
-                <div class="slider--area slider--marketing">
+                <div class="slider--area slider--marketing slick-slide">
 
                     <div class="slider--text">
 
                         <div class="slider_text">
-                            <h1>Web Design </h1>
+                            <h1>Digital Marketing</h1>
                             <p>For businesses looking to make a strong and effective first impression.</p>
                         </div>
                         
-                        <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        <button class="marketing-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
                         
                     </div>
                 </div>
-                <div class="slider--area slider--security">
+                <div class="slider--area slider--security slick-slide">
 
                     <div class="slider--text">
 
                         <div class="slider_text">
-                            <h1>Web Design </h1>
-                            <p>For businesses looking to make a strong and effective first impression.</p>
+                            <h1>Cyber Security</h1>
+                            <p>Keeping businesses and their customers sensitive information protected.</p>
                         </div>
                         
-                        <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        <button class="security-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
                         
                     </div>
                 </div>
+                <!-- <ul class="slick-dots">
+                    <li role="presentation"><button></button></li>
+                    <li role="presentation"><button></button></li>
+                    <li role="presentation"><button></button></li>
+                    <li role="presentation"><button></button></li>
+                    <li role="presentation"><button></button></li>
+                    <li role="presentation"><button></button></li>
+                </ul> -->
             </div>
             <!-- End of slider placeholder -->
 
@@ -730,8 +740,14 @@
         <div id="menu-overlay"></div>
 
         <script src="js/sideMenu.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="js/carousel.js"></script>
-       
+        <script src="js/slick.min.js"></script>
+        <script>
+            $('.slides').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        </script>
     </body>
 </html>
