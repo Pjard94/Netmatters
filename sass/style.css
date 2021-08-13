@@ -882,6 +882,22 @@ header {
   background-color: #f62459;
 }
 
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff;
+  opacity: 1;
+  border: #ffffff 2px solid;
+  border-radius: 25px;
+}
+
 @media screen and (min-width: 992px) {
   .slider_text {
     align-content: left;

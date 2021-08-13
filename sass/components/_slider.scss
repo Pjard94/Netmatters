@@ -140,9 +140,21 @@
     background-color: $fill-cyber;
 }
 
-@media screen and (min-width:$breakpoint-medium) {
-    
+.slick-dots {
+    bottom: 25px;
 }
+
+.slick-dots li button:before{
+    font-size: 15px;
+    color: $white;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $white;
+    opacity: 1;
+    border: $white 2px solid;
+    border-radius: 25px;
+  }
 
 @media screen and (min-width:$breakpoint-large) {
 
