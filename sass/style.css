@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -749,6 +748,7 @@ header {
   }
 }
 .slider--area {
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/asset-3.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -757,12 +757,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.slider--web {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/asset-3.jpeg);
-  width: 100%;
-  height: 883px;
 }
 
 .slider--text {
@@ -2680,185 +2674,5 @@ footer i {
   .bw--5 {
     width: 175px;
     height: 44px;
-  }
-}
-#side-menu {
-  width: 280px;
-  height: 100%;
-  position: fixed;
-  right: 0;
-  z-index: 100;
-  transform: translateX(280px);
-  transition: transform ease-in 250ms;
-  overflow-y: auto;
-  background: #333645;
-}
-#side-menu a {
-  color: #ffffff;
-}
-
-.small-menu-items {
-  padding: 19px 0 18px;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 16px;
-  background-color: #22242E;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.first-li {
-  border-top: none;
-  border-radius: 3px 3px 0 0;
-}
-
-.last-li {
-  border-radius: 0 0 3px 3px;
-}
-
-.menu-xs {
-  background: #333645;
-  padding: 21px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.web-icon {
-  color: #926fb1;
-}
-
-.support-icon {
-  color: #4183d7;
-}
-
-.telecoms-icon {
-  color: #d64541;
-}
-
-.bespoke-icon {
-  color: #4183d7;
-}
-
-.marketing-icon {
-  color: #2ecc71;
-}
-
-.security-icon {
-  color: #f62459;
-}
-
-.li-head {
-  display: block;
-  height: 100px;
-  width: 220px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  outline: 1px solid rgba(0, 0, 0, 0.25);
-  margin: 20px 0;
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 6px 0 18px;
-  text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-}
-.li-head span {
-  display: block;
-}
-.li-head small {
-  display: block;
-  font-size: 10px;
-}
-
-.side-menu--contact:hover,
-.li-head:hover {
-  background-color: #494d62;
-}
-
-.side-menu--contact {
-  width: 220px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  outline: 1px solid rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-  padding: 15px 0 18px;
-}
-
-#menu-overlay {
-  top: 0;
-  right: 0;
-  position: fixed;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  z-index: 10;
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  transition: opacity ease-in 250ms;
-  cursor: pointer;
-}
-
-.large-menu-group {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.large-menu-header {
-  background-color: #333645;
-  padding: 16px;
-  text-transform: uppercase;
-  width: 258px;
-  height: 56px;
-  display: block;
-  font-size: 16px;
-}
-
-.large-menu-items {
-  background-color: #22242E;
-  padding: 15px;
-  font-size: 14px;
-  text-transform: uppercase;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.side-menu_large-items::before {
-  content: "»";
-  padding-right: 15px;
-}
-
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  scroll-behavior: none;
-}
-
-.large-menu-group:hover .large-menu-header {
-  background-color: #494d62;
-}
-
-#main {
-  transform: translateX(0);
-  transition: transform ease-in 250ms;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 1000px;
-}
-
-.menu-showing #menu-overlay {
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-}
-.menu-showing #side-menu {
-  transform: translateX(0px);
-}
-.menu-showing #main {
-  transform: translateX(-280px);
-}
-
-@media screen and (min-width: 992px) {
-  .menu-xs {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
