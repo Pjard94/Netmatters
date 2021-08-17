@@ -1,3 +1,5 @@
+// this si the coding for the side menu
+
 const smallHamburger = document.getElementById('hamburger--sm');
 const hamburger = document.getElementById('hamburger--more');
 const body = document.body;
@@ -23,3 +25,20 @@ hamburger.addEventListener('click', function () {
        binary = 1;
     }
 })
+
+
+// This will be the sticky header coding
+
+const main = document.getElementById('main');
+
+let a = main.scrollTop;
+let b = main.scrollHeight - window.innerHeight;
+let scrollPosition = a / b;
+
+main.onscroll = function () {stickyHeader()}
+
+function stickyHeader() {
+    console.log('scroll detected');
+    console.log(scrollPosition);
+    document.getElementById('header').classList.add('sticky');
+}

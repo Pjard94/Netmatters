@@ -1,11 +1,11 @@
 const accept = document.getElementById('cookie-accept-button');
+const cookieModal = document.getElementById("cookie-container")
 
 window.addEventListener('load', function () {
-    document.getElementById("cookie-container").classList.add('cookie-check');
-    document.body.classList.add('modal-showing');
+    cookieModal.classList.add('cookie-check');
 })
 
 accept.addEventListener('click', function(){
-    document.getElementById("cookie-container").classList.remove('cookie-check')
-    document.body.classList.remove('modal-showing');
+    cookieModal.classList.remove('cookie-check');
+    document.getElementById('cookie-container').style.display = "none";
 })

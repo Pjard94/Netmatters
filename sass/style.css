@@ -752,7 +752,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 883px;
+  height: 780px;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -762,36 +762,36 @@ header {
 .slider--web {
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/asset-3.jpeg);
   width: 100%;
-  height: 883px;
+  height: 780px;
 }
 
 .slider--support {
   width: 100%;
-  height: 883px;
+  height: 780px;
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/it-support-banner.jpeg);
 }
 
 .slider--telecoms {
   width: 100%;
-  height: 883px;
+  height: 780px;
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/telecomm-services-banner.jpeg);
 }
 
 .slider--bespoke {
   width: 100%;
-  height: 883px;
+  height: 780px;
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/bespoke-design-banner.jpeg);
 }
 
 .slider--marketing {
   width: 100%;
-  height: 883px;
+  height: 780px;
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/digital-marketing-banner.jpeg);
 }
 
 .slider--security {
   width: 100%;
-  height: 883px;
+  height: 780px;
   background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/cyber-security-banner.jpeg);
 }
 
@@ -800,7 +800,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 883px;
+  height: 780px;
   flex-direction: column;
 }
 
@@ -2957,26 +2957,43 @@ body {
   align-items: center;
   z-index: 100;
   position: fixed;
-  padding: 20px;
+  padding: 30px;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 #cookie-modal {
   display: none;
   flex-wrap: wrap;
-  max-width: 500px;
+  max-width: 598px;
   height: auto;
   background-color: #ffffff;
   border-radius: 3px;
 }
 
 #cookie-modal-header {
-  padding: 15px 20px;
+  padding: 25px 20px 15px;
+  width: 100%;
+  height: 68px;
+}
+
+#cookie-header {
+  font-size: 26px;
 }
 
 #cookie-modal-paragraphs {
   padding: 15px 20px;
   border-top: #e5e5e5 1px solid;
   border-bottom: #e5e5e5 1px solid;
+}
+#cookie-modal-paragraphs p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 30px;
 }
 
 #cookie-modal-paragraphs div:first-child {
@@ -2987,13 +3004,14 @@ body {
   width: 100%;
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 #cookie-settings-button {
   background-color: #999aa2;
   width: 100%;
   color: #ffffff;
-  padding: 5px 15px;
   border-radius: 3px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -3008,7 +3026,6 @@ body {
   background-color: #926fb1;
   width: 100%;
   color: #ffffff;
-  padding: 5px 15px;
   border-radius: 3px;
   text-transform: uppercase;
   line-height: 35px;
@@ -3018,6 +3035,11 @@ body {
   background-color: #7E57A0;
 }
 
+#cookie-accept-button,
+#cookie-settings-button {
+  height: 47px;
+  padding: 7px 15px 15px;
+}
 #cookie-accept-button a,
 #cookie-settings-button a {
   height: 47px;
@@ -3031,16 +3053,27 @@ body {
 }
 
 .modal-showing #menu-overlay {
-  opacity: 0.5;
+  opacity: 0.7;
   width: 100%;
   height: 100%;
 }
 
 @media screen and (min-width: 768px) {
+  #cookie-buttons {
+    padding: 20px 0;
+    flex-direction: row;
+  }
+
   #cookie-accept-button,
 #cookie-settings-button {
-    width: 50%;
     display: inline;
-    margin: 0;
+    margin: 0 15px;
+    width: 294px;
   }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
 }/*# sourceMappingURL=style.css.map */
