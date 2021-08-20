@@ -30,15 +30,34 @@ hamburger.addEventListener('click', function () {
 // This will be the sticky header coding
 
 const main = document.getElementById('main');
+let sticker = document.getElementById('sticker');
+let thershold = 209;
+let curScroll;
+let prevScroll;
+let hasScrolled;
 
-let a = main.scrollTop;
-let b = main.scrollHeight - window.innerHeight;
-let scrollPosition = a / b;
 
-main.onscroll = function () {stickyHeader()}
+    main.addEventListener('scroll', function(){
+        hasScrolled = true;
+        curScroll = main.scrollTop;
+    })
 
-function stickyHeader() {
-    console.log('scroll detected');
-    console.log(scrollPosition);
-    document.getElementById('header').classList.add('sticky');
-}
+    function headerToggle() {
+        
+        if(prevScroll > curScroll){
+            main.classList.remove('hideHeader');
+            // console.log('header should reveal');
+        } else {
+            main.classList.add('hideHeader');
+            // console.log('header should be hidden')
+        } 
+        
+    }
+
+    setInterval(function() {
+        if (hasScrolled === true) {
+            headerToggle();
+            prevScroll = curScroll;
+            hasScrolled = false;
+        } 
+    }, 250);

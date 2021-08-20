@@ -1,8 +1,41 @@
 @use '../absracts/index' as *;
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 20;
+#sticker {
+    height: 209px;
+    width: 100vw;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+    
 }
+
+.showHeader {
+    position: sticky;
+    top: 0;
+}
+
+.hideHeader {
+    .showHeader {
+       position: static; 
+    }
+    
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    #main {
+        padding-top: 209px;
+    }
+    #sticker {
+        position: fixed;
+        top: 0;
+        overflow-x: hidden;
+    }
+
+    .hideHeader {
+    #sticker {
+      top: -209px;  
+    }
+    
+}
+}
+
