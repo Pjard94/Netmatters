@@ -114,14 +114,6 @@
       }
 }
 
-// @media screen and (min-width:280px) and (max-width:500px) {
-
-//     #cookie-container {
-//         display: block;
-//         overflow: auto;
-//     }
-// }
-
 @media screen and (min-width:$breakpoint-medium) {
     #cookie-buttons {
         padding: 20px 0;
