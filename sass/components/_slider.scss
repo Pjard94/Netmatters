@@ -154,6 +154,10 @@
     opacity: 1;
     border: $white 2px solid;
     border-radius: 25px;
+    display: block;
+    position: absolute;
+    top: calc(50% - (35px / 2));
+    left: calc(50% - (35px / 2));
   }
 
 @media screen and (min-width:$breakpoint-large) {

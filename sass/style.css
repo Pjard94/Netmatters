@@ -897,6 +897,10 @@ header {
   opacity: 1;
   border: #ffffff 2px solid;
   border-radius: 25px;
+  display: block;
+  position: absolute;
+  top: calc(50% - (35px / 2));
+  left: calc(50% - (35px / 2));
 }
 
 @media screen and (min-width: 992px) {
