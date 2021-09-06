@@ -149,16 +149,20 @@
     color: $white;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button {
     color: $white;
-    opacity: 1;
-    border: $white 2px solid;
-    border-radius: 25px;
     display: block;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    // border: $white 1px solid;
+    border-radius: 100%;
     position: absolute;
-    top: calc(50% - (35px / 2));
-    left: calc(50% - (35px / 2));
-  }
+    color: $white;
+    // top: calc(50% - (35px / 2));
+    // left: calc(50% - (35px / 2));
+}
 
 @media screen and (min-width:$breakpoint-large) {
 

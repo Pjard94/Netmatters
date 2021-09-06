@@ -892,15 +892,16 @@ header {
   color: #ffffff;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button {
   color: #ffffff;
-  opacity: 1;
-  border: #ffffff 2px solid;
-  border-radius: 25px;
   display: block;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  border-radius: 100%;
   position: absolute;
-  top: calc(50% - (35px / 2));
-  left: calc(50% - (35px / 2));
+  color: #ffffff;
 }
 
 @media screen and (min-width: 992px) {

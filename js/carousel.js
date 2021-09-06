@@ -5,8 +5,10 @@ $('.slides').slick({
     autoplaySpeed: 4000,
     arrows:false,
     dots:true,
-    // pauseOnHover: false,
-    // pauseOnFocus: false,
-    // pauseOnDots: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    pauseOnDots: false,
     swipe: true
 });
+
+
