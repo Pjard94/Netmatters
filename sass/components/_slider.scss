@@ -141,11 +141,11 @@
 }
 
 .slick-dots {
-    bottom: 25px;
+    bottom: 24px;
 }
 
 .slick-dots li button:before{
-    font-size: 15px;
+    font-size: 0.8rem;
     color: $white;
 }
 
@@ -156,12 +156,10 @@
 
 .slick-dots li.slick-active button:before {
     opacity: 1;
-    // border: $white 1px solid;
+    border: $white 2px solid;
     border-radius: 100%;
     position: absolute;
     color: $white;
-    // top: calc(50% - (35px / 2));
-    // left: calc(50% - (35px / 2));
 }
 
 @media screen and (min-width:$breakpoint-large) {

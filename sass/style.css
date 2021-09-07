@@ -884,11 +884,11 @@ header {
 }
 
 .slick-dots {
-  bottom: 25px;
+  bottom: 24px;
 }
 
 .slick-dots li button:before {
-  font-size: 15px;
+  font-size: 0.8rem;
   color: #ffffff;
 }
 
@@ -899,6 +899,7 @@ header {
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
+  border: #ffffff 2px solid;
   border-radius: 100%;
   position: absolute;
   color: #ffffff;
