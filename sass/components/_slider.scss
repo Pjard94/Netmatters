@@ -140,6 +140,7 @@
     background-color: $fill-cyber;
 }
 
+// Carousel dots styling
 .slick-dots {
     bottom: 24px;
 }
@@ -162,6 +163,7 @@
     color: $white;
 }
 
+// Media queries
 @media screen and (min-width:$breakpoint-large) {
 
     .slider_text {
