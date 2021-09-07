@@ -890,6 +890,8 @@ header {
 .slick-dots li button:before {
   font-size: 0.8rem;
   color: #ffffff;
+  width: 18px;
+  height: 17px;
 }
 
 .slick-dots li.slick-active button {
@@ -3103,6 +3105,7 @@ body {
     position: fixed;
     top: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .hideHeader #sticker {
