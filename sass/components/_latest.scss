@@ -102,16 +102,12 @@
     position: relative;
 }
 
-.art-head1,
-.art-head2,
-.art-head3 {
+.article-header-all{
     font-weight: 600;
     line-height: 24px;
 }
 
-.Read-more1,
-.Read-more2,
-.Read-more3 {
+.read-more-all {
     font-size: 17px;
     line-height: $secondary-lineheight;
     border-radius: 3px;
@@ -252,6 +248,7 @@
         img{
             opacity: 0.80;
             transform: scale(1.05); 
+            transition: transform .25s;
         }
     }
     

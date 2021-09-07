@@ -7,6 +7,7 @@
     height: auto;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .row--n {
@@ -67,6 +68,9 @@ label.required:after
     display: flex;
     margin: 0 5px 0 0;
 }
+.entry label {
+    font-weight: 600;
+}
 
 // Privacy policy rules
 .Privacy:link,
@@ -84,9 +88,10 @@ label.required:after
 .sub-button {
     color: $white;
     background-color: $color;
-    padding: 10px;
+    padding: 5px 15px;
     border: none;
-    border-radius: 8%;
+    border-radius: 3px;
+    line-height: 35px;
 }
 
 .sub-button:hover {
@@ -97,6 +102,7 @@ label.required:after
 // Search box rules
 .row--n input {
     border: none;
+    padding: 5px 15px;
 }
 
 .row--n input:focus {
