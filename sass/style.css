@@ -59,6 +59,11 @@ table {
   line-height: 1.375rem;
 }
 
+body {
+  width: 100vw;
+  height: 100%;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -484,6 +489,10 @@ header {
 
   .search--bar-med {
     width: 240px;
+  }
+
+  .logo {
+    height: 64px;
   }
 }
 .navbar {
@@ -1391,7 +1400,7 @@ header {
 
 .latest--title {
   display: flex;
-  width: 710px;
+  width: 100%;
   height: 104px;
   margin: auto;
 }
@@ -1584,6 +1593,10 @@ header {
   }
 }
 @media screen and (min-width: 768px) {
+  .latest--title {
+    width: 720px;
+  }
+
   .latest--title {
     width: 720px;
   }
@@ -2127,6 +2140,7 @@ label.required:after {
 .entry {
   float: left;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .entry > * {
@@ -2399,7 +2413,7 @@ footer i {
   }
 
   .social-media-buttons {
-    width: 240px;
+    width: 110px;
   }
 }
 .awards {
