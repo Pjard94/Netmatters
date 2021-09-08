@@ -483,6 +483,14 @@ header {
   .search--lrg {
     display: none;
   }
+
+  .search--bar-med {
+    width: 240px;
+  }
+
+  .logo {
+    height: 64px;
+  }
 }
 .navbar {
   width: 100%;
@@ -1426,6 +1434,7 @@ header {
   height: 47px;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
 }
 
 .but--cult {
@@ -1488,7 +1497,7 @@ header {
 
 .latest--title {
   display: flex;
-  width: 710px;
+  width: 100%;
   height: 104px;
   margin: auto;
 }
@@ -1578,16 +1587,12 @@ header {
   position: relative;
 }
 
-.art-head1,
-.art-head2,
-.art-head3 {
+.article-header-all {
   font-weight: 600;
   line-height: 24px;
 }
 
-.Read-more1,
-.Read-more2,
-.Read-more3 {
+.read-more-all {
   font-size: 17px;
   line-height: 35px;
   border-radius: 3px;
@@ -1713,6 +1718,7 @@ header {
   .main-img:hover img {
     opacity: 0.8;
     transform: scale(1.05);
+    transition: transform 0.25s;
   }
 
   .n--a3 {
@@ -2226,11 +2232,16 @@ label.required:after {
 .entry {
   float: left;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .entry > * {
   display: flex;
   margin: 0 5px 0 0;
+}
+
+.entry label {
+  font-weight: 600;
 }
 
 .Privacy:link,
@@ -2246,9 +2257,10 @@ label.required:after {
 .sub-button {
   color: #ffffff;
   background-color: #22242E;
-  padding: 10px;
+  padding: 5px 15px;
   border: none;
-  border-radius: 8%;
+  border-radius: 3px;
+  line-height: 35px;
 }
 
 .sub-button:hover {
@@ -2258,6 +2270,7 @@ label.required:after {
 
 .row--n input {
   border: none;
+  padding: 5px 15px;
 }
 
 .row--n input:focus {
@@ -2379,6 +2392,7 @@ footer {
 
 footer h3 {
   font-size: 16px;
+  margin: 0 0 26px;
 }
 
 .column {
@@ -2398,7 +2412,12 @@ footer a {
 }
 
 footer a:visited {
-  color: black;
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 footer ul {
@@ -2486,6 +2505,10 @@ footer i {
 
   .column {
     flex: 25%;
+  }
+
+  .social-media-buttons {
+    width: 110px;
   }
 }
 .awards {
@@ -2937,8 +2960,7 @@ body {
   transform: translateX(0);
   transition: transform ease-in 250ms;
   overflow-y: scroll;
-  overflow-x: hidden;
-  height: 1000px;
+  height: 1024px;
 }
 
 .menu-showing #menu-overlay {

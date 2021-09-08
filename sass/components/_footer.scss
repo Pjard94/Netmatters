@@ -18,6 +18,7 @@ footer {
 
 footer h3 {
     font-size: $primary-fontsize;
+    margin: 0 0 26px;
 }
 
 .column {
@@ -37,7 +38,12 @@ footer a {
 }
 
 footer a:visited {
-    color: black;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 footer ul {
@@ -132,5 +138,9 @@ footer i {
 
     .column {
         flex: 25%;
+    }
+
+    .social-media-buttons {
+        width: 110px;
     }
 }
