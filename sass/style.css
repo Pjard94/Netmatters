@@ -841,6 +841,7 @@ header {
   justify-self: left;
   margin-top: 10px;
   padding: 5px 20px;
+  cursor: pointer;
 }
 
 .design-button {
@@ -856,7 +857,7 @@ header {
 }
 
 .support-button:hover {
-  background-color: #4183d7;
+  background-color: #286abd;
 }
 
 .telecoms-button {
@@ -864,7 +865,7 @@ header {
 }
 
 .telecoms-button:hover {
-  background-color: #d64541;
+  background-color: #bc2c28;
 }
 
 .bespoke-button {
@@ -872,7 +873,7 @@ header {
 }
 
 .bespoke-button:hover {
-  background-color: #67809f;
+  background-color: #526781;
 }
 
 .marketing-button {
@@ -880,7 +881,7 @@ header {
 }
 
 .marketing-button:hover {
-  background-color: #2ecc71;
+  background-color: #25a25a;
 }
 
 .security-button {
@@ -888,7 +889,7 @@ header {
 }
 
 .security-button:hover {
-  background-color: #f62459;
+  background-color: #de093f;
 }
 
 .slick-dots {
@@ -3103,7 +3104,7 @@ body {
   }
 }
 #sticker {
-  height: 209px;
+  height: auto;
   width: 100vw;
   z-index: 10;
   transition: all 0.4s ease-in-out;

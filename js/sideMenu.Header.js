@@ -7,22 +7,26 @@ const page = document.getElementById('menu-overlay')
 let binary = 0;
 
 page.addEventListener('click', function (){
-    body.classList.remove('menu-showing')
-    body.classList.remove('large-menu-showing')
+    body.classList.remove('menu-showing');
+    body.classList.remove('large-menu-showing');
+    smallHamburger.classList.remove('is-active');
+    hamburger.classList.remove('is-active');
     binary = 0;
 })
 
 smallHamburger.addEventListener('click', function () {
     if (binary === 0) {
-       body.classList.add('menu-showing'); 
+       smallHamburger.classList.add('is-active');
+       body.classList.add('menu-showing');
        binary = 1;
     }
 })
 
 hamburger.addEventListener('click', function () {
     if (binary === 0) {
-       body.classList.add('menu-showing'); 
-       binary = 1;
+        hamburger.classList.add('is-active');
+        body.classList.add('menu-showing'); 
+        binary = 1;
     }
 })
 

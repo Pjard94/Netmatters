@@ -88,7 +88,8 @@
     text-transform: uppercase;
     justify-self:left;
     margin-top: 10px;
-    padding: 5px 20px
+    padding: 5px 20px;
+    cursor: pointer;
 }
 
 .design-button {
@@ -104,7 +105,7 @@
 }
 
 .support-button:hover {
-    background-color: $fill-supp;
+    background-color: darken($fill-supp, 10);
 }
 
 .telecoms-button {
@@ -112,7 +113,7 @@
 }
 
 .telecoms-button:hover {
-    background-color: $fill-telecoms;
+    background-color: darken($fill-telecoms, 10);
 }
 
 
@@ -121,7 +122,7 @@
 }
 
 .bespoke-button:hover {
-    background-color: $fill-bespoke;
+    background-color: darken($fill-bespoke, 10);
 }
 
 .marketing-button {
@@ -129,7 +130,7 @@
 }
 
 .marketing-button:hover {
-    background-color: $fill-market;
+    background-color: darken($fill-market, 10);
 }
 
 .security-button {
@@ -137,7 +138,7 @@
 }
 
 .security-button:hover {
-    background-color: $fill-cyber;
+    background-color: darken($fill-cyber, 10);
 }
 
 // Carousel dots styling
