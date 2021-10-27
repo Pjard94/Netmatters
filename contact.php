@@ -15,10 +15,12 @@
     </head>
     <body>
 
-    <?php include("inc/header.php") ?>
+        <?php include("inc/sidemenu.php"); ?>
+
+        <?php include("inc/header.php") ?>
 
 
-    <?php include("inc/newsletterSub.php") ?>
+        <?php include("inc/newsletterSub.php") ?>
 
-    <?php include("inc/footer.php") ?>
+        <?php include("inc/footer.php") ?>
     </body>
