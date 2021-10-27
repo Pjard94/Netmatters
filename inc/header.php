@@ -1,5 +1,3 @@
-<?php
-
 <div id="sticker" class="showHeader">
 
                 <header id="header">
@@ -193,5 +191,3 @@
                 </div>
 
             </div>
-
- ?>
