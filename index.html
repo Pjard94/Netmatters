@@ -6,196 +6,302 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--This helps to set up mobile viewing-->
         <title>Netmatters</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="sass/slick.css"/>
+        <link rel="stylesheet" href="sass/slick-theme.css">
+        <link rel="stylesheet" href="sass/hamburgers.css">
         <link rel="stylesheet" href="sass/style.css">
+        
     </head>
     <body>
 
 
+        <div id="cookie-container">
+            <div id="cookie-modal">
+                <div id="cookie-modal-header"><h3 id="cookie-header">Cookies Policy</h3></div>
+                <div id="cookie-modal-paragraphs">
+                    <div><p>We use cookies to obtain aggregate data regarding site traffic and interaction, in order to identify user trends and obtain insights in order to continually improve our site. These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.</p></div>
+                    <div><p>You can see a list of the other companies who use cookies on this website, by visiting cookie settings at the bottom of each page. For full details of how we use your personal information, and your rights in relation to it, view our privacy policy.</p></div>
+                </div>
+                <div id="cookie-buttons">
+                    <div id="cookie-settings-button"><a href="#">Change Settings</a></div>
+                    <div id="cookie-accept-button"><a href="#">Accept Cookies</a></div>
+                </div>
+            </div>
+        </div>
         <div id="main">
-            <header>
-                
-                <div class="header">
 
-                    <div class="topline">
+            <div id="sticker" class="showHeader">
 
-                        <div class="small-menu">
-
-                            <div class="small-menu-top">
+                <header id="header">
                     
-                                <a class="logo-link logo-small" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
-                                
-                                <div class="small-menu-top-buttons">
-                                
-                                    <a href="#" rel="Support page" class="sup-but-sm"><i class="fas fa-phone-alt"></i></a>
+                    <div class="header">
+
+                        <div class="topline">
+
+                            <div class="small-menu">
+
+                                <div class="small-menu-top">
+                        
+                                    <a class="logo-link logo-small" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
                                     
-                                    <a id="hamburger--sm" class="menu-button hamburger--sm"><span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span></a>
+                                    <div class="small-menu-top-buttons">
+                                    
+                                        <a href="#" rel="Support page" class="sup-but-sm"><i class="fas fa-phone-alt"></i></a>
+                                        
+                                        <!-- <a id="hamburger--sm" class="menu-button hamburger--sm"><span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span></a> -->
+
+                                        <button id="hamburger--sm" class="hamburger hamburger--spin menu-button hamburger--sm" type="button">
+                                            <span class="hamburger-box">
+                                              <span class="hamburger-inner"></span>
+                                            </span>
+                                            <span class="menu__word">Menu</span>
+                                        </button>
+
+                                    </div>
 
                                 </div>
+                                <!-- The search bar -->
+                                
+                                <div class="search-form-small">    
+                                    <input type="text" placeholder="Search ..." class="search--bar-sm">
+                                    <button type="submit" class="search--button-sm"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
 
-                            </div>
-                            <!-- The search bar -->
+                            <div class="large-menu">
+
+                                <a class="logo-link logo-larger" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
+                                
+                                <a class="support--lrg"><i class="fas fa-mouse"></i> SUPPORT</a>
+
+                                <a class="contact--lrg"><i class="fas fa-paper-plane"></i>CONTACT</a>
+
+                                <button type="submit" class="search--lrg"><i class="fas fa-search"></i></button>
+                
+                                <!-- medium and xl search bar -->
+
+                                <div class="search-med">
+                                    <input type="text" placeholder="Search ..." class="search--bar-med">
+                                    <button type="submit" class="search--button-med"><i class="fas fa-search"></i></button>
+                                </div>   
+
+                                <!-- hamburger -->
+                                <!-- <div id="hamburger--more" class="hamburger--more menu-button"> 
+                                    <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span>
+                                </div> -->
+
+                                <button id="hamburger--more" class="hamburger hamburger--spin menu-button hamburger--more" type="button">
+                                    <span class="hamburger-box">
+                                      <span class="hamburger-inner"></span>
+                                    </span>
+                                    <span class="menu__word">Menu</span>
+                                </button>
                             
-                            <div class="search-form-small">    
-                                <input type="text" placeholder="Search ..." class="search--bar-sm">
-                                <button type="submit" class="search--button-sm"><i class="fas fa-search"></i></button>
                             </div>
+
                         </div>
 
-                        <div class="large-menu">
 
-                            <a class="logo-link logo-larger" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
-                            
-                            <a class="support--lrg"><i class="fas fa-mouse"></i> SUPPORT</a>
+                    </div> <!-- the class header div end-->
+                </header>
 
-                            <a class="contact--lrg"><i class="fas fa-paper-plane"></i>CONTACT</a>
+                <div class="navbar">
 
-                            <button type="submit" class="search--lrg"><i class="fas fa-search"></i></button>
+                    <div class="navbar-container">
             
-                            <!-- medium and xl search bar -->
-
-                            <div class="search-med">
-                                <input type="text" placeholder="Search ..." class="search--bar-med">
-                                <button type="submit" class="search--button-med"><i class="fas fa-search"></i></button>
-                            </div>   
-
-                            <!-- hamburger -->
-                            <div id="hamburger--more" class="hamburger--more menu-button"> 
-                                <span class="menu-line"></span><span class="menu-line"></span><span class="menu-line"></span><span class="menu__word">Menu</span>
-                            </div>
-                        
-                        </div>
-
+                        <ul class="navbar-main">
+            
+                            <li class="web">
+                                <a href="">
+                                    <i class="fas fa-code ci"></i>
+                                    <span class="small">Web</span>
+                                    <span class="large">Design</span>
+                                </a>
+            
+                                <div class="empty-div"></div>
+                                <ul class="menu-web menu">
+                                    <li><a href="#">Stylish websites</a></li>
+                                    <li><a href="#">Ecommerce stores</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">Apps</a></li>
+                                    <li><a href="#">Web hosting</a></li>
+                                    <li><a href="#">Pay monthly websites</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="IT">
+                                <a href="">
+                                    <i class="fas fa-desktop ci"></i>
+                                    <span class="small">IT</span>
+                                    <span class="large">Support</span>
+                                </a>
+            
+                                <div class="empty-div"></div>
+                                <ul class="menu-it menu">
+                                    <li><a href="#">MANAGED IT</a></li>
+                                    <li><a href="#">BUSINESS IT</a></li>
+                                    <li><a href="#">OFFICE 365</a></li>
+                                    <li><a href="#">CONSULTANCY</a></li>
+                                    <li><a href="#">CLOUD PROVIDER</a></li>
+                                    <li><a href="#">DATA BACKUP</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="telecoms">
+                                <a href="">
+                                    <i class="fas fa-phone-alt ci"></i>
+                                    <span class="small">Telecoms</span>
+                                    <span class="large">Services</span>
+                                </a>
+            
+                                <div class="empty-div"></div>
+                                <ul class="menu-telecoms menu">
+                                    <li><a href="#">GIGABIT VOUCHER</a></li>
+                                    <li><a href="#">HOSTED VOIP</a></li>
+                                    <li><a href="#">BUSINESS VOIP</a></li>
+                                    <li><a href="#">BUSINESS BROADBAND</a></li>
+                                    <li><a href="#">LEASED LINE</a></li>
+                                    <li><a href="#">3CX SYSTEMS</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="bespoke">
+                                <a href="">
+                                    <i class="fas fa-th ci"></i>
+                                    <span class="small">Bespoke</span>
+                                    <span class="large">Software</span>
+                                </a>
+            
+                                <div class="empty-div"></div>
+                                <ul class="menu-bespoke menu">
+                                    <li><a href="#">WORKFLOW</a></li>
+                                    <li><a href="#">AUTOMATION</a></li>
+                                    <li><a href="#">INTEGRATION</a></li>
+                                    <li><a href="#">DATABASE</a></li>
+                                    <li><a href="#">SHAREPOINT</a></li>
+                                    <li><a href="#">BUSINESS MANAGEMENT</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="digital">
+                                <a href="">
+                                    <i class="fas fa-chart-line ci"></i>
+                                    <span class="small">Digital</span>
+                                    <span class="large">Marketing</span>
+                                </a>
+            
+                                <div class="empty-div"></div>
+                                <ul class="menu-marketing menu">
+                                    <li><a href="#">SEARCH (SEO)</a></li>
+                                    <li><a href="#">PAID (PPC)</a></li>
+                                    <li><a href="#">CONVERSION (CRO)</a></li>
+                                    <li><a href="#">EMAIL</a></li>
+                                    <li><a href="#">SOCIAL MEDIA</a></li>
+                                    <li><a href="#">CONTENT</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="cyber">
+                                <a href="">
+                                    <i class="fas fa-shield-alt ci"></i>
+                                    <span class="small">Cyber</span>
+                                    <span class="large">Security</span>
+                                </a>
+            
+                                <div class="empty-div"></div>
+                                <ul class="menu-cyber menu">
+                                    <li><a href="#">ASSESSMENT</a></li>
+                                    <li><a href="#">MANAGEMENT</a></li>
+                                    <li><a href="#">PENETRATION TESTING</a></li>
+                                    <li><a href="#">CYBER ESSENTIALS</a></li>
+                                    <li><a href="#">PCI/DSS</a></li>
+                                    <li><a href="#">HACKER PREVENTION</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-
-
-                </div> <!-- the class header div end-->
-            </header>
-
-            <div class="navbar">
-
-                <div class="navbar-container">
-        
-                    <ul class="navbar-main">
-        
-                        <li class="web">
-                            <a href="">
-                                <i class="fas fa-code ci"></i>
-                                <span class="small">Web</span>
-                                <span class="large">Design</span>
-                            </a>
-        
-                            <div class="empty-div"></div>
-                            <ul class="menu-web menu">
-                                <li><a href="#">Stylish websites</a></li>
-                                <li><a href="#">Ecommerce stores</a></li>
-                                <li><a href="#">Branding</a></li>
-                                <li><a href="#">Apps</a></li>
-                                <li><a href="#">Web hosting</a></li>
-                                <li><a href="#">Pay monthly websites</a></li>
-                            </ul>
-                        </li>
-        
-                        <li class="IT">
-                            <a href="">
-                                <i class="fas fa-desktop ci"></i>
-                                <span class="small">IT</span>
-                                <span class="large">Support</span>
-                            </a>
-        
-                            <div class="empty-div"></div>
-                            <ul class="menu-it menu">
-                                <li><a href="#">MANAGED IT</a></li>
-                                <li><a href="#">BUSINESS IT</a></li>
-                                <li><a href="#">OFFICE 365</a></li>
-                                <li><a href="#">CONSULTANCY</a></li>
-                                <li><a href="#">CLOUD PROVIDER</a></li>
-                                <li><a href="#">DATA BACKUP</a></li>
-                            </ul>
-                        </li>
-        
-                        <li class="telecoms">
-                            <a href="">
-                                <i class="fas fa-phone-alt ci"></i>
-                                <span class="small">Telecoms</span>
-                                <span class="large">Services</span>
-                            </a>
-        
-                            <div class="empty-div"></div>
-                            <ul class="menu-telecoms menu">
-                                <li><a href="#">GIGABIT VOUCHER</a></li>
-                                <li><a href="#">HOSTED VOIP</a></li>
-                                <li><a href="#">BUSINESS VOIP</a></li>
-                                <li><a href="#">BUSINESS BROADBAND</a></li>
-                                <li><a href="#">LEASED LINE</a></li>
-                                <li><a href="#">3CX SYSTEMS</a></li>
-                            </ul>
-                        </li>
-        
-                        <li class="bespoke">
-                            <a href="">
-                                <i class="fas fa-th ci"></i>
-                                <span class="small">Bespoke</span>
-                                <span class="large">Software</span>
-                            </a>
-        
-                            <div class="empty-div"></div>
-                            <ul class="menu-bespoke menu">
-                                <li><a href="#">WORKFLOW</a></li>
-                                <li><a href="#">AUTOMATION</a></li>
-                                <li><a href="#">INTEGRATION</a></li>
-                                <li><a href="#">DATABASE</a></li>
-                                <li><a href="#">SHAREPOINT</a></li>
-                                <li><a href="#">BUSINESS MANAGEMENT</a></li>
-                            </ul>
-                        </li>
-        
-                        <li class="digital">
-                            <a href="">
-                                <i class="fas fa-chart-line ci"></i>
-                                <span class="small">Digital</span>
-                                <span class="large">Marketing</span>
-                            </a>
-        
-                            <div class="empty-div"></div>
-                            <ul class="menu-marketing menu">
-                                <li><a href="#">SEARCH (SEO)</a></li>
-                                <li><a href="#">PAID (PPC)</a></li>
-                                <li><a href="#">CONVERSION (CRO)</a></li>
-                                <li><a href="#">EMAIL</a></li>
-                                <li><a href="#">SOCIAL MEDIA</a></li>
-                                <li><a href="#">CONTENT</a></li>
-                            </ul>
-                        </li>
-        
-                        <li class="cyber">
-                            <a href="">
-                                <i class="fas fa-shield-alt ci"></i>
-                                <span class="small">Cyber</span>
-                                <span class="large">Security</span>
-                            </a>
-        
-                            <div class="empty-div"></div>
-                            <ul class="menu-cyber menu">
-                                <li><a href="#">ASSESSMENT</a></li>
-                                <li><a href="#">MANAGEMENT</a></li>
-                                <li><a href="#">PENETRATION TESTING</a></li>
-                                <li><a href="#">CYBER ESSENTIALS</a></li>
-                                <li><a href="#">PCI/DSS</a></li>
-                                <li><a href="#">HACKER PREVENTION</a></li>
-                            </ul>
-                        </li>
-                    </ul>
                 </div>
+
             </div>
 
             <!-- Slider placeholder -->
-            <div class="slider--area">
+            <div class="slider-autoplay slides slick slick-initialise slick-slider slick-dotted">
+                <div class="slider--area slider--web slick-slide">
+
+                    <div class="slider--text">
+
+                        <div class="slider_text">
+                            <h1>Web Design</h1>
+                            <p>For businesses looking to make a strong and effective first impression.</p>
+                        </div>
+                        
+                        <button class="design-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        
+                    </div>
+                </div>
+                <div class="slider--area slider--support slick-slide">
 
                 <div class="slider--text">
 
-                    <div class="slider_text">
-                        <h1>Web Design </h1>
-                        <p>For businesses looking to make a strong and effective first impression.</p>
+                        <div class="slider_text">
+                            <h1>IT Support</h1>
+                            <p>For businesses looking to make a strong and effective first impression.</p>
+                        </div>
+                        
+                        <button class="support-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        
+                    </div>
+                </div>
+                <div class="slider--area slider--telecoms slick-slide">
+
+                    <div class="slider--text">
+
+                        <div class="slider_text">
+                            <h1>Telecoms Service</h1>
+                            <p>For businesses looking to make a strong and effective first impression.</p>
+                        </div>
+                        
+                        <button class="telecoms-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        
+                    </div>
+                </div>
+                <div class="slider--area slider--bespoke slick-slide">
+
+                    <div class="slider--text">
+
+                        <div class="slider_text">
+                            <h1>Bespoke Design</h1>
+                            <p>For businesses looking to make a strong and effective first impression.</p>
+                        </div>
+                        
+                        <button class="bespoke-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        
+                    </div>
+                </div>
+                <div class="slider--area slider--marketing slick-slide">
+
+                    <div class="slider--text">
+
+                        <div class="slider_text">
+                            <h1>Digital Marketing</h1>
+                            <p>For businesses looking to make a strong and effective first impression.</p>
+                        </div>
+                        
+                        <button class="marketing-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        
+                    </div>
+                </div>
+                <div class="slider--area slider--security slick-slide">
+
+                    <div class="slider--text">
+
+                        <div class="slider_text">
+                            <h1>Cyber Security</h1>
+                            <p>Keeping businesses and their customers sensitive information protected.</p>
+                        </div>
+                        
+                        <button class="security-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
+                        
                     </div>
                     
                     <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
@@ -521,6 +627,12 @@
             </div>
 
         </div>
-       
+        <div id="menu-overlay"></div>
+
+        <script src="js/slick.min.js"></script>
+        <script src="js/cookie.js"></script>
+        <script src="js/sideMenu.Header.js"></script>
+        <script src="js/carousel.js"></script>
+        
     </body>
 </html>

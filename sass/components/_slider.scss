@@ -2,15 +2,50 @@
 
 // The entire area rules
 .slider--area {
-    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/asset-3.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 883px;
+    height: 780px;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.slider--web {
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/asset-3.jpeg);
+    width: 100%;
+    height: 780px;
+}
+
+.slider--support {
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/it-support-banner.jpeg);
+}
+
+.slider--telecoms {
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/telecomm-services-banner.jpeg);
+}
+
+.slider--bespoke {
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/bespoke-design-banner.jpeg);
+}
+
+.slider--marketing {
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/digital-marketing-banner.jpeg);
+}
+
+.slider--security {
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../Assets/cyber-security-banner.jpeg);
 }
 
 // the text area rules
@@ -19,7 +54,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 883px;
+    height: 780px;
     flex-direction: column;
 }
 
@@ -31,6 +66,7 @@
         margin-bottom: 25px;
         font-size: 48px;
         line-height: 39px;
+        text-transform: uppercase;
     }
 
     p{
@@ -42,10 +78,7 @@
 }
 
 // Design button styling
-.design-button {
-    margin-top: 10px;
-    padding: 5px 20px;
-    background-color: $fill-des-dev;
+.slider-button {
     color: $white;
     transition: 0.3s ease-out;
     border-radius: 3px;
@@ -54,16 +87,86 @@
     line-height: 50px;
     text-transform: uppercase;
     justify-self:left;
+    margin-top: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.design-button {
+    background-color: $fill-des-dev;
 }
 
 .design-button:hover {
     background-color: $fill-des-dev-dar;
 }
 
-@media screen and (min-width:$breakpoint-medium) {
-    
+.support-button {
+    background-color: $fill-supp;
 }
 
+.support-button:hover {
+    background-color: darken($fill-supp, 10);
+}
+
+.telecoms-button {
+    background-color: $fill-telecoms;
+}
+
+.telecoms-button:hover {
+    background-color: darken($fill-telecoms, 10);
+}
+
+
+.bespoke-button {
+    background-color: $fill-bespoke;
+}
+
+.bespoke-button:hover {
+    background-color: darken($fill-bespoke, 10);
+}
+
+.marketing-button {
+    background-color: $fill-market;
+}
+
+.marketing-button:hover {
+    background-color: darken($fill-market, 10);
+}
+
+.security-button {
+    background-color: $fill-cyber;
+}
+
+.security-button:hover {
+    background-color: darken($fill-cyber, 10);
+}
+
+// Carousel dots styling
+.slick-dots {
+    bottom: 24px;
+}
+
+.slick-dots li button:before{
+    font-size: 0.8rem;
+    color: $white;
+    width: 18px;
+    height: 17px;
+}
+
+.slick-dots li.slick-active button {
+    color: $white;
+    display: block;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    border: $white 2px solid;
+    border-radius: 100%;
+    position: absolute;
+    color: $white;
+}
+
+// Media queries
 @media screen and (min-width:$breakpoint-large) {
 
     .slider_text {
@@ -76,17 +179,14 @@
         }
     }
 
-    .design-button {
+    .slider-button {
         justify-content: center;
         text-align: left;
+        margin-left: -703px;
     }
 
         .slider_text{
         padding-left: 15px;
-    }
-
-    .design-button {
-        margin-left: -703px;
     }
 }
 
@@ -96,7 +196,7 @@
         padding-left: 15px;
     }
 
-    .design-button {
+    .slider-button {
         margin-left: -932px;
     }
 }

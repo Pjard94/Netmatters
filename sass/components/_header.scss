@@ -3,6 +3,7 @@
 // Header rules
 header {
     width: 100%;
+    background-color: $white;
 }
 
 .header {
@@ -416,7 +417,7 @@ header {
     .search--lrg {
         display: none;
     }
-
+        
     .search--bar-med {
         width: 240px;
     }

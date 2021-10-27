@@ -73,6 +73,10 @@ label.required:after
     font-weight: 600;
 }
 
+.entry label {
+    font-weight: 600;
+}
+
 // Privacy policy rules
 .Privacy:link,
 .Privacy:visited {
@@ -94,7 +98,6 @@ label.required:after
     border-radius: 3px;
     line-height: 35px;
 }
-
 .sub-button:hover {
     background-color: $color-hover;
     color: $white;
@@ -105,6 +108,7 @@ label.required:after
     border: none;
     padding: 5px 15px;
 }
+
 
 .row--n input:focus {
 box-shadow: $news-focus 0 0 8px 0;
