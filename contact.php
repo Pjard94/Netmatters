@@ -23,4 +23,8 @@
         <?php include("inc/newsletterSub.php") ?>
 
         <?php include("inc/footer.php") ?>
+
+        
+        <script src="js/sideMenu.Header.js"></script>
     </body>
+</html>
