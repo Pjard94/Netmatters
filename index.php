@@ -109,11 +109,8 @@
                         </div>
                         
                         <button class="security-button slider-button">See More Here <i class="fas fa-arrow-right"></i> </button>
-                        
+                    
                     </div>
-                    
-                    <button class="design-button">See More Here <i class="fas fa-arrow-right"></i> </button>
-                    
                 </div>
             </div>
               

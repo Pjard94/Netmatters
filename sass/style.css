@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -490,6 +491,7 @@ header {
 
   .search--bar-med {
     width: 240px;
+    height: 94px;
   }
 
   .logo {
@@ -762,7 +764,6 @@ header {
   }
 }
 .slider--area {
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../Assets/asset-3.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -2255,6 +2256,10 @@ label.required:after {
   font-weight: 600;
 }
 
+.entry label {
+  font-weight: 600;
+}
+
 .Privacy:link,
 .Privacy:visited {
   color: #22242E;
@@ -3118,6 +3123,7 @@ body {
 }
 
 .showHeader {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
