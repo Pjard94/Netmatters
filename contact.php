@@ -17,12 +17,17 @@
 
         <?php include("inc/sidemenu.php"); ?>
 
-        <?php include("inc/header.php") ?>
+        
+        <div id="main">
+
+            <?php include("inc/header.php") ?>
 
 
-        <?php include("inc/newsletterSub.php") ?>
+            <?php include("inc/newsletterSub.php") ?>
 
-        <?php include("inc/footer.php") ?>
+            <?php include("inc/footer.php") ?>
+
+        </div>
 
         
         <script src="js/sideMenu.Header.js"></script>
