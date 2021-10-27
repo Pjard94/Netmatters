@@ -348,11 +348,13 @@
 
 
         </div>
+        <!-- Repeated scripts -->
         <div id="menu-overlay"></div>
+        <script src="js/sideMenu.Header.js"></script>
 
+        <!-- Uniquie scripts -->
         <script src="js/slick.min.js"></script>
         <script src="js/cookie.js"></script>
-        <script src="js/sideMenu.Header.js"></script>
         <script src="js/carousel.js"></script>
         
     </body>
