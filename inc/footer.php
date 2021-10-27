@@ -50,3 +50,18 @@
                 </div>
 
             </footer>
+
+            
+                <!-- Awards section -->
+                <div class="awards">
+                <div class="awards--container">
+                    <div class="a-img-contain-1"><div class="partner"></div></div>
+                    <div class="a-img-contain-2"><div class="award--1"></div></div>
+                    <div class="a-img-contain-3"><div class="bw--1"></div></div>
+                    <div class="a-img-contain-4"><div class="bw--2"></div></div>
+                    <div class="a-img-contain-5"><div class="bw--3"></div></div>
+                    <div class="a-img-contain-6"><div class="bw--4"></div></div>
+                    <div class="a-img-contain-7"><div class="bw--5"></div></div>
+                    <div class="a-img-contain-8"><div class="bw--6"></div></div>
+                </div>
+            </div>

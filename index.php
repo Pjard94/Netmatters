@@ -479,47 +479,10 @@
 
             </div>
 
-            <!-- Newsletter subscription section -->
-            <div class="Newsletter">
-
-                <div class="row--n">
-
-                    <div class="NewsTitle"> <h2>Email Newsletter Sign-Up</h2></div>
-                    <div class="entry">
-                        <label class="required" for="name">Your Name</label>
-                        <input type="text" name="users-name" id="name" value="" required="required" class="sub-box">
-                    </div>
-                    <div class="entry">
-                        <label class="required" for="email">Your Email</label>
-                        <input type="email" name="users-email" id="email" value="" required="required" class="sub-box">
-                    </div>
-                    <div class="subscription-label">
-                        <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
-                        <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
-                    </div>
-                    <div>
-                        <button class="sub-button" type="submit">SUBSCRIBE</button>
-                    </div>
-
-                </div>
-            <!-- <span class="fill"><i class="far fa-square "></i></span> <i class="fas fa-check-square"></i>-->
-            </div>
+            <?php include("inc/newsletterSub.php"); ?>
 
             <?php include("inc/footer.php"); ?>
 
-                <!-- Awards section -->
-            <div class="awards">
-                <div class="awards--container">
-                    <div class="a-img-contain-1"><div class="partner"></div></div>
-                    <div class="a-img-contain-2"><div class="award--1"></div></div>
-                    <div class="a-img-contain-3"><div class="bw--1"></div></div>
-                    <div class="a-img-contain-4"><div class="bw--2"></div></div>
-                    <div class="a-img-contain-5"><div class="bw--3"></div></div>
-                    <div class="a-img-contain-6"><div class="bw--4"></div></div>
-                    <div class="a-img-contain-7"><div class="bw--5"></div></div>
-                    <div class="a-img-contain-8"><div class="bw--6"></div></div>
-                </div>
-            </div>
 
         </div>
         <div id="menu-overlay"></div>
