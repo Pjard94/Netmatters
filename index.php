@@ -349,8 +349,7 @@
 
         </div>
         <!-- Repeated scripts -->
-        <div id="menu-overlay"></div>
-        <script src="js/sideMenu.Header.js"></script>
+        <?php include("inc/repeatedScripts.php") ?>
 
         <!-- Uniquie scripts -->
         <script src="js/slick.min.js"></script>

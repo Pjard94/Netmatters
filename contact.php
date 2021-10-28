@@ -22,6 +22,28 @@
 
             <?php include("inc/header.php") ?>
 
+            <div id="contact-container">
+
+                <div id="contact-banner">
+                    <h3><a>Home</a></h3>
+                    <ul class="banner-list">
+                        <li>Our Offices</li>
+                    </ul>
+                </div>
+
+                <div id="contact-title">
+                    <h1>Our Offices</h1>
+                </div>
+
+                <div id="office-addresses">
+                    <div class="office-cards"></div>
+                    <div class="map-container"></div>
+                </div>
+
+                <div id="contact-area"></div>
+
+            </div>
+
 
             <?php include("inc/newsletterSub.php") ?>
 
@@ -29,8 +51,7 @@
 
         </div>
         <!-- Repeated scripts -->
-        <div id="menu-overlay"></div>
-        <script src="js/sideMenu.Header.js"></script>
+        <?php include("inc/repeatedScripts.php") ?>
 
     </body>
 </html>
