@@ -3176,6 +3176,7 @@ body {
 #contact-title {
   background-color: #333645;
   padding: 24px 0;
+  color: #ffffff;
 }
 
 #office-page-title {
@@ -3187,11 +3188,17 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .office-columns {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.office-cards {
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 .office-images {
@@ -3200,6 +3207,88 @@ body {
 
 .office-card-text {
   padding: 30px;
+}
+.office-card-text p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.card-title {
+  color: #000;
+  font-size: 18px;
+}
+
+.text-design {
+  color: #926fb1;
+  font-size: 26px;
+}
+
+.card-title:hover,
+.text-design:hover {
+  text-decoration: underline;
+}
+
+.view-more {
+  margin-top: 15px;
+}
+
+.office-button {
+  color: #ffffff;
+  padding: 5px 30px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 14.4px;
+  height: 47px;
+  width: 144px;
+}
+
+#contact-area {
+  padding: 0 15px;
+}
+
+#contact-area-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-hours {
+  padding: 0 15px 0 30px;
+}
+
+.contact-hours-details {
+  margin-bottom: 15px;
+}
+
+#form-card {
+  background: #E6E7E9;
+  padding: 30px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-CF {
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.label-CF::after {
+  content: "*";
+  color: #C42E2A;
+}
+
+.button-replace {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -3224,6 +3313,7 @@ body {
   #contact-title {
     background-color: #ffffff;
     padding: 50px 0 0;
+    color: #121419;
   }
 
   .office-columns {
@@ -3233,6 +3323,10 @@ body {
   .inner,
 #office-list-container {
     width: 970px;
+  }
+
+  #contact-area-inner {
+    flex-direction: row-reverse;
   }
 }
 @media screen and (min-width: 1260px) {

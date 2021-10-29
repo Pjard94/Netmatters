@@ -1,5 +1,6 @@
 @use '../absracts/index' as *;
 
+// page and general styles 
 #contact-container {
     background-color: $white;
 }
@@ -10,6 +11,7 @@
     padding: 0 15px;
 }
 
+// The title and banner indicating the page
 #contact-banner {
     display: none;
     width: 100%;
@@ -33,22 +35,30 @@
 #contact-title {
     background-color: $color-primary;
     padding: 24px 0;
+    color: $white;
 }
 
 #office-page-title {
     margin: 0 0 28px;
 }
 
+// the styles for the cards and the container
 #office-list-container {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .office-columns {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.office-cards {
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .office-images {
@@ -57,6 +67,90 @@
 
 .office-card-text {
     padding: 30px;
+
+    p {
+        font-size: 13px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+.card-title {
+    color: #000;
+    font-size: 18px;
+}
+
+.text-design {
+    color: $fill-des-dev;
+    font-size: 26px;
+}
+
+.card-title:hover,
+.text-design:hover {
+    text-decoration: underline;
+}
+
+.view-more {
+    margin-top: 15px;
+}
+
+.office-button {
+    color: $white;
+    padding: 5px 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14.4px;
+    height: 47px;
+    width: 144px;
+}
+
+//contact form area
+#contact-area {
+    padding: 0 15px;
+}
+
+#contact-area-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-hours {
+    padding: 0 15px 0 30px;
+}
+
+.contact-hours-details {
+    margin-bottom: 15px;
+}
+
+#form-card {
+    background: $contact-form-fill;
+    padding: 30px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-CF {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.label-CF::after {
+    content: "*";
+    color: $news-art-alt2;
+}
+
+.button-replace {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
 }
 
 @media screen and (min-width: $breakpoint-medium) {
@@ -83,6 +177,7 @@
     #contact-title {
         background-color: $white;
         padding: 50px 0 0;
+        color: $color-hover;
     }
 
     .office-columns {
@@ -93,6 +188,11 @@
     #office-list-container {
         width: $media-lrg-width;
     }
+
+    #contact-area-inner {
+        flex-direction: row-reverse;
+    }
+    
 
 }
 

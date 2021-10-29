@@ -26,7 +26,7 @@
 
                 <div id="contact-banner">
                     <div class="inner">
-                        <a href="#"><h3>Home</h3></a>
+                        <a href="index.php"><h3><strong>Home</strong></h3></a>
                         <ul class="banner-list">
                             <li>Our Offices</li>
                         </ul>
@@ -46,14 +46,16 @@
                             <div class="office-cards">
                                 <img src="Assets/cambridge.jpg" alt="" class="office-images">
                                 <div class="office-card-text">
-                                    <a href="#">Cambridge Office</a>
+                                    <a href="#" class="card-title">Cambridge Office</a>
                                     <p>Unit 1.28,<br>
                                     St John's Innovation Centre,<br>
                                     Cowley Road, Milton,<br>
                                     Cambridge,<br>
                                     CB4 0WS</p>
                                     <a href="#" class="text-design">01223 37 57 72</a>
-                                    <a href="#" class="design-button office-button">view more</a>
+                                    <div class="view-more">
+                                        <a href="#" class="design-button office-button">view more</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="map-container">
@@ -64,14 +66,16 @@
                             <div class="office-cards">
                                 <img src="Assets/wymondham.jpg" alt="" class="office-images">
                                 <div class="office-card-text">
-                                    <a href="#">Wymondham Office</a>
+                                    <a href="#" class="card-title">Wymondham Office</a>
                                     <p>Unit 15,<br>
                                     Penfold Drive,<br>
                                     Gateway 11 Business Park,<br>
                                     Wymondham, Norfolk,<br>
                                     NR18 0WZ</p>
                                     <a href="#" class="text-design">01603 70 40 20</a>
-                                    <a href="#" class="design-button office-button">view more</a>
+                                    <div class="view-more">
+                                        <a href="#" class="design-button office-button">view more</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="map-container">
@@ -82,28 +86,68 @@
                             <div class="office-cards">
                                 <img src="Assets/yarmouth-2.jpg" alt="" class="office-images">
                                 <div class="office-card-text">
-                                    <a href="#">Great Yarmouth Office</a>
+                                    <a href="#" class="card-title">Great Yarmouth Office</a>
                                     <p>Suite F23,<br>
                                     Beacon Innovation Centre,<br>
                                     Beacon Park, Gorleston,<br>
                                     Great Yarmouth, Norfolk,<br>
                                     NR31 7RA</p>
                                     <a href="#" class="text-design">01493 60 32 04</a>
-                                    <a href="#" class="design-button office-button">view more</a>
+                                    <div class="view-more">
+                                        <a href="#" class="design-button office-button">view more</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="map-container">
 
                             </div>
                         </div>
-                    </div>
-                    
+
+                    </div>    
+
                 </div>
 
                 <div id="contact-area">
-                    <div class="inner">
+                    <div id="contact-area-inner">
 
-                    </div>
+                        <div id="contact-hours">
+                            <p class="contact-hours-details"><strong>Email us on:</strong></p>
+                            <p class="contact-hours-details"><a class="text-design" href="">sales@netmatters.com</a></p>
+                            <p class="contact-hours-details"><strong>Business hours:</strong></p>
+                            <p class="contact-hours-details"><strong>Monday - Friday 07:00 - 18:00 </strong></p>
+                            <div>
+                                <p class="contact-hours-details"><strong>Out of Hours IT Support</strong></p>
+                                <div>
+                                    <p class="contact-hours-details">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p class="contact-hours-details"><strong>Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br> Sunday 10:00 - 18:00</strong></p>
+                                    <p class="contact-hours-details">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="form-card">
+                            <form id="contactForm" action="">
+                                <label class="label-CF" for="first-name-CF">your name</label>
+                                <input type="text" id="name-CF">
+                                <label class="label-CF" for="email-CF">your email</label>
+                                <input type="email" id="email-CF">
+                                <label class="label-CF" for="phone-CF">your telephone number</label>
+                                <input type="phone" id="phone-CF">
+                                <label class="label-CF" for="subject-CF">subject</label>
+                                <input type="text" id="subject-CF">
+                                <label class="label-CF" for="message">message</label>
+                                <textarea></textarea>
+                                
+                                <div>
+                                    <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
+                                    <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
+                                </div>
+                                <button type="submit" class="design-button button-replace">Send enquiry</button>
+                                
+                            </form>   
+                        </div>
+                        
+                </div>
                 </div>
 
             </div>
