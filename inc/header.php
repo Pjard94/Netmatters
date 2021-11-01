@@ -10,7 +10,7 @@
 
                                 <div class="small-menu-top">
                         
-                                    <a class="logo-link logo-small" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
+                                    <a class="logo-link logo-small" href="index.php"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
                                     
                                     <div class="small-menu-top-buttons">
                                     
@@ -42,7 +42,7 @@
                                 
                                 <a class="support--lrg"><i class="fas fa-mouse"></i> SUPPORT</a>
 
-                                <a class="contact--lrg"><i class="fas fa-paper-plane"></i>CONTACT</a>
+                                <a class="contact--lrg" href="contact.php"><i class="fas fa-paper-plane"></i>CONTACT</a>
 
                                 <button type="submit" class="search--lrg"><i class="fas fa-search"></i></button>
                 

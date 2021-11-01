@@ -10,8 +10,7 @@
         <!-- Stylesheet links -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="sass/hamburgers.css">
-        <link rel="stylesheet" href="sass/style.css">
-        
+        <link rel="stylesheet" href="sass/style.css">    
     </head>
     <body>
 
@@ -126,17 +125,17 @@
                         </div>
 
                         <div id="form-card">
-                            <form id="contactForm" action="">
+                            <form id="contactForm" action="formSubmit.php" method="POST">
                                 <label class="label-CF" for="first-name-CF">your name</label>
-                                <input type="text" id="name-CF">
+                                <input type="text" id="name-CF" name="name">
                                 <label class="label-CF" for="email-CF">your email</label>
-                                <input type="email" id="email-CF">
+                                <input type="email" id="email-CF" name="email">
                                 <label class="label-CF" for="phone-CF">your telephone number</label>
-                                <input type="phone" id="phone-CF">
+                                <input type="phone" id="phone-CF" name="phoneNumber">
                                 <label class="label-CF" for="subject-CF">subject</label>
-                                <input type="text" id="subject-CF">
+                                <input type="text" id="subject-CF" name="subject">
                                 <label class="label-CF" for="message">message</label>
-                                <textarea></textarea>
+                                <textarea id="message" name="message"></textarea>
                                 
                                 <div>
                                     <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
