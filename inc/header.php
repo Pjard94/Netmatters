@@ -38,7 +38,7 @@
 
                             <div class="large-menu">
 
-                                <a class="logo-link logo-larger" href="#"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
+                                <a class="logo-link logo-larger" href="index.php"> <img class="logo" src="Assets/f-logo.png" alt="Netmatters"> </a>
                                 
                                 <a class="support--lrg"><i class="fas fa-mouse"></i> SUPPORT</a>
 

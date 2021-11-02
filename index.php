@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang=en>
     <head>
@@ -234,18 +240,18 @@
 
                     <div class="news-article n--a1">
                         <div class="main-img">
-                            <a href="#" class="news-img-banner banner-1">News</a>
+                            <a href="#" class="news-img-banner banner-1"><?php ?></a>
                             <a href="#" > <img src="Assets/asset_9.jpeg" alt="image related to the story"></a>
                         </div>
                         <div class="block block--1">
-                            <h3><a href="#" class="art-head1 article-header-all">Article</a></h3>
-                            <p>A brief discription of what is contained in the article.</p>
+                            <h3><a href="#" class="art-head1 article-header-all"><?php ?></a></h3>
+                            <p><?php ?></p>
                             <a href="#" class="Read-more1 read-more-all">Read More</a>
                             <div class="user">             
                                 <img src="Assets/netmatters-ltd-VXAv.png" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name">Netmatters Ltd</span>.</strong></p>
-                                    <p class="post-date">21st April 2021 </p>
+                                    <p><strong> Posted by <span class="user-name"><?php ?></span>.</strong></p>
+                                    <p class="post-date"><?php ?></p>
                                 </div>
                             </div>
                         </div>
@@ -253,18 +259,18 @@
 
                     <div class="news-article n--a2">
                         <div class="main-img">
-                            <a href="#" class="news-img-banner banner-2">News</a>
+                            <a href="#" class="news-img-banner banner-2"><?php ?></a>
                             <a href="#"> <img src="Assets/asset_11.jpeg" alt="image related to the story"></a>
                         </div>
                         <div class="block block--2">
-                            <h3><a href="#" class="art-head2 article-header-all">Article</a></h3>
-                            <p>A brief discription of what is contained in the article.</p>
+                            <h3><a href="#" class="art-head2 article-header-all"><?php ?></a></h3>
+                            <p><?php ?></p>
                             <a href="#" class="Read-more2 read-more-all">Read More</a>
                             <div class="user">
                                 <img src="Assets/netmatters-ltd-VXAv.png" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name">Netmatters Ltd</span>.</strong></p>
-                                    <p class="post-date">18th April 2021 </p>
+                                    <p><strong> Posted by <span class="user-name"><?php ?></span>.</strong></p>
+                                    <p class="post-date"><?php ?></p>
                                 </div>    
                             </div>
                         </div>
@@ -272,18 +278,18 @@
 
                     <div class="news-article n--a3">
                         <div class="main-img">
-                            <a href="#" class="news-img-banner banner-3">News</a>
+                            <a href="#" class="news-img-banner banner-3"><?php ?></a>
                             <a href="#"> <img src="Assets/asset_7.jpeg" alt="image related to the story"></a>
                         </div>
                         <div class="block block--3">
-                            <h3><a href="#" class="art-head3 article-header-all">Article</a></h3>
-                            <p>A brief discription of what is contained in the article.</p>
+                            <h3><a href="#" class="art-head3 article-header-all"><?php ?></a></h3>
+                            <p><?php ?></p>
                             <a href="#" class="Read-more3 read-more-all">Read More</a>
                             <div class="user">
                                 <img src="Assets/netmatters-ltd-VXAv.png" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name">Netmatters Ltd</span>.</strong></p>
-                                    <p class="post-date">10th April 2021 </p>
+                                    <p><strong> Posted by <span class="user-name"><?php ?></span>.</strong></p>
+                                    <p class="post-date"><?php ?> </p>
                                 </div>
                             </div>
                         </div>
