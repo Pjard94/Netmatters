@@ -1,6 +1,6 @@
 <?php
 
-
+require_once 'testArticle.php';
 
 ?>
 
@@ -240,18 +240,18 @@
 
                     <div class="news-article n--a1">
                         <div class="main-img">
-                            <a href="#" class="news-img-banner banner-1"><?php ?></a>
-                            <a href="#" > <img src="Assets/asset_9.jpeg" alt="image related to the story"></a>
+                            <a href="<?php echo $link1; ?>" class="news-img-banner banner-1"><?php echo $category1; ?></a>
+                            <a href="<?php echo $link1; ?>" > <img src="<?php echo $headImg1; ?>" alt="image related to the story"></a>
                         </div>
                         <div class="block block--1">
-                            <h3><a href="#" class="art-head1 article-header-all"><?php ?></a></h3>
-                            <p><?php ?></p>
-                            <a href="#" class="Read-more1 read-more-all">Read More</a>
+                            <h3><a href="<?php echo $link1; ?>" class="art-head1 article-header-all"><?php echo $title1; ?></a></h3>
+                            <p><?php echo $description1; ?></p>
+                            <a href="<?php echo $link1; ?>" class="Read-more1 read-more-all">Read More</a>
                             <div class="user">             
-                                <img src="Assets/netmatters-ltd-VXAv.png" alt="The image of the user who posted the story." class="img-responsiveness">
+                                <img src="<?php echo $profileIMG1; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name"><?php ?></span>.</strong></p>
-                                    <p class="post-date"><?php ?></p>
+                                    <p><strong> Posted by <span class="user-name"><?php echo $writer1; ?></span>.</strong></p>
+                                    <p class="post-date"><?php echo $date1; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -259,18 +259,18 @@
 
                     <div class="news-article n--a2">
                         <div class="main-img">
-                            <a href="#" class="news-img-banner banner-2"><?php ?></a>
-                            <a href="#"> <img src="Assets/asset_11.jpeg" alt="image related to the story"></a>
+                            <a href="<?php echo $link2; ?>" class="news-img-banner banner-2"><?php echo $category2; ?></a>
+                            <a href="<?php echo $link2; ?>"> <img src="Assets/asset_11.jpeg" alt="image related to the story"></a>
                         </div>
                         <div class="block block--2">
-                            <h3><a href="#" class="art-head2 article-header-all"><?php ?></a></h3>
-                            <p><?php ?></p>
-                            <a href="#" class="Read-more2 read-more-all">Read More</a>
+                            <h3><a href="<?php echo $link2; ?>" class="art-head2 article-header-all"><?php echo $title2; ?></a></h3>
+                            <p><?php echo $description2; ?></p>
+                            <a href="<?php echo $link2; ?>" class="Read-more2 read-more-all">Read More</a>
                             <div class="user">
-                                <img src="Assets/netmatters-ltd-VXAv.png" alt="The image of the user who posted the story." class="img-responsiveness">
+                                <img src="<?php echo $profileIMG2; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name"><?php ?></span>.</strong></p>
-                                    <p class="post-date"><?php ?></p>
+                                    <p><strong> Posted by <span class="user-name"><?php echo $writer2; ?></span>.</strong></p>
+                                    <p class="post-date"><?php echo $date2; ?></p>
                                 </div>    
                             </div>
                         </div>
@@ -278,18 +278,18 @@
 
                     <div class="news-article n--a3">
                         <div class="main-img">
-                            <a href="#" class="news-img-banner banner-3"><?php ?></a>
-                            <a href="#"> <img src="Assets/asset_7.jpeg" alt="image related to the story"></a>
+                            <a href="<?php echo $link3; ?>" class="news-img-banner banner-3"><?php echo $category3; ?></a>
+                            <a href="<?php echo $link3; ?>"> <img src="Assets/asset_7.jpeg" alt="image related to the story"></a>
                         </div>
                         <div class="block block--3">
-                            <h3><a href="#" class="art-head3 article-header-all"><?php ?></a></h3>
-                            <p><?php ?></p>
-                            <a href="#" class="Read-more3 read-more-all">Read More</a>
+                            <h3><a href="<?php echo $link3; ?>" class="art-head3 article-header-all"><?php echo $title3; ?></a></h3>
+                            <p><?php echo $description3; ?></p>
+                            <a href="<?php echo $link3; ?>" class="Read-more3 read-more-all">Read More</a>
                             <div class="user">
-                                <img src="Assets/netmatters-ltd-VXAv.png" alt="The image of the user who posted the story." class="img-responsiveness">
+                                <img src="<?php echo $profileIMG3; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name"><?php ?></span>.</strong></p>
-                                    <p class="post-date"><?php ?> </p>
+                                    <p><strong> Posted by <span class="user-name"><?php echo $writer3; ?></span>.</strong></p>
+                                    <p class="post-date"><?php echo $date3; ?> </p>
                                 </div>
                             </div>
                         </div>

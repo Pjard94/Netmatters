@@ -1,30 +1,43 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phoneNumber'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+$wasSent = false;
+$failedSend = false;
 
-$servername = "localhost";
-$username = "contact_admin";
-$password = "ABQdTJeV_wny/Z*d";
-$db = "contact";
+try {
+    $PDO = new PDO(dsn:"mysql:host=localhost;dbname=contact", username:"contact_admin", password:"ABQdTJeV_wny/Z*d");
 
-$conn = new mysqli($servername, $username, $password, $db);
+    if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['email']), FILTER_VALIDATE_EMAIL]){
 
-if ($conn->connect_error){
-    die("Connection failed: ". $conn->connect_error);
+        if(isset($_POST['name']) &&  $_POST['name'] != ' ') {
+
+            if(isset($_POST['phoneNumber']) &&  $_POST['phoneNumber'] != ' ' ){
+
+                if(isset($_POST['subject']) &&  $_POST['subject'] != ' '){
+
+                    if(isset($_POST['message']) &&  $_POST['message'] != ' '){
+
+                        $name = $_POST['name'];
+                        $email = $_POST['email'];
+                        $phone = $_POST['phoneNumber'];
+                        $subject = $_POST['subject'];
+                        $message = $_POST['message'];
+
+                        $sql = $PDO->prepare(query:"INSERT INTO form(name,email,phone_number,subject,message)
+                                            VALUES('$name','$email','$phone','$subject','$message')");
+                        $sql->execute();
+
+                        $wasSent = true;
+                    }
+
+                }
+
+            }
+
+        }
+
+    } 
+} catch (PDOException $e) {
+    // echo $e->getMessage();
 }
 
-$sql = "insert into form(name,email,phone_number,subject,message)
-        values('$name','$email','$phone','$subject','$message')";
-
-if ($conn->query($sql) === TRUE){
-    echo "Message sucessful.";
-} else {
-    echo "Error: ".$sql."<br>".$conn->error;
-}
-
-$conn->close();
 ?>

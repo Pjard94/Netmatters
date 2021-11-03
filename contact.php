@@ -127,8 +127,20 @@
                             </div>
                         </div>
 
+                        
+                        <?php if($wasSent == true){
+                            echo '<p class="message-indicator success-state">';
+                            echo 'Thank you for your enquiry.';
+                            echo '</p>';
+                        } elseif($failedSend == true){
+                            echo '<p class="message-indicator failed-state">';
+                            echo "We're sorry the form seems to have been incomplete.";
+                            echo '</p>';
+                        }
+                        ?>
+
                         <div id="form-card">
-                            <form id="contactForm" action="formSubmit.php" method="POST">
+                            <form id="contactForm" action="contact.php" method="POST">
                                 <label class="label-CF" for="first-name-CF">your name</label>
                                 <input type="text" id="name-CF" name="name">
                                 <label class="label-CF" for="email-CF">your email</label>
