@@ -1,5 +1,3 @@
-<?php require_once('formSubmit.php') ?>
-
 <!DOCTYPE html>
 
 <html lang=en>
@@ -140,8 +138,8 @@
                         ?>
 
                         <div id="form-card">
-                            <form id="contactForm" action="contact.php" method="POST">
-                                <label class="label-CF" for="first-name-CF">your name</label>
+                            <form id="contactForm">
+                                <label class="label-CF" for="name-CF">your name</label>
                                 <input type="text" id="name-CF" name="name">
                                 <label class="label-CF" for="email-CF">your email</label>
                                 <input type="email" id="email-CF" name="email">
@@ -156,7 +154,7 @@
                                     <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
                                     <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                                 </div>
-                                <button type="submit" class="design-button button-replace">Send enquiry</button>
+                                <button id="sumbit-form" class="design-button button-replace">Send enquiry</button>
                                 
                             </form>   
                         </div>

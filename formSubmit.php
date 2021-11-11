@@ -1,12 +1,13 @@
 <?php
 
-$wasSent = false;
-$failedSend = false;
-
 try {
     $PDO = new PDO(dsn:"mysql:host=localhost;dbname=contact", username:"contact_admin", password:"ABQdTJeV_wny/Z*d");
+     
+} catch (PDOException $e) {
+    // echo $e->getMessage();
+}
 
-    if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['email']), FILTER_VALIDATE_EMAIL]){
+if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['email']), FILTER_VALIDATE_EMAIL]){
 
         if(isset($_POST['name']) &&  $_POST['name'] != ' ') {
 
@@ -16,7 +17,7 @@ try {
 
                     if(isset($_POST['message']) &&  $_POST['message'] != ' '){
 
-                        $name = $_POST['name'];
+                        $name = $_POST['first_name'];
                         $email = $_POST['email'];
                         $phone = $_POST['phoneNumber'];
                         $subject = $_POST['subject'];
@@ -26,18 +27,48 @@ try {
                                             VALUES('$name','$email','$phone','$subject','$message')");
                         $sql->execute();
 
-                        $wasSent = true;
+                        echo json_encode(
+                            array(
+                                'sent' => true
+                            )
+                        );
+                        
+                    }else {
+                        echo json_encode(
+                            array(
+                                'sent' => false
+                            )
+                            );
+                        }
+
+                }else {
+                    echo json_encode(
+                        array(
+                            'sent' => false
+                        )
+                        );
                     }
 
+            }else {
+                echo json_encode(
+                    array(
+                        'sent' => false
+                    )
+                    );
                 }
 
+        }else {
+            echo json_encode(
+                array(
+                    'sent' => false
+                )
+                );
             }
-
-        }
-
-    } 
-} catch (PDOException $e) {
-    // echo $e->getMessage();
-}
-
+}else {
+    echo json_encode(
+        array(
+            'sent' => false
+        )
+        );
+    }
 ?>
