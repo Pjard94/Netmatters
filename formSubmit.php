@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $PDO = new PDO(dsn:"mysql:host=localhost;dbname=contact", username:"contact_admin", password:"ABQdTJeV_wny/Z*d");
+    $PDO = new PDO("mysql:host=localhost;dbname=contact","contact_admin","ABQdTJeV_wny/Z*d");
      
 } catch (PDOException $e) {
     // echo $e->getMessage();
@@ -23,7 +23,7 @@ if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['emai
                         $subject = $_POST['subject'];
                         $message = $_POST['message'];
 
-                        $sql = $PDO->prepare(query:"INSERT INTO form(name,email,phone_number,subject,message)
+                        $sql = $PDO->prepare("INSERT INTO form(name,email,phone_number,subject,message)
                                             VALUES('$name','$email','$phone','$subject','$message')");
                         $sql->execute();
 

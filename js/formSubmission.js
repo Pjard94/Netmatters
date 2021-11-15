@@ -16,6 +16,9 @@ submit.addEventListener("click", function (e) {
         const XHR = new XMLHttpRequest();
         const XHRData = `first=${firstName.value}&last=${lastName.value}&email=${email.value}&subject=${subject.value}&message=${message.value}`;
   
+
+        
+          
         XHR.open('post', 'contactSubmit.php');
         XHR.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         XHR.send(XHRData);
