@@ -1,47 +1,74 @@
-const name = document.getElementById('name-CF');
+const formName = document.getElementById('name-CF');
 const email = document.getElementById('email-CF');
 const phoneNo = document.getElementById('phone-CF');
 const subject = document.getElementById('subject-CF');
 const message = document.getElementById('message');
 const submit = document.getElementById('submit-form');
+const tickbox = document.getElementById('m-y');
+const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
 
+tickbox.addEventListener("click", function (e) {
+  e.preventDefault();
+});
 
 submit.addEventListener("click", function (e) {
     e.preventDefault();
-    if(email.classList != "contact-form-input Form-valid" || message.classList != "contact-form-input Form-valid" || firstName.classList != "contact-form-input Form-valid" || lastName.classList != "contact-form-input Form-valid" || subject.classList != "contact-form-input Form-valid"){
-        failedBar.classList.add("failed-bar");
-        setTimeout(function () {failedBar.classList.remove("failed-bar")}, 5000);
-        // console.log("this worked");
-      } else {
-        const XHR = new XMLHttpRequest();
-        const XHRData = `first=${firstName.value}&last=${lastName.value}&email=${email.value}&subject=${subject.value}&message=${message.value}`;
-  
+    console.log('this worked');
+    if(emailREGEX(email.value) == true){
 
+      } else {
         
-          
-        XHR.open('post', 'contactSubmit.php');
-        XHR.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        XHR.send(XHRData);
-  
-  
-        XHR.onload = () => {
-          let responseObject= null;
-  
-          try{
-            responseObject = JSON.parse(XHR.responseText);
-          }catch (e){
-            console.error("Could not parse JSON!");
-          }
-  
-          if (responseObject){
-            handleresponse(responseObject);
-          }
+      }
+
+      if(formName != '' && formName != ' ') {
+
+      }else {
+
+      }
+
+      if(subject != '' && subject != ' ') {
+
+      } else {
+
+      }
+
+      if(message != '' && message != ' '){
+
+      } else {
+
+      }
+
+      if(phoneNo != '' && phoneNo != ' '){
+               
+      } else {
+        
+      }
+
+      const XHR = new XMLHttpRequest();
+      const XHRData = `first=${firstName.value}&last=${lastName.value}&email=${email.value}&subject=${subject.value}&message=${message.value}`;
+
+      XHR.open('post', 'contactSubmit.php');
+      XHR.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      XHR.send(XHRData);
+
+
+      XHR.onload = () => {
+        let responseObject= null;
+
+        try{
+          responseObject = JSON.parse(XHR.responseText);
+        }catch (e){
+          console.error("Could not parse JSON!");
         }
-  
-        
+
+        if (responseObject){
+          handleresponse(responseObject);
+        }
       }
   })
     
+
+
   
   function handleresponse (responseObject) {
     if (responseObject.sent) {

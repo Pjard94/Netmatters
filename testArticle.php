@@ -1,7 +1,7 @@
 <?php
 $i = 0;
 
-$PDO = new PDO("mysql:host=localhost;dbname=peterjar_netmatters", "peterjar_contact_admin", "ABQdTJeV_wny/Z*d");
+require_once 'inc/databaseCall.php';
 
 $stmt = $PDO->prepare("SELECT * FROM news ORDER BY date DESC LIMIT 3");
 $stmt->execute();

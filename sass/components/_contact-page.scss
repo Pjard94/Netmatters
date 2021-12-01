@@ -157,6 +157,10 @@
     color: $white;
 }
 
+.error-showing{
+    border: red;
+}
+
 @media screen and (min-width: $breakpoint-medium) {
     #contact-banner {
        display: block; 

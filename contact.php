@@ -126,15 +126,16 @@
                         </div>
 
                         
-                        <?php if($wasSent == true){
-                            echo '<p class="message-indicator success-state">';
-                            echo 'Thank you for your enquiry.';
-                            echo '</p>';
-                        } elseif($failedSend == true){
-                            echo '<p class="message-indicator failed-state">';
-                            echo "We're sorry the form seems to have been incomplete.";
-                            echo '</p>';
-                        }
+                       <?php 
+                    //    if($wasSent == true){
+                    //         echo '<p class="message-indicator success-state">';
+                    //         echo 'Thank you for your enquiry.';
+                    //         echo '</p>';
+                    //     } elseif($failedSend == true){
+                    //         echo '<p class="message-indicator failed-state">';
+                    //         echo "We're sorry the form seems to have been incomplete.";
+                    //         echo '</p>';
+                    //     }
                         ?>
 
                         <div id="form-card">
@@ -154,7 +155,7 @@
                                     <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
                                     <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                                 </div>
-                                <button id="sumbit-form" class="design-button button-replace">Send enquiry</button>
+                                <button id="submit-form" class="design-button button-replace">Send enquiry</button>
                                 
                             </form>   
                         </div>
@@ -172,6 +173,8 @@
         </div>
         <!-- Repeated scripts -->
         <?php include("inc/repeatedScripts.php") ?>
+
+        <script src="js/formSubmission.js"></script>
 
     </body>
 </html>

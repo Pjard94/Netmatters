@@ -1,11 +1,5 @@
 <?php
-
-try {
-    $PDO = new PDO("mysql:host=localhost;dbname=peterjar_netmatters", "peterjar_contact_admin", "ABQdTJeV_wny/Z*d");
-     
-} catch (PDOException $e) {
-    // echo $e->getMessage();
-}
+require_once 'inc/databaseCall.php';
 
 if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['email']), FILTER_VALIDATE_EMAIL]){
 
