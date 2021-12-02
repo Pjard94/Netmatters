@@ -5,15 +5,15 @@ if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['emai
 
         if(isset($_POST['name']) &&  $_POST['name'] != ' ') {
 
-            if(isset($_POST['phoneNumber']) &&  $_POST['phoneNumber'] != ' ' ){
+            if(isset($_POST['phone_number']) &&  $_POST['phone_number'] != ' ' ){
 
                 if(isset($_POST['subject']) &&  $_POST['subject'] != ' '){
 
                     if(isset($_POST['message']) &&  $_POST['message'] != ' '){
 
-                        $name = $_POST['first_name'];
+                        $name = $_POST['name'];
                         $email = $_POST['email'];
-                        $phone = $_POST['phoneNumber'];
+                        $phone = $_POST['phone_number'];
                         $subject = $_POST['subject'];
                         $message = $_POST['message'];
 

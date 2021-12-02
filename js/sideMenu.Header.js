@@ -33,7 +33,7 @@ hamburger.addEventListener('click', function () {
 
 // This will be the sticky header coding
 
-const main = document.getElementById('main');
+
 let sticker = document.getElementById('sticker');
 let thershold = 209;
 let curScroll;
@@ -65,3 +65,8 @@ let hasScrolled;
             hasScrolled = false;
         } 
     }, 250);
+
+    window.addEventListener('load', function(){
+        main.classList.add('hideHeader');
+        main.classList.remove('hideHeader');
+    });

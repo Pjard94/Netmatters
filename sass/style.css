@@ -3115,8 +3115,7 @@ body {
   }
 }
 #sticker {
-  height: auto;
-  width: 100vw;
+  height: 230px;
   z-index: 10;
   transition: all 0.4s ease-in-out;
 }
@@ -3297,10 +3296,15 @@ body {
 
 .form-input {
   border: none;
+  outline: none;
 }
 
-.error-showing {
-  border: red 1px solid;
+.form-input:focus {
+  box-shadow: 0 0 10px 3px #C2DCE6;
+}
+
+.error {
+  border: 1px solid red;
 }
 
 @media screen and (min-width: 768px) {
@@ -3339,6 +3343,7 @@ body {
 
   #contact-area-inner {
     flex-direction: row-reverse;
+    max-width: 1169px;
   }
 }
 @media screen and (min-width: 1260px) {

@@ -141,15 +141,15 @@
                         <div id="form-card">
                             <form id="contactForm">
                                 <label class="label-CF" for="name-CF">your name</label>
-                                <input type="text" id="name-CF" name="name">
-                                <label class="label-CF" for="email-CF">your email</label>
+                                <input type="text" id="name-CF" class="form-input" name="name">
+                                <label class="label-CF"  for="email-CF">your email</label>
                                 <input type="email" id="email-CF" class="form-input" name="email">
                                 <label class="label-CF" for="phone-CF">your telephone number</label>
-                                <input type="phone" id="phone-CF" name="phoneNumber">
+                                <input type="phone" id="phone-CF" class="form-input" name="phoneNumber">
                                 <label class="label-CF" for="subject-CF">subject</label>
-                                <input type="text" id="subject-CF" name="subject">
+                                <input type="text" id="subject-CF" class="form-input" name="subject">
                                 <label class="label-CF" for="message">message</label>
-                                <textarea id="message" name="message"></textarea>
+                                <textarea id="message" class="form-input" name="message"></textarea>
                                 
                                 <div>
                                     <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
