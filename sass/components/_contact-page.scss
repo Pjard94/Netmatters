@@ -157,8 +157,12 @@
     color: $white;
 }
 
+.form-input{
+    border: none;
+}
+
 .error-showing{
-    border: red;
+    border: red 1px solid;
 }
 
 @media screen and (min-width: $breakpoint-medium) {

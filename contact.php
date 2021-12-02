@@ -143,7 +143,7 @@
                                 <label class="label-CF" for="name-CF">your name</label>
                                 <input type="text" id="name-CF" name="name">
                                 <label class="label-CF" for="email-CF">your email</label>
-                                <input type="email" id="email-CF" name="email">
+                                <input type="email" id="email-CF" class="form-input" name="email">
                                 <label class="label-CF" for="phone-CF">your telephone number</label>
                                 <input type="phone" id="phone-CF" name="phoneNumber">
                                 <label class="label-CF" for="subject-CF">subject</label>
