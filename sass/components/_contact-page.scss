@@ -18,6 +18,7 @@
     height: 45px;
     padding: 14px;
 
+
     * {
         font-size: 13px;
         display: inline;
@@ -107,11 +108,14 @@
 //contact form area
 #contact-area {
     padding: 0 15px 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #contact-area-inner {
     display: flex;
     flex-direction: column;
+    max-width: 1179px;
 }
 
 #contact-hours {
@@ -125,6 +129,7 @@
 #form-card {
     background: $contact-form-fill;
     padding: 30px;
+    border-radius: 3px;
 }
 
 #contactForm {
@@ -172,7 +177,7 @@
 
 @media screen and (min-width: $breakpoint-medium) {
     #contact-banner {
-       display: block; 
+       display: flex; 
     }
 
     #office-list-container {
@@ -209,6 +214,10 @@
     #contact-area-inner {
         flex-direction: row-reverse;
         max-width: 1169px;
+    }
+
+    #contact-hours {
+        width: 370px;
     }
     
     

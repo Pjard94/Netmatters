@@ -3244,11 +3244,14 @@ body {
 
 #contact-area {
   padding: 0 15px 50px;
+  display: flex;
+  justify-content: center;
 }
 
 #contact-area-inner {
   display: flex;
   flex-direction: column;
+  max-width: 1179px;
 }
 
 #contact-hours {
@@ -3262,6 +3265,7 @@ body {
 #form-card {
   background: #E6E7E9;
   padding: 30px;
+  border-radius: 3px;
 }
 
 #contactForm {
@@ -3309,7 +3313,7 @@ body {
 
 @media screen and (min-width: 768px) {
   #contact-banner {
-    display: block;
+    display: flex;
   }
 
   #office-list-container {
@@ -3344,6 +3348,10 @@ body {
   #contact-area-inner {
     flex-direction: row-reverse;
     max-width: 1169px;
+  }
+
+  #contact-hours {
+    width: 370px;
   }
 }
 @media screen and (min-width: 1260px) {
