@@ -11,6 +11,7 @@
         <!-- Stylesheet links -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="sass/hamburgers.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
         <link rel="stylesheet" href="sass/style.css">    
     </head>
     <body>
@@ -58,7 +59,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="map-container">
+                            <div id="map1" class="map-container">
 
                             </div>
                         </div>
@@ -78,7 +79,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="map-container">
+                            <div id="map2" class="map-container">
 
                             </div>
                         </div>
@@ -98,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="map-container">
+                            <div id="map3" class="map-container">
 
                             </div>
                         </div>
@@ -116,11 +117,13 @@
                             <p class="contact-hours-details"><strong>Business hours:</strong></p>
                             <p class="contact-hours-details"><strong>Monday - Friday 07:00 - 18:00 </strong></p>
                             <div>
-                                <p class="contact-hours-details"><strong>Out of Hours IT Support</strong></p>
-                                <div>
-                                    <p class="contact-hours-details">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                                    <p class="contact-hours-details"><strong>Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br> Sunday 10:00 - 18:00</strong></p>
-                                    <p class="contact-hours-details">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+                                <div id="hours-info">
+                                <p class="contact-hours-details"><strong>Out of Hours IT Support</strong></p><i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="drop-down">
+                                    <p class="contact-hours-details hidden-hours">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p class="contact-hours-details hidden-hours"><strong>Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br> Sunday 10:00 - 18:00</strong></p>
+                                    <p class="contact-hours-details hidden-hours">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +154,7 @@
                                 <label class="label-CF" for="message">message</label>
                                 <textarea id="message" class="form-input" name="message"></textarea>
                                 
-                                <div>
+                                <div id="checkbox-group">
                                     <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
                                     <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                                 </div>
@@ -174,7 +177,10 @@
         <!-- Repeated scripts -->
         <?php include("inc/repeatedScripts.php") ?>
 
+        <script src="js/hoursDisplay.js"></script>
         <script src="js/formSubmission.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script src="js/leafletActivating.js"></script>
 
     </body>
 </html>

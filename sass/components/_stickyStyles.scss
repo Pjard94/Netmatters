@@ -1,7 +1,7 @@
 @use '../absracts/index' as *;
 
 #sticker {
-    height: 230px;
+    height: auto;
     // width: 100vw;
     z-index: 10;
     transition: all 0.4s ease-in-out;

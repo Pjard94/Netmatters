@@ -2226,6 +2226,7 @@ header {
   font-size: 16px;
   line-height: 32px;
   font-weight: 600;
+  margin: 0 0 0 20px;
 }
 
 .entry label,
@@ -3115,7 +3116,7 @@ body {
   }
 }
 #sticker {
-  height: 230px;
+  height: auto;
   z-index: 10;
   transition: all 0.4s ease-in-out;
 }
@@ -3193,6 +3194,7 @@ body {
 .office-columns {
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 30px;
 }
 
 .office-cards {
@@ -3221,6 +3223,7 @@ body {
 .text-design {
   color: #926fb1;
   font-size: 26px;
+  font-weight: 700;
 }
 
 .card-title:hover,
@@ -3242,9 +3245,12 @@ body {
   width: 144px;
 }
 
+.map-container {
+  height: 300px;
+}
+
 #contact-area {
   padding: 0 15px 50px;
-  display: flex;
   justify-content: center;
 }
 
@@ -3262,10 +3268,18 @@ body {
   margin-bottom: 15px;
 }
 
+.hidden-hours {
+  display: none;
+}
+
+.revealed-hours {
+  display: block;
+}
+
 #form-card {
   background: #E6E7E9;
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 #contactForm {
@@ -3290,7 +3304,7 @@ body {
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
-  font-size: 1.063rem;
+  font-size: 15px;
   border: none;
   border-radius: 3px;
   outline: none;
@@ -3301,6 +3315,7 @@ body {
 .form-input {
   border: none;
   outline: none;
+  height: 47px;
 }
 
 .form-input:focus {
@@ -3309,6 +3324,10 @@ body {
 
 .error {
   border: 1px solid red;
+}
+
+#checkbox-group {
+  margin: 15px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -3343,6 +3362,10 @@ body {
   .inner,
 #office-list-container {
     width: 970px;
+  }
+
+  #contact-area {
+    display: flex;
   }
 
   #contact-area-inner {
