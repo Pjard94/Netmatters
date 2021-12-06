@@ -3,7 +3,8 @@
 const smallHamburger = document.getElementById('hamburger--sm');
 const hamburger = document.getElementById('hamburger--more');
 const body = document.body;
-const page = document.getElementById('menu-overlay')
+const page = document.getElementById('menu-overlay');
+const main = document.getElementById('main');
 let binary = 0;
 
 page.addEventListener('click', function (){
@@ -35,7 +36,6 @@ hamburger.addEventListener('click', function () {
 
 
 let sticker = document.getElementById('sticker');
-let thershold = 209;
 let curScroll;
 let prevScroll;
 let hasScrolled;

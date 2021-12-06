@@ -2815,12 +2815,12 @@ footer i {
   }
 }
 #side-menu {
-  width: 280px;
+  width: 275px;
   height: 100%;
   position: fixed;
   right: 0;
   z-index: 100;
-  transform: translateX(280px);
+  transform: translateX(275px);
   transition: transform ease-in 250ms;
   overflow-y: auto;
   background: #333645;
@@ -2970,8 +2970,7 @@ body {
 }
 
 .menu-showing {
-  overflow-y: hidden;
-  transform: translateX(-280px);
+  transform: translateX(-275px);
 }
 .menu-showing #menu-overlay {
   opacity: 0.5;
@@ -2980,6 +2979,9 @@ body {
 }
 .menu-showing #side-menu {
   overflow-y: scroll;
+}
+.menu-showing #main {
+  overflow-y: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -3233,17 +3235,15 @@ body {
 }
 
 .view-more {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .office-button {
   color: #ffffff;
-  padding: 5px 30px;
+  padding: 15px 28px;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 14.4px;
-  height: 47px;
-  width: 144px;
 }
 
 .map-container {
@@ -3267,6 +3267,18 @@ body {
 
 .contact-hours-details {
   margin-bottom: 15px;
+}
+
+#hours-info {
+  display: flex;
+}
+
+.email-link {
+  font-size: 19px;
+}
+
+.info-drop {
+  margin: 0 0 0 10px;
 }
 
 .hidden-hours {
@@ -3301,7 +3313,7 @@ body {
 
 .button-replace {
   height: auto;
-  width: 140px;
+  width: 149px;
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
@@ -3343,6 +3355,10 @@ body {
 
   .inner {
     width: 750px;
+  }
+
+  .email-link {
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 992px) {

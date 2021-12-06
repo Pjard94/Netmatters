@@ -113,12 +113,12 @@
 
                         <div id="contact-hours">
                             <p class="contact-hours-details"><strong>Email us on:</strong></p>
-                            <p class="contact-hours-details"><a class="text-design" href="">sales@netmatters.com</a></p>
+                            <p class="contact-hours-details"><a class="text-design email-link" href="">sales@netmatters.com</a></p>
                             <p class="contact-hours-details"><strong>Business hours:</strong></p>
                             <p class="contact-hours-details"><strong>Monday - Friday 07:00 - 18:00 </strong></p>
                             <div>
                                 <div id="hours-info">
-                                <p class="contact-hours-details"><strong>Out of Hours IT Support</strong></p><i class="fas fa-chevron-down"></i>
+                                <p class="contact-hours-details"><strong>Out of Hours IT Support</strong></p><i class="fas fa-chevron-down info-drop"></i>
                                 </div>
                                 <div id="drop-down" class=" hidden-hours">
                                     <p class="contact-hours-details">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>

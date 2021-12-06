@@ -94,17 +94,15 @@
 }
 
 .view-more {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .office-button {
     color: $white;
-    padding: 5px 30px;
+    padding: 15px 28px;
     border-radius: 3px;
     text-transform: uppercase;
     font-size: 14.4px;
-    height: 47px;
-    width: 144px;
 }
 
 .map-container {
@@ -129,6 +127,18 @@
 
 .contact-hours-details {
     margin-bottom: 15px;
+}
+
+#hours-info {
+    display: flex;
+}
+
+.email-link{
+    font-size: 19px;
+}
+
+.info-drop {
+    margin: 0 0 0 10px;
 }
 
 .hidden-hours {
@@ -163,7 +173,7 @@
 
 .button-replace {
     height: auto;
-    width: 140px;
+    width: 149px;
     line-height: 35px;
     padding: 5px 15px;
     text-transform: uppercase;
@@ -207,6 +217,9 @@
         width: $media-med-width;
     }
     
+    .email-link{
+        font-size: 26px;
+    }
 }
 
 @media screen and (min-width: $breakpoint-large) {
