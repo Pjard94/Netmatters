@@ -120,10 +120,10 @@
                                 <div id="hours-info">
                                 <p class="contact-hours-details"><strong>Out of Hours IT Support</strong></p><i class="fas fa-chevron-down"></i>
                                 </div>
-                                <div id="drop-down">
-                                    <p class="contact-hours-details hidden-hours">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                                    <p class="contact-hours-details hidden-hours"><strong>Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br> Sunday 10:00 - 18:00</strong></p>
-                                    <p class="contact-hours-details hidden-hours">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+                                <div id="drop-down" class=" hidden-hours">
+                                    <p class="contact-hours-details">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p class="contact-hours-details"><strong>Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br> Sunday 10:00 - 18:00</strong></p>
+                                    <p class="contact-hours-details">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
                                 </div>
                             </div>
                         </div>

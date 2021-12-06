@@ -1,4 +1,4 @@
-<div id="sticker" class="showHeader">
+<div id="sticker" >
 
                 <header id="header">
                     

@@ -1,4 +1,4 @@
-// this si the coding for the side menu
+// this is the coding for the side menu
 
 const smallHamburger = document.getElementById('hamburger--sm');
 const hamburger = document.getElementById('hamburger--more');
@@ -41,19 +41,22 @@ let prevScroll;
 let hasScrolled;
 
 
-    main.addEventListener('scroll', function(){
+    window.addEventListener('scroll', function(){
         hasScrolled = true;
-        curScroll = main.scrollTop;
+        curScroll = window.scrollY;
+        // console.log(curScroll);
     })
 
     function headerToggle() {
         
         if(prevScroll > curScroll){
-            main.classList.remove('hideHeader');
-            // console.log('header should reveal');
+            sticker.classList.remove('hideHeader');
+            sticker.classList.add('showHeader');
+            console.log('header should reveal');
         } else {
-            main.classList.add('hideHeader');
-            // console.log('header should be hidden')
+            sticker.classList.add('hideHeader');
+            sticker.classList.remove('showHeader');
+            console.log('header should be hidden')
         } 
         
     }
@@ -63,10 +66,6 @@ let hasScrolled;
             headerToggle();
             prevScroll = curScroll;
             hasScrolled = false;
+            // console.log(prevScroll);
         } 
     }, 250);
-
-    window.addEventListener('load', function(){
-        main.classList.add('hideHeader');
-        main.classList.remove('hideHeader');
-    });

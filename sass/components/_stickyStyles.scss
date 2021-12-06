@@ -14,10 +14,7 @@
 }
 
 .hideHeader {
-    .showHeader {
-       position: static; 
-    }
-    
+    top: -230px;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -40,3 +37,9 @@
 }
 }
 
+.leaflet-top,
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane{
+    z-index: 0;
+}

@@ -150,8 +150,9 @@
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-behavior: none;
+    // overflow-y: hidden;
+    transform: translateX(0);
+    transition: transform ease-in 250ms;
 }
 
 .large-menu-group:hover {
@@ -160,12 +161,12 @@ body {
     }
 }
 
-#main {
-    transform: translateX(0);
-    transition: transform ease-in 250ms;
-    overflow-y: scroll;
-    height: 1024px;
-}
+// #main {
+//     // transform: translateX(0);
+//     // transition: transform ease-in 250ms;
+//     // overflow-y: scroll;
+//     // height: 1024px;
+// }
 .menu-showing {
     
     #menu-overlay {
@@ -175,12 +176,12 @@ body {
     }
 
     #side-menu  {
-        transform: translateX(0px);
+        overflow-y: scroll;
     }
 
-    #main {
-      transform: translateX(-280px);  
-    }
+    overflow-y: hidden;
+    transform: translateX(-280px);  
+    
 }
 
 @media screen and (min-width:$breakpoint-large) {
