@@ -128,29 +128,26 @@
                             </div>
                         </div>
 
-                        
-                       <?php 
-                    //    if($wasSent == true){
-                    //         echo '<p class="message-indicator success-state">';
-                    //         echo 'Thank you for your enquiry.';
-                    //         echo '</p>';
-                    //     } elseif($failedSend == true){
-                    //         echo '<p class="message-indicator failed-state">';
-                    //         echo "We're sorry the form seems to have been incomplete.";
-                    //         echo '</p>';
-                    //     }
-                        ?>
-
                         <div id="form-card">
                             <form id="contactForm">
-                                <label class="label-CF" for="name-CF">your name</label>
-                                <input type="text" id="name-CF" class="form-input" name="name">
-                                <label class="label-CF"  for="email-CF">your email</label>
-                                <input type="email" id="email-CF" class="form-input" name="email">
-                                <label class="label-CF" for="phone-CF">your telephone number</label>
-                                <input type="phone" id="phone-CF" class="form-input" name="phoneNumber">
-                                <label class="label-CF" for="subject-CF">subject</label>
-                                <input type="text" id="subject-CF" class="form-input" name="subject">
+                                <div class="contactForm-inner">
+                                    <div class="form-display">
+                                        <label class="label-CF" for="name-CF">your name</label>
+                                        <input type="text" id="name-CF" class="form-input" name="name">
+                                    </div>
+                                    <div class="form-display form-right">
+                                        <label class="label-CF"  for="email-CF">your email</label>
+                                        <input type="email" id="email-CF" class="form-input" name="email">
+                                    </div>
+                                    <div class="form-display">
+                                        <label class="label-CF" for="phone-CF">your telephone number</label>
+                                        <input type="phone" id="phone-CF" class="form-input" name="phoneNumber">
+                                    </div>
+                                    <div class="form-display form-right">
+                                        <label class="label-CF" for="subject-CF">subject</label>
+                                        <input type="text" id="subject-CF" class="form-input" name="subject">
+                                    </div>
+                                </div>
                                 <label class="label-CF" for="message">message</label>
                                 <textarea id="message" class="form-input" name="message"></textarea>
                                 

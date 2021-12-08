@@ -3304,6 +3304,7 @@ body {
   text-transform: capitalize;
   font-size: 16px;
   margin-top: 15px;
+  font-weight: 600;
 }
 
 .label-CF::after {
@@ -3327,6 +3328,7 @@ body {
 
 .form-input {
   border: none;
+  border-radius: 2px;
   outline: none;
   height: 47px;
 }
@@ -3341,6 +3343,16 @@ body {
 
 #checkbox-group {
   margin: 15px 0;
+}
+
+.form-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm-inner {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -3392,6 +3404,19 @@ body {
 
   #contact-hours {
     width: 370px;
+  }
+
+  .contactForm-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-display {
+    width: calc(50% - 20px);
+  }
+
+  .form-right {
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 1260px) {
