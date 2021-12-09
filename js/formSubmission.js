@@ -1,3 +1,4 @@
+const inputs = document.getElementsByClassName('form-input');
 const formName = document.getElementById('name-CF');
 const email = document.getElementById('email-CF');
 const phoneNo = document.getElementById('phone-CF');
@@ -6,6 +7,7 @@ const message = document.getElementById('message');
 const submit = document.getElementById('submit-form');
 const tickbox = document.getElementById('m-y');
 const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
+const phoneREGEX = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/ ;
 let nameCheck = false;
 let emailCheck = false;
 let phoneCheck = false;
@@ -51,7 +53,7 @@ submit.addEventListener("click", function (e) {
         console.log('failed check')
       }
 
-      if(phoneNo.value != '' && phoneNo.value != ' '){
+      if(phoneNo.value != '' && phoneNo.value != ' ' && phoneREGEX.test(phoneNo.value)){
         phoneCheck = true;
         console.log('this worked'); 
       } else {
@@ -85,8 +87,34 @@ submit.addEventListener("click", function (e) {
       
   })
     
+$(inputs).focus(function() {
 
+  setInterval(function() {
 
+    if(this == email){
+
+      if(emailREGEX.test(email.value) == true && this.value != '' && this.value != ' '){
+        email.classList.remove('error')
+      } else {
+        return false;
+      }
+
+    }
+
+    if(this == phoneNo){
+      if(phoneREGEX.test(phoneNo.value) == true && this.value != '' && this.value != ' '){
+        phoneNo.classList.remove('error')
+      } else {
+        return false;
+      }
+    }
+
+    if (this.value != '' && this.value != ' ') {    
+      this.classList.remove('error');
+    }
+  }, 250);
+
+})
   
   function handleresponse (responseObject) {
     if (responseObject.sent) {

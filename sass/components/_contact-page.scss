@@ -133,6 +133,11 @@
     display: flex;
 }
 
+#out-of-hours:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .email-link{
     font-size: 19px;
 }
@@ -187,7 +192,7 @@
 }
 
 .form-input{
-    border: none;
+    border: 1px solid $modal-border;
     border-radius: 2px;
     outline: none;
     height: 47px;
@@ -213,6 +218,10 @@
 .contactForm-inner {
     display: flex;
     flex-direction: column;
+}
+
+#message {
+    height: 100px;
 }
 
 @media screen and (min-width: $breakpoint-medium) {
@@ -277,7 +286,7 @@
     }
 
     .form-right {
-        margin-left: 20px;
+        margin-left: 40px;
     }
 }
 

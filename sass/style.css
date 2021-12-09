@@ -3273,6 +3273,11 @@ body {
   display: flex;
 }
 
+#out-of-hours:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .email-link {
   font-size: 19px;
 }
@@ -3327,7 +3332,7 @@ body {
 }
 
 .form-input {
-  border: none;
+  border: 1px solid #e5e5e5;
   border-radius: 2px;
   outline: none;
   height: 47px;
@@ -3353,6 +3358,10 @@ body {
 .contactForm-inner {
   display: flex;
   flex-direction: column;
+}
+
+#message {
+  height: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -3416,7 +3425,7 @@ body {
   }
 
   .form-right {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1260px) {
