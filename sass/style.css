@@ -3331,6 +3331,10 @@ body {
   color: #ffffff;
 }
 
+.button-replace:hover {
+  cursor: pointer;
+}
+
 .form-input {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
@@ -3368,8 +3372,8 @@ body {
   height: 100px;
 }
 
-.notSubmitted {
-  display: none;
+.success-state {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {

@@ -128,7 +128,6 @@
                             </div>
                         </div>
 
-                        <p id="enquiry" class="notSubmitted">Thank you for you enquiry</p>
                         <div id="form-card">
                             <form id="contactForm">
                                 <div class="contactForm-inner">
@@ -160,6 +159,8 @@
                                 
                             </form>   
                         </div>
+
+                        <p id="enquiry" class="notSubmitted">Thank you for you enquiry</p>
                         
                 </div>
                 </div>

@@ -191,6 +191,10 @@
     color: $white;
 }
 
+.button-replace:hover {
+    cursor: pointer;
+}
+
 .form-input{
     border: 1px solid $modal-border;
     border-radius: 2px;
@@ -228,8 +232,8 @@
     height: 100px;
 }
 
-.notSubmitted {
-    display: none;
+.success-state{
+    display: flex;
 }
 
 @media screen and (min-width: $breakpoint-medium) {

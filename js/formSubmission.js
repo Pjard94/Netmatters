@@ -99,7 +99,7 @@ function activeValid() {
   if(this == email){
 
     if(emailREGEX.test(email.value) == true && this.value != '' && this.value != ' '){
-      email.classList.add('error-fixed');
+      email.classList.remove('error');
       // console.log('email fixed');
     } else {
       return false;
@@ -109,7 +109,7 @@ function activeValid() {
 
   if(this == phoneNo){
     if(phoneREGEX.test(phoneNo.value) == true && this.value != '' && this.value != ' '){
-      phoneNo.classList.add('error-fixed');
+      phoneNo.classList.remove('error');
       // console.log('phone fixed');
     } else {
       return false;
@@ -117,7 +117,7 @@ function activeValid() {
   }
 
   if (this.value != '' && this.value != ' ') {    
-    this.classList.add('error-fixed');
+    this.classList.remove('error');
     // console.log('other error fixed');
   }
 
@@ -137,8 +137,8 @@ function activeValid() {
       phoneCheck = false;
       subjectCheck = false;
       messageCheck = false;
-      successBar.classList.add("success-bar");
-      setTimeout(function () {successBar.classList.remove("success-bar")}, 5000);
+      successBar.classList.add("success-state");
+      setTimeout(function () {successBar.classList.remove("success-state")}, 5000);
     }
   
   }

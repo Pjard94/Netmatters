@@ -52,11 +52,11 @@ let hasScrolled;
         if(prevScroll > curScroll){
             sticker.classList.remove('hideHeader');
             sticker.classList.add('showHeader');
-            console.log('header should reveal');
+            // console.log('header should reveal');
         } else {
             sticker.classList.add('hideHeader');
             sticker.classList.remove('showHeader');
-            console.log('header should be hidden')
+            // console.log('header should be hidden')
         } 
         
     }
