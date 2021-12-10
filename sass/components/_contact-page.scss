@@ -206,6 +206,10 @@
     border: 1px solid red;
 }
 
+.error-fixed {
+    border: 1px solid $modal-border;
+}
+
 #checkbox-group{
     margin: 15px 0;
 }
@@ -222,6 +226,10 @@
 
 #message {
     height: 100px;
+}
+
+.notSubmitted {
+    display: none;
 }
 
 @media screen and (min-width: $breakpoint-medium) {

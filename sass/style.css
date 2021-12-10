@@ -3346,6 +3346,10 @@ body {
   border: 1px solid red;
 }
 
+.error-fixed {
+  border: 1px solid #e5e5e5;
+}
+
 #checkbox-group {
   margin: 15px 0;
 }
@@ -3362,6 +3366,10 @@ body {
 
 #message {
   height: 100px;
+}
+
+.notSubmitted {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

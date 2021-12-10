@@ -1,4 +1,3 @@
-const inputs = document.getElementsByClassName('form-input');
 const formName = document.getElementById('name-CF');
 const email = document.getElementById('email-CF');
 const phoneNo = document.getElementById('phone-CF');
@@ -6,6 +5,7 @@ const subject = document.getElementById('subject-CF');
 const message = document.getElementById('message');
 const submit = document.getElementById('submit-form');
 const tickbox = document.getElementById('m-y');
+const successBar = document.getElementById('enquiry');
 const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
 const phoneREGEX = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/ ;
 let nameCheck = false;
@@ -23,42 +23,42 @@ submit.addEventListener("click", function (e) {
     // console.log('this worked');
     if(emailREGEX.test(email.value) == true){
       emailCheck = true;
-      console.log('this worked');
+      // console.log('this worked');
       } else {
         email.classList.add('error');
-        console.log('failed check')
+        // console.log('failed check')
       }
 
       if(formName.value != '' && formName.value != ' ') {
         nameCheck = true;
-        console.log('this worked');
+        // console.log('this worked');
       }else {
         formName.classList.add('error');
-        console.log('failed check')
+        // console.log('failed check')
       }
 
       if(subject.value != '' && subject.value != ' ') {
         subjectCheck = true;
-        console.log('this worked');
+        // console.log('this worked');
       } else {
         subject.classList.add('error');
-        console.log('failed check')
+        // console.log('failed check')
       }
 
       if(message.value != '' && message.value != ' '){
         messageCheck = true;
-        console.log('this worked');
+        // console.log('this worked');
       } else {
         message.classList.add('error');
-        console.log('failed check')
+        // console.log('failed check')
       }
 
       if(phoneNo.value != '' && phoneNo.value != ' ' && phoneREGEX.test(phoneNo.value)){
         phoneCheck = true;
-        console.log('this worked'); 
+        // console.log('this worked'); 
       } else {
         phoneNo.classList.add('error');
-        console.log('failed check')
+        // console.log('failed check')
       }
 
       if(phoneCheck == true && messageCheck == true && subjectCheck == true && nameCheck == true && emailCheck == true){
@@ -87,34 +87,42 @@ submit.addEventListener("click", function (e) {
       
   })
     
-$(inputs).focus(function() {
+email.addEventListener('input', activeValid);
+phoneNo.addEventListener('input', activeValid);
+formName.addEventListener('input', activeValid);
+subject.addEventListener('input', activeValid);
+message.addEventListener('input', activeValid);
 
-  setInterval(function() {
+// this function actively validates the inputs as information is being filled in so will shwo when the error is resolved
+function activeValid() {
+  
+  if(this == email){
 
-    if(this == email){
-
-      if(emailREGEX.test(email.value) == true && this.value != '' && this.value != ' '){
-        email.classList.remove('error')
-      } else {
-        return false;
-      }
-
+    if(emailREGEX.test(email.value) == true && this.value != '' && this.value != ' '){
+      email.classList.add('error-fixed');
+      // console.log('email fixed');
+    } else {
+      return false;
     }
 
-    if(this == phoneNo){
-      if(phoneREGEX.test(phoneNo.value) == true && this.value != '' && this.value != ' '){
-        phoneNo.classList.remove('error')
-      } else {
-        return false;
-      }
-    }
+  }
 
-    if (this.value != '' && this.value != ' ') {    
-      this.classList.remove('error');
+  if(this == phoneNo){
+    if(phoneREGEX.test(phoneNo.value) == true && this.value != '' && this.value != ' '){
+      phoneNo.classList.add('error-fixed');
+      // console.log('phone fixed');
+    } else {
+      return false;
     }
-  }, 250);
+  }
 
-})
+  if (this.value != '' && this.value != ' ') {    
+    this.classList.add('error-fixed');
+    // console.log('other error fixed');
+  }
+
+  // console.log('the form is activly validating');
+}
   
   function handleresponse (responseObject) {
     if (responseObject.sent) {
@@ -131,9 +139,6 @@ $(inputs).focus(function() {
       messageCheck = false;
       successBar.classList.add("success-bar");
       setTimeout(function () {successBar.classList.remove("success-bar")}, 5000);
-    } else {
-      failedBar.classList.add("failed-bar");
-      setTimeout(function () {failedBar.classList.remove("failed-bar")}, 5000);
     }
   
   }
