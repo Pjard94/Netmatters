@@ -48,7 +48,7 @@
                                 <img src="Assets/cambridge.jpg" alt="" class="office-images">
                                 <div class="office-card-text">
                                     <a href="#" class="card-title">Cambridge Office</a>
-                                    <p>Unit 1.28,<br>
+                                    <p class="alt-text-colour">Unit 1.28,<br>
                                     St John's Innovation Centre,<br>
                                     Cowley Road, Milton,<br>
                                     Cambridge,<br>
@@ -68,7 +68,7 @@
                                 <img src="Assets/wymondham.jpg" alt="" class="office-images">
                                 <div class="office-card-text">
                                     <a href="#" class="card-title">Wymondham Office</a>
-                                    <p>Unit 15,<br>
+                                    <p class="alt-text-colour">Unit 15,<br>
                                     Penfold Drive,<br>
                                     Gateway 11 Business Park,<br>
                                     Wymondham, Norfolk,<br>
@@ -88,7 +88,7 @@
                                 <img src="Assets/yarmouth-2.jpg" alt="" class="office-images">
                                 <div class="office-card-text">
                                     <a href="#" class="card-title">Great Yarmouth Office</a>
-                                    <p>Suite F23,<br>
+                                    <p class="alt-text-colour">Suite F23,<br>
                                     Beacon Innovation Centre,<br>
                                     Beacon Park, Gorleston,<br>
                                     Great Yarmouth, Norfolk,<br>
@@ -121,15 +121,19 @@
                                 <p id="out-of-hours" class="contact-hours-details"><strong>Out of Hours IT Support</strong></p><i class="fas fa-chevron-down info-drop"></i>
                                 </div>
                                 <div id="drop-down" class=" hidden-hours">
-                                    <p class="contact-hours-details">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p class="contact-hours-details alt-text-colour">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                     <p class="contact-hours-details"><strong>Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br> Sunday 10:00 - 18:00</strong></p>
-                                    <p class="contact-hours-details">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+                                    <p class="contact-hours-details alt-text-colour">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
                                 </div>
                             </div>
                         </div>
 
                         <div id="form-card">
                             <form id="contactForm">
+                                <div id="submission-bar" class="submission-bar">
+                                    <p id="enquiry" class="notSubmitted">Your message has been sent!</p>
+                                    <button id="success-close">x</button>
+                                </div>
                                 <div class="contactForm-inner">
                                     <div class="form-display">
                                         <label class="label-CF" for="name-CF">your name</label>
@@ -159,8 +163,6 @@
                                 
                             </form>   
                         </div>
-
-                        <p id="enquiry" class="notSubmitted">Thank you for you enquiry</p>
                         
                 </div>
                 </div>

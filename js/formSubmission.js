@@ -5,7 +5,8 @@ const subject = document.getElementById('subject-CF');
 const message = document.getElementById('message');
 const submit = document.getElementById('submit-form');
 const tickbox = document.getElementById('m-y');
-const successBar = document.getElementById('enquiry');
+const successBar = document.getElementById('submission-bar');
+const closeBar = document.getElementById('success-close');
 const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
 const phoneREGEX = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/ ;
 let nameCheck = false;
@@ -138,7 +139,11 @@ function activeValid() {
       subjectCheck = false;
       messageCheck = false;
       successBar.classList.add("success-state");
-      setTimeout(function () {successBar.classList.remove("success-state")}, 5000);
     }
   
   }
+
+  closeBar.addEventListener('click', function(e){
+    e.preventDefault();
+    successBar.classList.remove("success-state")
+  })

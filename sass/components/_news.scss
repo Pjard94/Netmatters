@@ -141,6 +141,10 @@ outline: none;
     padding: 0 0 0 3px;
 }
 
+.pretty--checkbox:hover {
+    cursor: pointer;
+}
+
 .pretty--checkbox:focus-within {
     
     .focus-fill {
