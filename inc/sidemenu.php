@@ -2,7 +2,7 @@
             <div class="menu-xs">
                 <ul>
                     <li class="side-menu--contact">
-                        <a>Contact us</a>
+                        <a href="contact.php">Contact us</a>
                     </li>
                     <li class="side-menu--web">
                         <a href="#" class="li-head"><span class="web-icon"><i class="fas fa-code ci"></i></span>

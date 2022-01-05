@@ -65,6 +65,10 @@ body {
   height: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -2988,6 +2992,10 @@ body {
   overflow-y: hidden;
 }
 
+.overflow {
+  overflow-x: visible;
+}
+
 @media screen and (min-width: 992px) {
   .menu-xs {
     display: none;
@@ -3350,6 +3358,7 @@ body {
   border-radius: 2px;
   outline: none;
   height: 47px;
+  padding: 5px 15px;
 }
 
 .form-input:focus {

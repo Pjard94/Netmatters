@@ -87,12 +87,6 @@ submit.addEventListener("click", function (e) {
         }
       
   })
-    
-email.addEventListener('input', activeValid);
-phoneNo.addEventListener('input', activeValid);
-formName.addEventListener('input', activeValid);
-subject.addEventListener('input', activeValid);
-message.addEventListener('input', activeValid);
 
 // this function actively validates the inputs as information is being filled in so will shwo when the error is resolved
 function activeValid() {
@@ -124,7 +118,13 @@ function activeValid() {
 
   // console.log('the form is activly validating');
 }
-  
+
+  email.addEventListener('input', activeValid);
+  phoneNo.addEventListener('input', activeValid);
+  formName.addEventListener('input', activeValid);
+  subject.addEventListener('input', activeValid);
+  message.addEventListener('input', activeValid);
+
   function handleresponse (responseObject) {
     if (responseObject.sent) {
       console.log('this worked')

@@ -12,6 +12,7 @@ page.addEventListener('click', function (){
     body.classList.remove('large-menu-showing');
     smallHamburger.classList.remove('is-active');
     hamburger.classList.remove('is-active');
+    setTimeout(function () {document.documentElement.classList.remove('overflow')}, 250);
     binary = 0;
 })
 
@@ -19,6 +20,7 @@ smallHamburger.addEventListener('click', function () {
     if (binary === 0) {
        smallHamburger.classList.add('is-active');
        body.classList.add('menu-showing');
+       document.documentElement.classList.add('overflow')
        binary = 1;
     }
 })
@@ -27,6 +29,7 @@ hamburger.addEventListener('click', function () {
     if (binary === 0) {
         hamburger.classList.add('is-active');
         body.classList.add('menu-showing'); 
+        document.documentElement.classList.add('overflow')
         binary = 1;
     }
 })

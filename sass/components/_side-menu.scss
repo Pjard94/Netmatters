@@ -181,6 +181,10 @@ body {
     
 }
 
+.overflow {
+    overflow-x: visible;
+}
+
 @media screen and (min-width:$breakpoint-large) {
     .menu-xs {
         display: none;
