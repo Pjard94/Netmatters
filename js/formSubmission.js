@@ -72,7 +72,7 @@ submit.addEventListener("click", function (e) {
 
 
         XHR.onload = () => {
-          let responseObject= null;
+          let responseObject;
 
           try{
             responseObject = JSON.parse(XHR.responseText);
@@ -85,7 +85,32 @@ submit.addEventListener("click", function (e) {
           }
         }
         }
-      
+
+  function handleresponse (responseObject) {
+    if (responseObject.sent) {
+      console.log('this worked')
+      formName.value = "";
+      email.value = "";
+      phoneNo.value = "";
+      subject.value = "";
+      message.value = "";
+      nameCheck = false;
+      emailCheck = false;
+      phoneCheck = false;
+      subjectCheck = false;
+      messageCheck = false;
+      successBar.classList.add("success-state");
+      // document.getElementById('form-card').style.height = '605px';
+    }
+  
+  }
+
+})
+
+closeBar.addEventListener('click', function(e){
+    e.preventDefault();
+    successBar.classList.remove("success-state")
+    // document.getElementById('form-card').style.height = '552px';
   })
 
 // this function actively validates the inputs as information is being filled in so will shwo when the error is resolved
@@ -124,26 +149,3 @@ function activeValid() {
   formName.addEventListener('input', activeValid);
   subject.addEventListener('input', activeValid);
   message.addEventListener('input', activeValid);
-
-  function handleresponse (responseObject) {
-    if (responseObject.sent) {
-      console.log('this worked')
-      formName.value = "";
-      email.value = "";
-      phoneNo.value = "";
-      subject.value = "";
-      message.value = "";
-      nameCheck = false;
-      emailCheck = false;
-      phoneCheck = false;
-      subjectCheck = false;
-      messageCheck = false;
-      successBar.classList.add("success-state");
-    }
-  
-  }
-
-  closeBar.addEventListener('click', function(e){
-    e.preventDefault();
-    successBar.classList.remove("success-state")
-  })

@@ -163,7 +163,6 @@
     background: $contact-form-fill;
     padding: 30px;
     border-radius: 10px;
-    max-height: 520px;
 }
 
 #contactForm {
@@ -325,6 +324,10 @@
     .contactForm-inner{
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    #form-card {
+        height: 552px;
     }
 
     .form-display{

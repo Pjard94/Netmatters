@@ -238,62 +238,94 @@ require_once 'testArticle.php';
 
                 <div class="latest--container">
 
-                    <div class="news-article n--a1">
-                        <div class="main-img">
-                            <a href="<?php echo $link1; ?>" class="news-img-banner banner-1"><?php echo $category1; ?></a>
-                            <a href="<?php echo $link1; ?>" > <img src="<?php echo $headImg1; ?>" alt="image related to the story"></a>
-                        </div>
-                        <div class="block block--1">
-                            <h3><a href="<?php echo $link1; ?>" class="art-head1 article-header-all"><?php echo $title1; ?></a></h3>
-                            <p><?php echo $description1; ?></p>
-                            <a href="<?php echo $link1; ?>" class="Read-more1 read-more-all">Read More</a>
-                            <div class="user">             
-                                <img src="<?php echo $profileIMG1; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
-                                <div class="details">
-                                    <p><strong> Posted by <span class="user-name"><?php echo $writer1; ?></span>.</strong></p>
-                                    <p class="post-date"><?php echo $date1; ?></p>
-                                </div>
+                <?php 
+
+                $i = 1;
+                
+                foreach ($news as $article) {
+
+                    
+
+                    echo '<div class="news-article n--a'.$i.'">
+                    <div class="main-img">
+                        <a href="'.$article["link"].'" class="news-img-banner banner-'.$i.'">'.$article["category"].'</a>
+                        <a href="'.$article["link"].'" > <img src="'.$article["article_image"].'" alt="image related to the story"></a>
+                    </div>
+                    <div class="block block--'.$i.'">
+                        <h3><a href="'.$article["link"].'" class="art-head'.$i.' article-header-all">'.$article["title"].'</a></h3>
+                        <p>'.$article["description"].'</p>
+                        <a href="'.$article["link"].'" class="Read-more'.$i.' read-more-all">Read More</a>
+                        <div class="user">             
+                            <img src="'.$article["profile_image"].'" alt="The image of the user who posted the story." class="img-responsiveness">
+                            <div class="details">
+                                <p><strong> Posted by <span class="user-name">'.$article["writer"].'</span>.</strong></p>
+                                <p class="post-date">'.$article["date"].'</p>
                             </div>
                         </div>
                     </div>
+                </div>';
+    
+                $i++;
+                }
 
-                    <div class="news-article n--a2">
+                ?>
+
+                    <!-- <div class="news-article n--a1">
                         <div class="main-img">
-                            <a href="<?php echo $link2; ?>" class="news-img-banner banner-2"><?php echo $category2; ?></a>
-                            <a href="<?php echo $link2; ?>"> <img src="Assets/asset_11.jpeg" alt="image related to the story"></a>
+                            <a href="<?php // echo $news["link"]; ?>" class="news-img-banner banner-1"><?php // echo $news["category"]; ?></a>
+                            <a href="<?php // echo $news["link"]; ?>" > <img src="<?php // echo $news["article_image"]; ?>" alt="image related to the story"></a>
+                        </div>
+                        <div class="block block--1">
+                            <h3><a href="<?php //echo $news["link"]; ?>" class="art-head1 article-header-all"><?php //echo $title; ?></a></h3>
+                            <p><?php // echo $description; ?></p>
+                            <a href="<?php //echo $news["link"]; ?>" class="Read-more1 read-more-all">Read More</a>
+                            <div class="user">             
+                                <img src="<?php //echo $profileIMG; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
+                                <div class="details">
+                                    <p><strong> Posted by <span class="user-name"><?php // echo $writer; ?></span>.</strong></p>
+                                    <p class="post-date"><?php //echo $news["date"]; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="news-article n--a2">
+                        <div class="main-img">
+                            <a href="<?php //echo $news["link"]; ?>" class="news-img-banner banner-2"><?php //echo $news["category"]; ?></a>
+                            <a href="<?php //echo $news["link"]; ?>"> <img src="<?php //echo $article["article_image"]; ?>" alt="image related to the story"></a>
                         </div>
                         <div class="block block--2">
-                            <h3><a href="<?php echo $link2; ?>" class="art-head2 article-header-all"><?php echo $title2; ?></a></h3>
-                            <p><?php echo $description2; ?></p>
-                            <a href="<?php echo $link2; ?>" class="Read-more2 read-more-all">Read More</a>
+                            <h3><a href="<?php //echo $news["link"]; ?>" class="art-head2 article-header-all"><?php // echo $title; ?></a></h3>
+                            <p><?php //echo $description; ?></p>
+                            <a href="<?php //echo $news["link"]; ?>" class="Read-more2 read-more-all">Read More</a>
                             <div class="user">
-                                <img src="<?php echo $profileIMG2; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
+                                <img src="<?php //echo $profileIMG; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name"><?php echo $writer2; ?></span>.</strong></p>
-                                    <p class="post-date"><?php echo $date2; ?></p>
+                                    <p><strong> Posted by <span class="user-name"><?php //echo $writer; ?></span>.</strong></p>
+                                    <p class="post-date"><?php //echo $news["date"]; ?></p>
                                 </div>    
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="news-article n--a3">
+                    <!-- <div class="news-article n--a3">
                         <div class="main-img">
-                            <a href="<?php echo $link3; ?>" class="news-img-banner banner-3"><?php echo $category3; ?></a>
-                            <a href="<?php echo $link3; ?>"> <img src="Assets/asset_7.jpeg" alt="image related to the story"></a>
+                            <a href="<?php //echo $link; ?>" class="news-img-banner banner-3"><?php //echo $news["category"]; ?></a>
+                            <a href="<?php //echo $link; ?>"> <img src="<?php //echo $headImg; ?>" alt="image related to the story"></a>
                         </div>
                         <div class="block block--3">
-                            <h3><a href="<?php echo $link3; ?>" class="art-head3 article-header-all"><?php echo $title3; ?></a></h3>
-                            <p><?php echo $description3; ?></p>
-                            <a href="<?php echo $link3; ?>" class="Read-more3 read-more-all">Read More</a>
+                            <h3><a href="<?php //echo $link; ?>" class="art-head3 article-header-all"><?php //echo $title; ?></a></h3>
+                            <p><?php //echo $description; ?></p>
+                            <a href="<?php //echo $link; ?>" class="Read-more3 read-more-all">Read More</a>
                             <div class="user">
-                                <img src="<?php echo $profileIMG3; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
+                                <img src="<?php //echo $profileIMG; ?>" alt="The image of the user who posted the story." class="img-responsiveness">
                                 <div class="details">
-                                    <p><strong> Posted by <span class="user-name"><?php echo $writer3; ?></span>.</strong></p>
-                                    <p class="post-date"><?php echo $date3; ?> </p>
+                                    <p><strong> Posted by <span class="user-name"><?php //echo $writer; ?></span>.</strong></p>
+                                    <p class="post-date"><?php //echo $news["date"]; ?> </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div> 
             </div>
