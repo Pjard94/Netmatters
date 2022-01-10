@@ -259,7 +259,7 @@ require_once 'testArticle.php';
                             <img src="'.$article["profile_image"].'" alt="The image of the user who posted the story." class="img-responsiveness">
                             <div class="details">
                                 <p><strong> Posted by <span class="user-name">'.$article["writer"].'</span>.</strong></p>
-                                <p class="post-date">'.date("j F Y", strtotime($article["date"])).'</p>
+                                <p class="post-date">'.date("jS F Y", strtotime($article["date"])).'</p>
                             </div>
                         </div>
                     </div>

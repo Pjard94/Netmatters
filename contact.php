@@ -128,42 +128,43 @@
                             </div>
                         </div>
 
-                        <div id="form-card">
-                            <form id="contactForm">
-                                <div id="submission-bar" class="submission-bar">
-                                    <p id="enquiry" class="notSubmitted">Your message has been sent!</p>
-                                    <button id="success-close">x</button>
-                                </div>
-                                <div class="contactForm-inner">
-                                    <div class="form-display">
-                                        <label class="label-CF" for="name-CF">your name</label>
-                                        <input type="text" id="name-CF" class="form-input" name="name">
+                        <div>
+                            <div id="form-card">
+                                <form id="contactForm">
+                                    <div id="submission-bar" class="submission-bar">
+                                        <p id="enquiry" class="notSubmitted">Your message has been sent!</p>
+                                        <button id="success-close">x</button>
                                     </div>
-                                    <div class="form-display form-right">
-                                        <label class="label-CF"  for="email-CF">your email</label>
-                                        <input type="email" id="email-CF" class="form-input" name="email">
+                                    <div class="contactForm-inner">
+                                        <div class="form-display">
+                                            <label class="label-CF" for="name-CF">your name</label>
+                                            <input type="text" id="name-CF" class="form-input" name="name">
+                                        </div>
+                                        <div class="form-display form-right">
+                                            <label class="label-CF"  for="email-CF">your email</label>
+                                            <input type="email" id="email-CF" class="form-input" name="email">
+                                        </div>
+                                        <div class="form-display">
+                                            <label class="label-CF" for="phone-CF">your telephone number</label>
+                                            <input type="phone" id="phone-CF" class="form-input" name="phoneNumber">
+                                        </div>
+                                        <div class="form-display form-right">
+                                            <label class="label-CF" for="subject-CF">subject</label>
+                                            <input type="text" id="subject-CF" class="form-input" name="subject">
+                                        </div>
                                     </div>
-                                    <div class="form-display">
-                                        <label class="label-CF" for="phone-CF">your telephone number</label>
-                                        <input type="phone" id="phone-CF" class="form-input" name="phoneNumber">
+                                    <label class="label-CF" for="message">message</label>
+                                    <textarea id="message" class="form-input" name="message"></textarea>
+                                    
+                                    <div id="checkbox-group">
+                                        <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
+                                        <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                                     </div>
-                                    <div class="form-display form-right">
-                                        <label class="label-CF" for="subject-CF">subject</label>
-                                        <input type="text" id="subject-CF" class="form-input" name="subject">
-                                    </div>
-                                </div>
-                                <label class="label-CF" for="message">message</label>
-                                <textarea id="message" class="form-input" name="message"></textarea>
-                                
-                                <div id="checkbox-group">
-                                    <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
-                                    <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
-                                </div>
-                                <button id="submit-form" class="design-button button-replace">Send enquiry</button>
-                                
-                            </form>   
+                                    <button id="submit-form" class="design-button button-replace">Send enquiry</button>
+                                    
+                                </form>   
+                            </div>
                         </div>
-                        
                 </div>
                 </div>
 
