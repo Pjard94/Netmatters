@@ -163,6 +163,7 @@
     background: $contact-form-fill;
     padding: 30px;
     border-radius: 10px;
+    max-height: 900px;
 }
 
 #contactForm {
@@ -245,6 +246,7 @@
     justify-content: space-between;
     border: 1px solid #d6e9c6;
     background-color: $fill-market;
+    margin-top: -15px;
 }
 
 .notSubmitted {
@@ -327,7 +329,7 @@
     }
 
     #form-card {
-        height: 552px;
+        max-height: 568px;
     }
 
     .form-display{

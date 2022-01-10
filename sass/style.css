@@ -1600,6 +1600,7 @@ header {
 .article-header-all {
   font-weight: 600;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .read-more-all {
@@ -2968,7 +2969,6 @@ footer i {
 }
 
 body {
-  overflow-x: hidden;
   transform: translateX(0);
   transition: transform ease-in 250ms;
 }
@@ -3315,6 +3315,7 @@ body {
   background: #E6E7E9;
   padding: 30px;
   border-radius: 10px;
+  max-height: 900px;
 }
 
 #contactForm {
@@ -3396,6 +3397,7 @@ body {
   justify-content: space-between;
   border: 1px solid #d6e9c6;
   background-color: #2ecc71;
+  margin-top: -15px;
 }
 
 .notSubmitted {
@@ -3477,7 +3479,7 @@ body {
   }
 
   #form-card {
-    height: 552px;
+    max-height: 568px;
   }
 
   .form-display {

@@ -100,7 +100,6 @@ submit.addEventListener("click", function (e) {
       subjectCheck = false;
       messageCheck = false;
       successBar.classList.add("success-state");
-      // document.getElementById('form-card').style.height = '605px';
     }
   
   }
@@ -110,7 +109,6 @@ submit.addEventListener("click", function (e) {
 closeBar.addEventListener('click', function(e){
     e.preventDefault();
     successBar.classList.remove("success-state")
-    // document.getElementById('form-card').style.height = '552px';
   })
 
 // this function actively validates the inputs as information is being filled in so will shwo when the error is resolved
