@@ -51,11 +51,17 @@
     }
 
     p {
-        height: 66px;
         margin: 0 0 25px;
         font-size: 13px;
     }
 }
+
+.articleDescription {
+    color: #666;
+    line-height: 1.375rem;
+    height: 66px;
+}
+
 
 .news-img-banner {
     position: absolute;
@@ -139,6 +145,7 @@
     
     .user-name {
         padding: 0 0 10px 0;
+        text-transform: capitalize;
     }
 }
 
@@ -211,10 +218,9 @@
         h3 {
           height: 24px;  
         }
-
-        p {
-            height: 44px;
-        }
+    }
+    .articleDescription {
+        height: 44px;
     }
 }
 

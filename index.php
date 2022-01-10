@@ -253,13 +253,13 @@ require_once 'testArticle.php';
                     </div>
                     <div class="block block--'.$i.'">
                         <h3><a href="'.$article["link"].'" class="art-head'.$i.' article-header-all">'.$article["title"].'</a></h3>
-                        <p>'.$article["description"].'</p>
+                        <p class="articleDescription">'.$article["description"].' ...</p>
                         <a href="'.$article["link"].'" class="Read-more'.$i.' read-more-all">Read More</a>
                         <div class="user">             
                             <img src="'.$article["profile_image"].'" alt="The image of the user who posted the story." class="img-responsiveness">
                             <div class="details">
                                 <p><strong> Posted by <span class="user-name">'.$article["writer"].'</span>.</strong></p>
-                                <p class="post-date">'.$article["date"].'</p>
+                                <p class="post-date">'.date("j F Y", strtotime($article["date"])).'</p>
                             </div>
                         </div>
                     </div>

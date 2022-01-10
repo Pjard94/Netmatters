@@ -1,3 +1,4 @@
+// this starts up the carousel with all the required rules and calls the slick.min.js
 $('.slides').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

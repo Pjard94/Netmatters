@@ -19,6 +19,7 @@ tickbox.addEventListener("click", function (e) {
   e.preventDefault();
 });
 
+// This checks the forms inputs are valid when the form is submitted
 submit.addEventListener("click", function (e) {
     e.preventDefault();
     // console.log('this worked');
@@ -86,14 +87,11 @@ submit.addEventListener("click", function (e) {
         }
         }
 
+  // This deals with the response from the form submission on the server side
   function handleresponse (responseObject) {
     if (responseObject.sent) {
-      console.log('this worked')
-      formName.value = "";
-      email.value = "";
-      phoneNo.value = "";
-      subject.value = "";
-      message.value = "";
+      // console.log('this worked')
+      $('#contactForm').trigger("reset");
       nameCheck = false;
       emailCheck = false;
       phoneCheck = false;
@@ -106,6 +104,7 @@ submit.addEventListener("click", function (e) {
 
 })
 
+// This closes the success bar when it is here.
 closeBar.addEventListener('click', function(e){
     e.preventDefault();
     successBar.classList.remove("success-state")
@@ -141,7 +140,7 @@ function activeValid() {
 
   // console.log('the form is activly validating');
 }
-
+// These activate the active validation method while the user is typing
   email.addEventListener('input', activeValid);
   phoneNo.addEventListener('input', activeValid);
   formName.addEventListener('input', activeValid);

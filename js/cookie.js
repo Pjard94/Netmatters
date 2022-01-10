@@ -1,6 +1,7 @@
 const accept = document.getElementById('cookie-accept-button');
 const cookieModal = document.getElementById("cookie-container");
 
+// This is a basic cookie using the users local storage to check if they have seen the modal.
 window.addEventListener('load', function() {
 
     const cookieCheck = window.localStorage.getItem('PeterCookie');

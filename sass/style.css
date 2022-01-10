@@ -902,7 +902,7 @@ header {
 }
 
 .slick-dots {
-  bottom: 24px;
+  bottom: 65px;
 }
 
 .slick-dots li button:before {
@@ -1547,9 +1547,14 @@ header {
   margin: 0 0 15px;
 }
 .news-article p {
-  height: 66px;
   margin: 0 0 25px;
   font-size: 13px;
+}
+
+.articleDescription {
+  color: #666;
+  line-height: 1.375rem;
+  height: 66px;
 }
 
 .news-img-banner {
@@ -1633,6 +1638,7 @@ header {
 }
 .details .user-name {
   padding: 0 0 10px 0;
+  text-transform: capitalize;
 }
 
 .art-head1:link,
@@ -1696,7 +1702,8 @@ header {
   .news-article h3 {
     height: 24px;
   }
-  .news-article p {
+
+  .articleDescription {
     height: 44px;
   }
 }
