@@ -1,21 +1,22 @@
 <?php
 require_once 'inc/databaseCall.php';
 
-if(isset($_POST['email']) &&  $_POST['email'] != ' ' && [filter_var($_POST['email']), FILTER_VALIDATE_EMAIL]){
+$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+$phone = filter_var($_POST['phone_number'], FILTER_SANITIZE_NUMBER_INT);
+$subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-        if(isset($_POST['name']) &&  $_POST['name'] != ' ') {
+if(isset($email) &&  $email != ' ' && filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-            if(isset($_POST['phone_number']) &&  $_POST['phone_number'] != ' ' ){
+        if(isset($name) &&  $name != ' ') {
 
-                if(isset($_POST['subject']) &&  $_POST['subject'] != ' '){
+            if(isset($phone) &&  $phone != ' ' && filter_var($phone, FILTER_VALIDATE_INT)){
 
-                    if(isset($_POST['message']) &&  $_POST['message'] != ' '){
+                if(isset($subject) &&  $subject != ' '){
 
-                        $name = $_POST['name'];
-                        $email = $_POST['email'];
-                        $phone = $_POST['phone_number'];
-                        $subject = $_POST['subject'];
-                        $message = $_POST['message'];
+                    if(isset($message) &&  $message != ' '){
+
 
                         $sql = $PDO->prepare("INSERT INTO form(name,email,phone_number,subject,message)
                                             VALUES('$name','$email','$phone','$subject','$message')");

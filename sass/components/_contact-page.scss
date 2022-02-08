@@ -271,6 +271,21 @@
     opacity: 1;
 }
 
+//form checkbox
+#form-check {
+    width: 32px;
+    height: 32px;
+    border: solid 2px $color-primary;
+    cursor: pointer;
+    background-color: $background-color-footer;
+    padding: 0 0 0 3px;
+}
+
+#form-check:checked {
+    background-color: black;
+    color: white;
+}
+
 @media screen and (min-width: $breakpoint-medium) {
     #contact-banner {
        display: flex; 

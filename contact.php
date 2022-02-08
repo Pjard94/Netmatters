@@ -157,8 +157,9 @@
                                     <textarea id="message" class="form-input" name="message"></textarea>
                                     
                                     <div id="checkbox-group">
-                                        <button id="m-y" class="pretty--checkbox"><span class="focus-fill"><i class="fas fa-check"></i></span></button>
-                                        <label class="subscription-checkbox--mail" for="m-y">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
+                                        
+                                        <input id="form-check" type="checkbox">
+                                        <label class="subscription-checkbox--mail" for="form-check">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                                     </div>
                                     <button id="submit-form" class="design-button button-replace">Send enquiry</button>
                                     

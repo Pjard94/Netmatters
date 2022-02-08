@@ -4,7 +4,7 @@ const phoneNo = document.getElementById('phone-CF');
 const subject = document.getElementById('subject-CF');
 const message = document.getElementById('message');
 const submit = document.getElementById('submit-form');
-const tickbox = document.getElementById('m-y');
+const tickbox = document.getElementById('form-check');
 const successBar = document.getElementById('submission-bar');
 const closeBar = document.getElementById('success-close');
 const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
@@ -15,9 +15,7 @@ let phoneCheck = false;
 let subjectCheck = false;
 let messageCheck = false;
 
-tickbox.addEventListener("click", function (e) {
-  e.preventDefault();
-});
+
 
 // This checks the forms inputs are valid when the form is submitted
 submit.addEventListener("click", function (e) {
@@ -140,6 +138,8 @@ function activeValid() {
 
   // console.log('the form is activly validating');
 }
+
+
 // These activate the active validation method while the user is typing
   email.addEventListener('input', activeValid);
   phoneNo.addEventListener('input', activeValid);
