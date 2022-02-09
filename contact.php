@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="sass/style.css">    
     </head>
     <body>
-
+    
         <?php include("inc/sidemenu.php"); ?>
 
         
@@ -156,11 +156,16 @@
                                     <label class="label-CF" for="message">message</label>
                                     <textarea id="message" class="form-input" name="message"></textarea>
                                     
-                                    <div id="checkbox-group">
+                                    <div id="checkbox-group" class="form-group">
+                                        <div class="opt-box">
+                                            
+                                            <input id="form-check" type="checkbox" name="form-check" class="checkboxStyle">
+                                            <label for="form-check" class="checkboxStyle"><i class="fas fa-check"></i></label>
+                                        </div>
                                         
-                                        <input id="form-check" type="checkbox">
                                         <label class="subscription-checkbox--mail" for="form-check">Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#" rel="How we will keep your information safe." class="Privacy">Privacy Policy</a> for more information on how we use your data.</label>
                                     </div>
+                                    
                                     <button id="submit-form" class="design-button button-replace">Send enquiry</button>
                                     
                                 </form>   
