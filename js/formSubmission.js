@@ -9,6 +9,7 @@ const successBar = document.getElementById('submission-bar');
 const closeBar = document.getElementById('success-close');
 const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
 const phoneREGEX = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/ ;
+const noNumberInput = /\d/;
 let nameCheck = false;
 let emailCheck = false;
 let phoneCheck = false;
@@ -29,7 +30,7 @@ submit.addEventListener("click", function (e) {
         // console.log('failed check')
       }
 
-      if(formName.value != '' && formName.value != ' ') {
+      if(formName.value != '' && formName.value != ' ' && noNumberInput.test(formName.value) != true) {
         nameCheck = true;
         // console.log('this worked');
       }else {
@@ -53,7 +54,7 @@ submit.addEventListener("click", function (e) {
         // console.log('failed check')
       }
 
-      if(phoneNo.value != '' && phoneNo.value != ' ' && phoneREGEX.test(phoneNo.value)){
+      if(phoneNo.value != '' && phoneNo.value != ' ' && phoneREGEX.test(phoneNo.value) == true){
         phoneCheck = true;
         // console.log('this worked'); 
       } else {
@@ -89,13 +90,25 @@ submit.addEventListener("click", function (e) {
   function handleresponse (responseObject) {
     if (responseObject.sent) {
       // console.log('this worked')
-      $('#contactForm').trigger("reset");
+      formName.value = '';
+      email.value = '';
+      subject.value = '';
+      phoneNo.value = '';
+      message.value = '';
       nameCheck = false;
       emailCheck = false;
       phoneCheck = false;
       subjectCheck = false;
       messageCheck = false;
       successBar.classList.add("success-state");
+    } 
+
+    if (responseObject.email == false){
+      console.log('email is the reason')
+    }
+
+    if (responseObject.phone == false){
+      console.log('phone is the reason')
     }
   
   }

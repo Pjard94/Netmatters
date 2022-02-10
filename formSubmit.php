@@ -11,12 +11,13 @@ if(isset($email) &&  $email != ' ' && filter_var($email, FILTER_VALIDATE_EMAIL))
 
         if(isset($name) &&  $name != ' ') {
 
-            if(isset($phone) &&  $phone != ' ' && filter_var($phone, FILTER_VALIDATE_INT)){
+            if(isset($phone) &&  $phone != ' '){
 
                 if(isset($subject) &&  $subject != ' '){
 
                     if(isset($message) &&  $message != ' '){
 
+                        
 
                         $sql = $PDO->prepare("INSERT INTO form(name,email,phone_number,subject,message)
                                             VALUES('$name','$email','$phone','$subject','$message')");
@@ -47,7 +48,7 @@ if(isset($email) &&  $email != ' ' && filter_var($email, FILTER_VALIDATE_EMAIL))
             }else {
                 echo json_encode(
                     array(
-                        'sent' => false
+                        'phone' => false
                     )
                     );
                 }
@@ -62,7 +63,7 @@ if(isset($email) &&  $email != ' ' && filter_var($email, FILTER_VALIDATE_EMAIL))
 }else {
     echo json_encode(
         array(
-            'sent' => false
+            'email' => false
         )
         );
     }
